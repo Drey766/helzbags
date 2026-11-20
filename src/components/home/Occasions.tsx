@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { brand } from "@/config/brand";
 import { getProducts, productAlt } from "@/lib/products";
 import { SmartImage } from "@/components/ui/SmartImage";
 import { Reveal } from "@/components/ui/Reveal";
@@ -23,15 +22,15 @@ export function Occasions() {
   const used = new Set<string>();
   return (
     <section className="section" aria-labelledby="occasions-title">
-      <div className="container-zb">
+      <div className="container-hz">
         <SectionHeading
           eyebrow="Shop by occasion"
           title={
             <span id="occasions-title">
-              A bag for <em className="text-plum-soft">every</em> part of your day
+              A bag for <em className="text-primary-raised">every</em> part of your day
             </span>
           }
-          intro={<>&ldquo;{brand.ownWords[1]}&rdquo;</>}
+          intro="Work, outings, evenings or everyday: start with where you are going."
         />
         <ul className="mt-10 grid grid-cols-2 gap-3 md:mt-14 md:grid-cols-4 md:gap-6">
           {tiles.map((t, i) => {
@@ -42,7 +41,7 @@ export function Occasions() {
                 <Reveal delay={i * 80}>
                   <Link
                     href={`/shop?occasion=${t.key}`}
-                    className="gilt-frame group relative block aspect-[3/4] overflow-hidden rounded-[20px] bg-plum md:aspect-[4/5.4]"
+                    className="gilt-frame group relative block aspect-[3/4] overflow-hidden rounded-[20px] bg-primary md:aspect-[4/5.4]"
                   >
                     {p && (
                       <SmartImage
@@ -52,10 +51,10 @@ export function Occasions() {
                         className="transition-transform duration-700 ease-out group-hover:scale-105"
                       />
                     )}
-                    <span aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-plum-deep/90 via-plum/25 to-transparent" />
+                    <span aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-primary-deep/90 via-primary/25 to-transparent" />
                     <span className="absolute inset-x-0 bottom-7 flex flex-col items-center text-center md:bottom-9">
-                      <span className="display block text-[2rem] italic leading-none text-ivory md:text-[2.6rem]">{t.name}</span>
-                      <span aria-hidden="true" className="mt-3 block h-px w-8 bg-gold-light transition-all duration-500 group-hover:w-16" />
+                      <span className="display block text-[2rem] italic leading-none text-surface md:text-[2.6rem]">{t.name}</span>
+                      <span aria-hidden="true" className="mt-3 block h-px w-8 bg-accent-light transition-all duration-500 group-hover:w-16" />
                     </span>
                   </Link>
                 </Reveal>

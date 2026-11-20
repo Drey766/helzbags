@@ -74,14 +74,14 @@ export function ShopView() {
       : null;
 
   return (
-    <div className="container-zb pb-24 pt-8 md:pt-12">
+    <div className="container-hz pb-24 pt-8 md:pt-12">
       <header className="max-w-2xl">
         <nav aria-label="Breadcrumb" className="text-sm text-muted">
-          <Link href="/" className="hover:text-plum">Home</Link>
+          <Link href="/" className="hover:text-primary">Home</Link>
           <span aria-hidden="true" className="mx-2">/</span>
-          {category || occasion ? <Link href="/shop" className="hover:text-plum">Shop</Link> : <span aria-current="page">Shop</span>}
+          {category || occasion ? <Link href="/shop" className="hover:text-primary">Shop</Link> : <span aria-current="page">Shop</span>}
         </nav>
-        <h1 className="display h-section mt-4 text-plum">{title}</h1>
+        <h1 className="display h-section mt-4 text-primary">{title}</h1>
         <p className="mt-3 text-muted">{intro}</p>
       </header>
 
@@ -131,7 +131,7 @@ export function ShopView() {
               <button
                 type="button"
                 onClick={() => go(c.next)}
-                className="inline-flex min-h-9 items-center gap-1.5 rounded-full bg-lilac py-1 pl-3 pr-2 text-sm text-plum hover:bg-plum hover:text-ivory"
+                className="inline-flex min-h-9 items-center gap-1.5 rounded-full bg-surface-soft py-1 pl-3 pr-2 text-sm text-primary hover:bg-primary hover:text-surface"
                 aria-label={`Remove filter ${c.label}`}
               >
                 {c.label}
@@ -140,7 +140,7 @@ export function ShopView() {
             </li>
           ))}
           <li>
-            <button type="button" onClick={() => go({ sort: filters.sort })} className="min-h-9 px-2 text-sm text-plum underline underline-offset-4">
+            <button type="button" onClick={() => go({ sort: filters.sort })} className="min-h-9 px-2 text-sm text-primary underline underline-offset-4">
               Clear all
             </button>
           </li>
@@ -165,10 +165,10 @@ export function ShopView() {
               {grouped.map((g) => (
                 <section key={g.cat.key} aria-labelledby={`cat-${g.cat.key}`}>
                   <div className="flex items-baseline justify-between gap-4 border-b border-line pb-3">
-                    <h2 id={`cat-${g.cat.key}`} className="display text-3xl text-plum">
+                    <h2 id={`cat-${g.cat.key}`} className="display text-3xl text-primary">
                       {g.cat.name}
                     </h2>
-                    <Link href={`/shop?category=${g.cat.key}`} className="text-sm text-plum-soft underline-offset-4 hover:underline">
+                    <Link href={`/shop?category=${g.cat.key}`} className="text-sm text-primary-raised underline-offset-4 hover:underline">
                       View {g.items.length}
                     </Link>
                   </div>
@@ -223,15 +223,15 @@ function Grid({ items }: { items: Product[] }) {
 
 function NoResults({ onClear }: { onClear: () => void }) {
   return (
-    <div className="mt-8 rounded-[28px] bg-champagne px-6 py-12 text-center">
-      <p className="display text-3xl text-plum">No bags match those filters.</p>
+    <div className="mt-8 rounded-[28px] bg-surface-alt px-6 py-12 text-center">
+      <p className="display text-3xl text-primary">No bags match those filters.</p>
       <p className="mt-3 text-muted">Remove a filter, or browse by occasion.</p>
       <ul className="mt-6 flex flex-wrap justify-center gap-2">
         {occasions
           .filter((o) => o.key !== "travel")
           .map((o) => (
             <li key={o.key}>
-              <Link href={`/shop?occasion=${o.key}`} className="inline-flex min-h-11 items-center rounded-full border border-plum px-5 text-plum hover:bg-plum hover:text-ivory">
+              <Link href={`/shop?occasion=${o.key}`} className="inline-flex min-h-11 items-center rounded-full border border-primary px-5 text-primary hover:bg-primary hover:text-surface">
                 {o.name}
               </Link>
             </li>

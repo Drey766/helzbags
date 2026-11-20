@@ -8,7 +8,7 @@ export function NewIn() {
   if (!items.length) return null;
   return (
     <section className="section" aria-labelledby="new-in-title">
-      <div className="container-zb">
+      <div className="container-hz">
         <SectionHeading
           title={<span id="new-in-title">New in</span>}
           intro="Recently added to the shop."

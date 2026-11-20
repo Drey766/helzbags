@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 
 export default function WishlistPage() {
   return (
-    <div className="container-zb pb-24 pt-10 md:pt-14">
-      <h1 className="display h-section text-plum">
-        Your <em className="text-plum-soft">wishlist</em>
+    <div className="container-hz pb-24 pt-10 md:pt-14">
+      <h1 className="display h-section text-primary">
+        Your <em className="text-primary-raised">wishlist</em>
       </h1>
       <p className="mt-3 max-w-xl text-muted">Saved on this device only. Share it on WhatsApp when you are ready.</p>
       <div className="mt-10">

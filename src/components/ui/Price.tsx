@@ -14,11 +14,11 @@ export function Price({ product, className = "", size = "md", tone = "light" }: 
   const sz = { sm: "text-[0.95rem]", md: "text-base", lg: "text-2xl" }[size];
   return (
     <span className={`inline-flex flex-wrap items-baseline gap-x-2 ${className}`}>
-      <span className={`tabular font-medium ${sz} ${tone === "dark" ? "text-ivory" : "text-ink"}`}>
+      <span className={`tabular font-medium ${sz} ${tone === "dark" ? "text-surface" : "text-ink"}`}>
         {formatKes(product.priceKes)}
       </span>
       {sample && (
-        <span className={`text-xs tracking-wide ${tone === "dark" ? "text-lilac-text" : "text-muted"}`}>
+        <span className={`text-xs tracking-wide ${tone === "dark" ? "text-muted-on-dark" : "text-muted"}`}>
           Sample price
         </span>
       )}

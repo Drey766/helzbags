@@ -115,7 +115,7 @@ export function getRelated(product: Product, limit = 4): Product[] {
     .map((x) => x.p);
 }
 
-/** First visible product with photos, preferring Zuri's own bags. */
+/** First visible product with photos, preferring Heiz Bags' own bags. */
 export function getFeaturedWithPhoto(): Product | undefined {
   const products = getProducts();
   return (

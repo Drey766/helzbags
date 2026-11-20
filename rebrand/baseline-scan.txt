@@ -1,0 +1,542 @@
+
+Old-brand terms in 109 files:
+  src\app\about\page.tsx:24  [Zuri Bags]  About <em className="text-gold-light">Zuri Bags</em>
+  src\app\about\page.tsx:24  [Zuri]  About <em className="text-gold-light">Zuri Bags</em>
+  src\app\api\contact\route.ts:5  [Zuri Bags]  // Nothing is stored or logged. Personal data only travels in the email to Zuri Bags.
+  src\app\api\contact\route.ts:5  [Zuri]  // Nothing is stored or logged. Personal data only travels in the email to Zuri Bags.
+  src\app\api\contact\route.ts:65  [Zuri Bags]  "Sent from the contact form on the Zuri Bags website. Reply by WhatsApp or phone.",
+  src\app\api\contact\route.ts:65  [Zuri]  "Sent from the contact form on the Zuri Bags website. Reply by WhatsApp or phone.",
+  src\app\basket\page.tsx:14  [Zuri Bags]  Your basket stays on this device. When you are ready, send the order on WhatsApp and Zuri Bags will reply to c
+  src\app\basket\page.tsx:14  [Zuri]  Your basket stays on this device. When you are ready, send the order on WhatsApp and Zuri Bags will reply to c
+  src\app\blog\page.tsx:8  [Zuri Bags]  description: "Styling and care notes for handbags, from Zuri Bags.",
+  src\app\blog\page.tsx:8  [Zuri]  description: "Styling and care notes for handbags, from Zuri Bags.",
+  src\app\contact\page.tsx:14  [Zuri Bags]  description: "Message Zuri Bags on WhatsApp, call, or send a note through the form.",
+  src\app\contact\page.tsx:14  [Zuri]  description: "Message Zuri Bags on WhatsApp, call, or send a note through the form.",
+  src\app\contact\page.tsx:26  [Zuri Bags]  intro="WhatsApp is the quickest way to reach Zuri Bags. You can also call, or leave a message here."
+  src\app\contact\page.tsx:26  [Zuri]  intro="WhatsApp is the quickest way to reach Zuri Bags. You can also call, or leave a message here."
+  src\app\globals.css:3  [ZB-]  /* Colour values live in src/config/brand.ts and are injected as --zb-* variables
+  src\app\globals.css:6  [ZB-]  --color-ivory: var(--zb-ivory);
+  src\app\globals.css:7  [ZB-]  --color-champagne: var(--zb-champagne);
+  src\app\globals.css:8  [ZB-]  --color-lilac: var(--zb-lilac);
+  src\app\globals.css:9  [ZB-]  --color-ink: var(--zb-ink);
+  src\app\globals.css:10  [ZB-]  --color-muted: var(--zb-muted);
+  src\app\globals.css:11  [ZB-]  --color-plum: var(--zb-plum);
+  src\app\globals.css:12  [ZB-]  --color-plum-deep: var(--zb-plum-deep);
+  src\app\globals.css:13  [ZB-]  --color-plum-soft: var(--zb-plum-soft);
+  src\app\globals.css:14  [ZB-]  --color-gold: var(--zb-gold);
+  src\app\globals.css:15  [ZB-]  --color-gold-light: var(--zb-gold-light);
+  src\app\globals.css:16  [ZB-]  --color-gold-deep: var(--zb-gold-deep);
+  src\app\globals.css:17  [ZB-]  --color-gold-text: var(--zb-gold-text);
+  src\app\globals.css:18  [ZB-]  --color-lilac-text: var(--zb-lilac-text);
+  src\app\globals.css:19  [ZB-]  --color-line: var(--zb-line);
+  src\app\globals.css:20  [ZB-]  --color-white: var(--zb-white);
+  src\app\globals.css:21  [ZB-]  --color-success: var(--zb-success);
+  src\app\globals.css:22  [ZB-]  --color-danger: var(--zb-danger);
+  src\app\globals.css:38  [ZB-]  background: var(--zb-ivory);
+  src\app\globals.css:39  [ZB-]  color: var(--zb-ink);
+  src\app\globals.css:48  [ZB-]  background: var(--zb-plum);
+  src\app\globals.css:49  [ZB-]  color: var(--zb-ivory);
+  src\app\globals.css:54  [ZB-]  outline: 2px solid var(--zb-plum);
+  src\app\globals.css:60  [ZB-]  outline-color: var(--zb-gold);
+  src\app\globals.css:154  [ZB-]  background: var(--zb-plum);
+  src\app\globals.css:155  [ZB-]  color: var(--zb-ivory);
+  src\app\globals.css:156  [ZB-]  box-shadow: 0 1px 0 color-mix(in srgb, var(--zb-gold) 60%, transparent) inset;
+  src\app\globals.css:159  [ZB-]  background: var(--zb-plum-deep);
+  src\app\globals.css:162  [ZB-]  background: linear-gradient(135deg, var(--zb-gold-light), var(--zb-gold) 45%, var(--zb-gold-deep));
+  src\app\globals.css:163  [ZB-]  color: var(--zb-plum);
+  src\app\globals.css:167  [ZB-]  box-shadow: 0 8px 24px -10px color-mix(in srgb, var(--zb-gold) 70%, transparent);
+  src\app\globals.css:170  [ZB-]  border: 1px solid var(--zb-plum);
+  src\app\globals.css:171  [ZB-]  color: var(--zb-plum);
+  src\app\globals.css:175  [ZB-]  background: var(--zb-plum);
+  src\app\globals.css:176  [ZB-]  color: var(--zb-ivory);
+  src\app\globals.css:179  [ZB-]  border: 1px solid color-mix(in srgb, var(--zb-gold) 70%, transparent);
+  src\app\globals.css:180  [ZB-]  color: var(--zb-ivory);
+  src\app\globals.css:184  [ZB-]  border-color: var(--zb-gold);
+  src\app\globals.css:185  [ZB-]  background: color-mix(in srgb, var(--zb-gold) 12%, transparent);
+  src\app\globals.css:207  [ZB-]  background: linear-gradient(100deg, var(--zb-gold-light), var(--zb-gold) 50%, var(--zb-gold-light));
+  src\app\globals.css:215  [ZB-]  background: var(--zb-line);
+  src\app\globals.css:234  [ZB-]  background-color: var(--zb-plum);
+  src\app\globals.css:236  [ZB-]  radial-gradient(120% 80% at 85% 0%, color-mix(in srgb, var(--zb-plum-soft) 45%, transparent), transparent 60%)
+  src\app\globals.css:237  [ZB-]  radial-gradient(90% 70% at 0% 100%, color-mix(in srgb, var(--zb-plum-deep) 80%, transparent), transparent 70%)
+  src\app\globals.css:238  [ZB-]  color: var(--zb-ivory);
+  src\app\globals.css:242  [ZB-]  background: var(--zb-champagne);
+  src\app\globals.css:251  [ZB-]  border: 1px solid var(--zb-line);
+  src\app\globals.css:252  [ZB-]  background: var(--zb-white);
+  src\app\globals.css:253  [ZB-]  color: var(--zb-ink);
+  src\app\globals.css:257  [ZB-]  border-color: color-mix(in srgb, var(--zb-plum) 35%, var(--zb-line));
+  src\app\globals.css:260  [ZB-]  outline: 2px solid var(--zb-plum);
+  src\app\globals.css:262  [ZB-]  border-color: var(--zb-plum);
+  src\app\globals.css:282  [ZB-]  color: var(--zb-plum);
+  src\app\globals.css:300  [ZB-]  background: var(--zb-gold-text);
+  src\app\globals.css:309  [ZB-]  border: 1px solid color-mix(in srgb, var(--zb-gold-light) 55%, transparent);
+  src\app\globals.css:316  [ZB-]  .zb-shimmer {
+  src\app\globals.css:318  [ZB-]  linear-gradient(100deg, transparent 30%, color-mix(in srgb, var(--zb-white) 55%, transparent) 50%, transparent
+  src\app\globals.css:319  [ZB-]  var(--zb-champagne);
+  src\app\globals.css:320  [ZB-]  animation: zb-shimmer 1.6s ease-in-out infinite;
+  src\app\globals.css:322  [ZB-]  @keyframes zb-shimmer {
+  src\app\globals.css:328  [ZB-]  .zb-loader-handle {
+  src\app\globals.css:331  [ZB-]  animation: zb-draw 1.6s var(--ease-out-soft) infinite;
+  src\app\globals.css:333  [ZB-]  .zb-loader-line {
+  src\app\globals.css:335  [ZB-]  animation: zb-sweep 1.6s var(--ease-out-soft) infinite;
+  src\app\globals.css:337  [ZB-]  @keyframes zb-draw {
+  src\app\globals.css:343  [ZB-]  @keyframes zb-sweep {
+  src\app\globals.css:350  [ZB-]  .zb-progress {
+  src\app\globals.css:351  [ZB-]  background: linear-gradient(90deg, var(--zb-gold-deep), var(--zb-gold-light) 50%, var(--zb-gold));
+  src\app\globals.css:352  [ZB-]  box-shadow: 0 0 10px color-mix(in srgb, var(--zb-gold) 70%, transparent);
+  src\app\globals.css:388  [ZB-]  @keyframes zb-pop {
+  src\app\globals.css:400  [ZB-]  animation: zb-pop 320ms var(--ease-out-soft);
+  src\app\globals.css:403  [ZB-]  @keyframes zb-sheet-up {
+  src\app\globals.css:411  [ZB-]  @keyframes zb-sheet-right {
+  src\app\globals.css:419  [ZB-]  @keyframes zb-fade {
+  src\app\globals.css:428  [ZB-]  animation: zb-sheet-up 320ms var(--ease-out-soft);
+  src\app\globals.css:431  [ZB-]  animation: zb-sheet-right 320ms var(--ease-out-soft);
+  src\app\globals.css:434  [ZB-]  animation: zb-fade 250ms ease-out;
+  src\app\globals.css:452  [ZB-]  .zb-shimmer,
+  src\app\globals.css:453  [ZB-]  .zb-loader-handle,
+  src\app\globals.css:454  [ZB-]  .zb-loader-line {
+  src\app\globals.css:457  [ZB-]  .zb-loader-handle {
+  src\app\how-to-order\page.tsx:26  [Zuri Bags]  intro="Ordering from Zuri Bags happens on WhatsApp, so you talk to a person, not a checkout."
+  src\app\how-to-order\page.tsx:26  [Zuri]  intro="Ordering from Zuri Bags happens on WhatsApp, so you talk to a person, not a checkout."
+  src\app\how-to-order\page.tsx:43  [Zuri Bags]  Pay once Zuri Bags has confirmed your order in the chat. You can also pay when you pick up at a shop.
+  src\app\how-to-order\page.tsx:43  [Zuri]  Pay once Zuri Bags has confirmed your order in the chat. You can also pay when you pick up at a shop.
+  src\app\layout.tsx:31  [Chrisbella]  const description = `Women's handbags in Nairobi CBD: totes, office bags, slings, clutches and Chrisbella. Ord
+  src\app\layout.tsx:59  [ZB-]  <style id="zb-brand-vars" dangerouslySetInnerHTML={{ __html: brandCssVars() }} />
+  src\app\opengraph-image.alt.txt:1  [Zuri Bags]  Zuri Bags logo with the words Carry elegance. Carry confidence.
+  src\app\opengraph-image.alt.txt:1  [Zuri]  Zuri Bags logo with the words Carry elegance. Carry confidence.
+  src\app\opengraph-image.alt.txt:1  [Carry elegance]  Zuri Bags logo with the words Carry elegance. Carry confidence.
+  src\app\opengraph-image.alt.txt:1  [Carry confidence]  Zuri Bags logo with the words Carry elegance. Carry confidence.
+  src\app\page.tsx:6  [Zuri]  import { ZuriCollection } from "@/components/home/ZuriCollection";
+  src\app\page.tsx:22  [Zuri]  <ZuriCollection />
+  src\app\privacy\page.tsx:8  [Zuri Bags]  description: "How the Zuri Bags website handles your information.",
+  src\app\privacy\page.tsx:8  [Zuri]  description: "How the Zuri Bags website handles your information.",
+  src\app\sitemap.ts:8  [Zuri]  // Samples are never listed: only Zuri's own bags.
+  src\app\terms\page.tsx:8  [Zuri Bags]  description: "Ordering through WhatsApp, prices and exchanges at Zuri Bags.",
+  src\app\terms\page.tsx:8  [Zuri]  description: "Ordering through WhatsApp, prices and exchanges at Zuri Bags.",
+  src\app\terms\page.tsx:14  [Zuri Bags]  <PageHero title="Terms" intro="How buying from Zuri Bags works." />
+  src\app\terms\page.tsx:14  [Zuri]  <PageHero title="Terms" intro="How buying from Zuri Bags works." />
+  src\app\visit\page.tsx:13  [Zuri Bags]  description: "Zuri Bags shops in Nairobi CBD, along Moi Avenue and Tom Mboya Street. Directions, phone and M-P
+  src\app\visit\page.tsx:13  [Zuri]  description: "Zuri Bags shops in Nairobi CBD, along Moi Avenue and Tom Mboya Street. Directions, phone and M-P
+  src\app\visit\page.tsx:13  [Moi Avenue]  description: "Zuri Bags shops in Nairobi CBD, along Moi Avenue and Tom Mboya Street. Directions, phone and M-P
+  src\app\visit\page.tsx:25  [Moi Avenue]  intro="See the bags in person in Nairobi CBD, along Moi Avenue and Tom Mboya Street."
+  src\components\brand\HandleArch.tsx:16  [ZB-]  const stroke = handle === "gold" ? "var(--zb-gold)" : "var(--zb-plum)";
+  src\components\brand\Logo.tsx:6  [Zuri]  /** "full" = bag + ZURI + bags; "mark" = the bag alone */
+  src\components\brand\Logo.tsx:16  [Zuri Bags]  * The Zuri Bags logo, inlined from assets/zuri-logo.svg and zuri-mark.svg.
+  src\components\brand\Logo.tsx:16  [Zuri]  * The Zuri Bags logo, inlined from assets/zuri-logo.svg and zuri-mark.svg.
+  src\components\brand\Logo.tsx:19  [Zuri Bags]  export function Logo({ variant = "full", tone = "light", className, title = "Zuri Bags", decorative }: Props) 
+  src\components\brand\Logo.tsx:19  [Zuri]  export function Logo({ variant = "full", tone = "light", className, title = "Zuri Bags", decorative }: Props) 
+  src\components\brand\Logo.tsx:24  [ZB-]  ? ({ "--logo-purple": "var(--zb-ivory)" } as React.CSSProperties)
+  src\components\home\EditorialSplit.tsx:7  [simple]  /** "Simple, elegant & classy": their line beside a large image. */
+  src\components\home\EditorialSplit.tsx:7  [elegant & classy]  /** "Simple, elegant & classy": their line beside a large image. */
+  src\components\home\EditorialSplit.tsx:20  [simple]  Simple, <em className="text-plum-soft">elegant</em> &amp; classy
+  src\components\home\EditorialSplit.tsx:31  [Zuri Bags]  About Zuri Bags
+  src\components\home\EditorialSplit.tsx:31  [Zuri]  About Zuri Bags
+  src\components\home\Hero.tsx:44  [Moi Avenue]  Shops along Moi Avenue and Tom Mboya Street. Pay via M-Pesa Till{" "}
+  src\components\home\ZuriCollection.tsx:11  [Zuri]  /** Zuri's own bags (ZB-001, ZB-002), in their own words, with designed placeholders until photos arrive. */
+  src\components\home\ZuriCollection.tsx:11  [ZB-]  /** Zuri's own bags (ZB-001, ZB-002), in their own words, with designed placeholders until photos arrive. */
+  src\components\home\ZuriCollection.tsx:12  [Zuri]  export function ZuriCollection() {
+  src\components\home\ZuriCollection.tsx:19  [Zuri]  eyebrow="The Zuri Collection"
+  src\components\layout\Footer.tsx:59  [Zuri Bags]  ["Zuri Bags", footerNav.about],
+  src\components\layout\Footer.tsx:59  [Zuri]  ["Zuri Bags", footerNav.about],
+  src\components\layout\nav.ts:24  [Zuri Bags]  { href: "/about", label: "About Zuri Bags" },
+  src\components\layout\nav.ts:24  [Zuri]  { href: "/about", label: "About Zuri Bags" },
+  src\components\layout\RouteProgress.tsx:87  [ZB-]  className="zb-progress h-full"
+  src\components\product\OwnPlaceholder.tsx:4  [Zuri]  * Designed placeholder for Zuri's own bags until photos arrive:
+  src\components\product\OwnPlaceholder.tsx:24  [ZB-]  <path d="M0,36 C80,10 160,12 220,30 C290,50 340,52 400,24 L400,30 C340,60 290,58 220,38 C160,20 80,20 0,44 Z" 
+  src\components\product\OwnPlaceholder.tsx:25  [ZB-]  <path d="M0,26 C90,0 170,4 230,22 C300,42 350,44 400,16" fill="none" stroke="var(--zb-gold-light)" strokeWidth
+  src\components\product\ProductCard.tsx:32  [ZB-]  <path d="M6,30 C6,2 94,2 94,30" fill="none" stroke="var(--zb-gold-text)" strokeWidth="1.25" vectorEffect="non-
+  src\components\shops\CbdMap.tsx:4  [Moi Avenue]  * Schematic map of Nairobi CBD: Moi Avenue and Tom Mboya Street as two gold lines,
+  src\components\shops\CbdMap.tsx:14  [ZB-]  const labelFill = dark ? "var(--zb-ivory)" : "var(--zb-ink)";
+  src\components\shops\CbdMap.tsx:15  [ZB-]  const subFill = dark ? "var(--zb-lilac-text)" : "var(--zb-muted)";
+  src\components\shops\CbdMap.tsx:16  [ZB-]  const streetFill = dark ? "var(--zb-gold-light)" : "var(--zb-gold-text)";
+  src\components\shops\CbdMap.tsx:21  [Zuri Bags]  <title id="cbd-map-title">Schematic map of Zuri Bags shops in Nairobi CBD</title>
+  src\components\shops\CbdMap.tsx:21  [Zuri]  <title id="cbd-map-title">Schematic map of Zuri Bags shops in Nairobi CBD</title>
+  src\components\shops\CbdMap.tsx:26  [ZB-]  <g stroke={dark ? "var(--zb-lilac-text)" : "var(--zb-line)"} strokeWidth="1" opacity={dark ? 0.16 : 0.9}>
+  src\components\shops\CbdMap.tsx:34  [Moi Avenue]  {/* Moi Avenue */}
+  src\components\shops\CbdMap.tsx:35  [ZB-]  <path d="M150,24 C170,110 190,200 214,318" fill="none" stroke="var(--zb-gold)" strokeWidth="5" strokeLinecap="
+  src\components\shops\CbdMap.tsx:37  [ZB-]  <path d="M232,310 C262,230 300,150 380,40" fill="none" stroke="var(--zb-gold)" strokeWidth="5" strokeLinecap="
+  src\components\shops\CbdMap.tsx:39  [Moi Avenue]  MOI AVENUE
+  src\components\shops\CbdMap.tsx:49  [ZB-]  <circle cx={p.x} cy={p.y} r="15" fill={dark ? "var(--zb-ivory)" : "var(--zb-plum)"} opacity=".14" />
+  src\components\shops\CbdMap.tsx:52  [ZB-]  fill="var(--zb-plum)"
+  src\components\shops\CbdMap.tsx:53  [ZB-]  stroke={dark ? "var(--zb-gold-light)" : "var(--zb-ivory)"}
+  src\components\shops\CbdMap.tsx:56  [ZB-]  <circle cx={p.x} cy={p.y - 17} r="3.5" fill="var(--zb-gold)" />
+  src\components\shops\ShopsBand.tsx:18  [Moi Avenue]  See the bags in person in Nairobi CBD, along Moi Avenue and Tom Mboya Street.
+  src\components\ui\BrandLoader.tsx:2  [Zuri]  * Loading state in Zuri's own shapes: the bag's handle draws itself and a gold line
+  src\components\ui\BrandLoader.tsx:11  [ZB-]  <path d="M14,40 H24 L16,100 H4 Z" fill="var(--zb-plum)" />
+  src\components\ui\BrandLoader.tsx:12  [ZB-]  <path d="M27,41 L36,40 L34,100 H20 Z" fill="var(--zb-gold-light)" />
+  src\components\ui\BrandLoader.tsx:13  [ZB-]  <path d="M38,40 H92 L91,60 C89,70 75,73 68,80 C61,87 58,94 58,100 H35 Z" fill="var(--zb-gold)" opacity=".9" />
+  src\components\ui\BrandLoader.tsx:16  [ZB-]  className="zb-loader-handle"
+  src\components\ui\BrandLoader.tsx:19  [ZB-]  stroke="var(--zb-plum)"
+  src\components\ui\BrandLoader.tsx:25  [ZB-]  <span className="zb-loader-line block h-px w-full bg-gradient-to-r from-gold-deep via-gold-light to-gold" />
+  src\components\ui\SampleTag.tsx:4  [Zuri]  /** "Sample" on sample bags, "Zuri Collection" on their own, only in demo mode. */
+  src\components\ui\SampleTag.tsx:14  [Zuri]  {own ? "Zuri Collection" : "Sample"}
+  src\components\ui\SmartImage.tsx:24  [Zuri]  * Zuri's own photos (in /public) are still optimised.
+  src\components\ui\SmartImage.tsx:47  [ZB-]  {!loaded && <span aria-hidden="true" className="zb-shimmer absolute inset-0" />}
+  src\config\brand.ts:1  [Zuri Bags]  // Single source of truth for Zuri Bags: names, contacts, shops, their own words,
+  src\config\brand.ts:1  [Zuri]  // Single source of truth for Zuri Bags: names, contacts, shops, their own words,
+  src\config\brand.ts:5  [Zuri Bags]  name: "Zuri Bags",
+  src\config\brand.ts:5  [Zuri]  name: "Zuri Bags",
+  src\config\brand.ts:6  [Carry elegance]  tagline: "Carry elegance. Carry confidence.", // their words
+  src\config\brand.ts:6  [Carry confidence]  tagline: "Carry elegance. Carry confidence.", // their words
+  src\config\brand.ts:8  [Carry elegance]  "Carry elegance. Carry confidence. Carry Chrisbella.",
+  src\config\brand.ts:8  [Carry confidence]  "Carry elegance. Carry confidence. Carry Chrisbella.",
+  src\config\brand.ts:8  [Chrisbella]  "Carry elegance. Carry confidence. Carry Chrisbella.",
+  src\config\brand.ts:9  [elevating your everyday look]  "Perfect for work, outings or elevating your everyday look.",
+  src\config\brand.ts:10  [simple]  "A timeless piece for the woman who loves her style simple, elegant & classy.",
+  src\config\brand.ts:10  [elegant & classy]  "A timeless piece for the woman who loves her style simple, elegant & classy.",
+  src\config\brand.ts:12  [0717 840 894]  phoneDisplay: "0717 840 894",
+  src\config\brand.ts:12  [0717840894]  phoneDisplay: "0717 840 894",
+  src\config\brand.ts:13  [254717840894]  phoneTel: "+254717840894",
+  src\config\brand.ts:13  [+254717840894]  phoneTel: "+254717840894",
+  src\config\brand.ts:14  [254717840894]  whatsapp: "254717840894",
+  src\config\brand.ts:15  [5242805]  mpesaTill: "5242805",
+  src\config\brand.ts:22  [Sasa Mall]  { key: "sasa", mall: "Sasa Mall", unit: "G16", street: "Moi Avenue", confirm: true },
+  src\config\brand.ts:22  [Moi Avenue]  { key: "sasa", mall: "Sasa Mall", unit: "G16", street: "Moi Avenue", confirm: true },
+  src\config\brand.ts:22  [G16]  { key: "sasa", mall: "Sasa Mall", unit: "G16", street: "Moi Avenue", confirm: true },
+  src\config\brand.ts:23  [Sawa Mall]  { key: "sawa", mall: "Sawa Mall", unit: "G12", street: "Moi Avenue", confirm: false },
+  src\config\brand.ts:23  [Moi Avenue]  { key: "sawa", mall: "Sawa Mall", unit: "G12", street: "Moi Avenue", confirm: false },
+  src\config\brand.ts:23  [G12]  { key: "sawa", mall: "Sawa Mall", unit: "G12", street: "Moi Avenue", confirm: false },
+  src\config\brand.ts:24  [Star Mall]  { key: "star", mall: "Star Mall", unit: "M12", street: "Tom Mboya Street", confirm: false },
+  src\config\brand.ts:24  [M12]  { key: "star", mall: "Star Mall", unit: "M12", street: "Tom Mboya Street", confirm: false },
+  src\config\brand.ts:46  [Zuri Bags]  demoNotice: "Preview: most bags shown are samples while Zuri Bags' own photos are added.",
+  src\config\brand.ts:46  [Zuri]  demoNotice: "Preview: most bags shown are samples while Zuri Bags' own photos are added.",
+  src\config\brand.ts:47  [Zuri Bags]  articleNotice: "This article is general styling and care advice from Zuri Bags.",
+  src\config\brand.ts:47  [Zuri]  articleNotice: "This article is general styling and care advice from Zuri Bags.",
+  src\config\brand.ts:69  [ZB-]  "--zb-ivory": c.ivory,
+  src\config\brand.ts:70  [ZB-]  "--zb-champagne": c.champagne,
+  src\config\brand.ts:71  [ZB-]  "--zb-lilac": c.lilac,
+  src\config\brand.ts:72  [ZB-]  "--zb-ink": c.ink,
+  src\config\brand.ts:73  [ZB-]  "--zb-muted": c.muted,
+  src\config\brand.ts:74  [ZB-]  "--zb-plum": c.plum,
+  src\config\brand.ts:75  [ZB-]  "--zb-plum-deep": c.plumDeep,
+  src\config\brand.ts:76  [ZB-]  "--zb-plum-soft": c.plumSoft,
+  src\config\brand.ts:77  [ZB-]  "--zb-gold": c.gold,
+  src\config\brand.ts:78  [ZB-]  "--zb-gold-light": c.goldLight,
+  src\config\brand.ts:79  [ZB-]  "--zb-gold-deep": c.goldDeep,
+  src\config\brand.ts:80  [ZB-]  "--zb-gold-text": c.goldText,
+  src\config\brand.ts:81  [ZB-]  "--zb-lilac-text": c.lilacText,
+  src\config\brand.ts:82  [ZB-]  "--zb-line": c.line,
+  src\config\brand.ts:83  [ZB-]  "--zb-white": c.white,
+  src\config\brand.ts:84  [ZB-]  "--zb-success": c.success,
+  src\config\brand.ts:85  [ZB-]  "--zb-danger": c.danger,
+  src\data\about.json:3  [Zuri Bags]  "title": "About Zuri Bags",
+  src\data\about.json:3  [Zuri]  "title": "About Zuri Bags",
+  src\data\about.json:5  [Zuri Bags]  "intro": "Zuri Bags sells women's handbags from shops along Moi Avenue and Tom Mboya Street. Sling bags, tote 
+  src\data\about.json:5  [Zuri]  "intro": "Zuri Bags sells women's handbags from shops along Moi Avenue and Tom Mboya Street. Sling bags, tote 
+  src\data\about.json:5  [Chrisbella]  "intro": "Zuri Bags sells women's handbags from shops along Moi Avenue and Tom Mboya Street. Sling bags, tote 
+  src\data\about.json:5  [Moi Avenue]  "intro": "Zuri Bags sells women's handbags from shops along Moi Avenue and Tom Mboya Street. Sling bags, tote 
+  src\data\about.json:12  [Zuri Bags]  "note": "To be written with Zuri Bags. Nothing is shown publicly until they provide it."
+  src\data\about.json:12  [Zuri]  "note": "To be written with Zuri Bags. Nothing is shown publicly until they provide it."
+  src\data\blog.json:23  [Zuri Bags]  { "type": "p", "text": "Not sure where to start? Try the Bag Finder, or send Zuri Bags a WhatsApp message with
+  src\data\blog.json:23  [Zuri]  { "type": "p", "text": "Not sure where to start? Try the Bag Finder, or send Zuri Bags a WhatsApp message with
+  src\data\blog.json:35  [simple]  { "type": "p", "text": "The way a bag sits on your body changes how your whole outfit looks and how free you f
+  src\data\blog.json:50  [simple]  "excerpt": "Simple habits that keep a bag looking good for longer.",
+  src\data\blog.json:77  [Zuri Bags]  { "type": "p", "text": "In Zuri Bags' words, a good bag is \"perfect for work, outings or elevating your every
+  src\data\blog.json:77  [Zuri]  { "type": "p", "text": "In Zuri Bags' words, a good bag is \"perfect for work, outings or elevating your every
+  src\data\blog.json:77  [elevating your everyday look]  { "type": "p", "text": "In Zuri Bags' words, a good bag is \"perfect for work, outings or elevating your every
+  src\data\blog.json:79  [simple]  { "type": "p", "text": "Carry it by the handles or on the shoulder with a blazer or a simple dress. Keep the i
+  src\data\blog.json:101  [simple]  { "type": "ul", "items": ["Match the clutch to your shoes for a calm, classic look.", "Choose a contrast colou
+  src\data\blog.json:109  [Zuri]  "slug": "how-to-order-from-zuri-bags",
+  src\data\blog.json:111  [Zuri Bags]  "title": "How to order from Zuri Bags",
+  src\data\blog.json:111  [Zuri]  "title": "How to order from Zuri Bags",
+  src\data\blog.json:117  [Zuri Bags]  { "type": "p", "text": "Ordering from Zuri Bags happens on WhatsApp. You talk to a person who can answer quest
+  src\data\blog.json:117  [Zuri]  { "type": "p", "text": "Ordering from Zuri Bags happens on WhatsApp. You talk to a person who can answer quest
+  src\data\blog.json:123  [Zuri Bags]  { "type": "p", "text": "Zuri Bags will reply to confirm availability. You do not pay anything until you agree 
+  src\data\blog.json:123  [Zuri]  { "type": "p", "text": "Zuri Bags will reply to confirm availability. You do not pay anything until you agree 
+  src\data\faqs.json:8  [Zuri Bags]  "a": "Choose a bag and tap Order on WhatsApp. A message with the bag, its price and its link opens in WhatsApp
+  src\data\faqs.json:8  [Zuri]  "a": "Choose a bag and tap Order on WhatsApp. A message with the bag, its price and its link opens in WhatsApp
+  src\data\faqs.json:14  [Zuri Bags]  "a": "Pay via M-Pesa: Lipa na M-Pesa, Buy Goods and Services, Till number {till}, enter the amount and your PI
+  src\data\faqs.json:14  [Zuri]  "a": "Pay via M-Pesa: Lipa na M-Pesa, Buy Goods and Services, Till number {till}, enter the amount and your PI
+  src\data\faqs.json:20  [Zuri Bags]  "a": "Zuri Bags has shops in Nairobi CBD: {shops}. See the Visit page for directions."
+  src\data\faqs.json:20  [Zuri]  "a": "Zuri Bags has shops in Nairobi CBD: {shops}. See the Visit page for directions."
+  src\data\faqs.json:38  [Zuri Bags]  "a": "Ask us on WhatsApp. Tell us where you are and Zuri Bags will advise."
+  src\data\faqs.json:38  [Zuri]  "a": "Ask us on WhatsApp. Tell us where you are and Zuri Bags will advise."
+  src\data\faqs.json:44  [Zuri Bags]  "a": "Ask on WhatsApp to confirm. Zuri Bags will confirm availability when you send your order."
+  src\data\faqs.json:44  [Zuri]  "a": "Ask on WhatsApp to confirm. Zuri Bags will confirm availability when you send your order."
+  src\data\faqs.json:47  [Chrisbella]  "key": "chrisbella",
+  src\data\faqs.json:49  [Chrisbella]  "q": "Do you sell Chrisbella bags?",
+  src\data\faqs.json:50  [Zuri Bags]  "a": "Yes. In Zuri Bags' words: \"Carry elegance. Carry confidence. Carry Chrisbella.\" Ask on WhatsApp about 
+  src\data\faqs.json:50  [Zuri]  "a": "Yes. In Zuri Bags' words: \"Carry elegance. Carry confidence. Carry Chrisbella.\" Ask on WhatsApp about 
+  src\data\faqs.json:50  [Carry elegance]  "a": "Yes. In Zuri Bags' words: \"Carry elegance. Carry confidence. Carry Chrisbella.\" Ask on WhatsApp about 
+  src\data\faqs.json:50  [Carry confidence]  "a": "Yes. In Zuri Bags' words: \"Carry elegance. Carry confidence. Carry Chrisbella.\" Ask on WhatsApp about 
+  src\data\faqs.json:50  [Chrisbella]  "a": "Yes. In Zuri Bags' words: \"Carry elegance. Carry confidence. Carry Chrisbella.\" Ask on WhatsApp about 
+  src\data\products.json:68  [ZB-]  "id": "ZB-001",
+  src\data\products.json:69  [Chrisbella]  "slug": "chrisbella-handbag",
+  src\data\products.json:70  [Chrisbella]  "name": "Chrisbella Handbag",
+  src\data\products.json:84  [Carry elegance]  "summary": "Carry elegance. Carry confidence. Carry Chrisbella.",
+  src\data\products.json:84  [Carry confidence]  "summary": "Carry elegance. Carry confidence. Carry Chrisbella.",
+  src\data\products.json:84  [Chrisbella]  "summary": "Carry elegance. Carry confidence. Carry Chrisbella.",
+  src\data\products.json:85  [Carry elegance]  "description": "Carry elegance. Carry confidence. Carry Chrisbella. Perfect for work, outings or elevating you
+  src\data\products.json:85  [Carry confidence]  "description": "Carry elegance. Carry confidence. Carry Chrisbella. Perfect for work, outings or elevating you
+  src\data\products.json:85  [Chrisbella]  "description": "Carry elegance. Carry confidence. Carry Chrisbella. Perfect for work, outings or elevating you
+  src\data\products.json:85  [elevating your everyday look]  "description": "Carry elegance. Carry confidence. Carry Chrisbella. Perfect for work, outings or elevating you
+  src\data\products.json:94  [ZB-]  "id": "ZB-002",
+  src\data\products.json:110  [simple]  "summary": "A timeless piece for the woman who loves her style simple, elegant & classy.",
+  src\data\products.json:110  [elegant & classy]  "summary": "A timeless piece for the woman who loves her style simple, elegant & classy.",
+  src\data\products.json:111  [simple]  "description": "A timeless piece for the woman who loves her style simple, elegant & classy.",
+  src\data\products.json:111  [elegant & classy]  "description": "A timeless piece for the woman who loves her style simple, elegant & classy.",
+  src\data\products.json:119  [ZB-]  "id": "ZB-003",
+  src\data\products.json:160  [ZB-]  "id": "ZB-004",
+  src\data\products.json:192  [ZB-]  "id": "ZB-005",
+  src\data\products.json:228  [ZB-]  "id": "ZB-006",
+  src\data\products.json:271  [ZB-]  "id": "ZB-007",
+  src\data\products.json:308  [ZB-]  "id": "ZB-008",
+  src\data\products.json:345  [ZB-]  "id": "ZB-009",
+  src\data\products.json:379  [ZB-]  "id": "ZB-010",
+  src\data\products.json:414  [ZB-]  "id": "ZB-011",
+  src\data\products.json:451  [ZB-]  "id": "ZB-012",
+  src\data\products.json:487  [ZB-]  "id": "ZB-013",
+  src\data\products.json:528  [ZB-]  "id": "ZB-014",
+  src\data\products.json:570  [ZB-]  "id": "ZB-015",
+  src\data\products.json:609  [ZB-]  "id": "ZB-016",
+  src\data\products.json:654  [ZB-]  "id": "ZB-017",
+  src\data\products.json:690  [ZB-]  "id": "ZB-018",
+  src\data\products.json:724  [ZB-]  "id": "ZB-019",
+  src\data\products.json:762  [ZB-]  "id": "ZB-020",
+  src\data\products.json:797  [ZB-]  "id": "ZB-021",
+  src\data\products.json:833  [ZB-]  "id": "ZB-022",
+  src\data\products.json:870  [ZB-]  "id": "ZB-023",
+  src\data\products.json:891  [G12]  "https://media.hbleatherke.com/products/gallery/HB-LB-005_02_03_joy-odera-clutch-bag-12.jpg",
+  src\data\products.json:910  [ZB-]  "id": "ZB-024",
+  src\data\products.json:949  [ZB-]  "id": "ZB-025",
+  src\data\products.json:990  [ZB-]  "id": "ZB-026",
+  src\data\products.json:1025  [ZB-]  "id": "ZB-027",
+  src\data\products.json:1066  [ZB-]  "id": "ZB-028",
+  src\data\products.json:1100  [ZB-]  "id": "ZB-029",
+  src\data\steps.json:4  [Zuri Bags]  "intro": "Ordering from Zuri Bags happens on WhatsApp, so you talk to a person, not a checkout.",
+  src\data\steps.json:4  [Zuri]  "intro": "Ordering from Zuri Bags happens on WhatsApp, so you talk to a person, not a checkout.",
+  src\data\steps.json:14  [Zuri Bags]  "body": "Tap Order on WhatsApp. Your message is written for you with the bag, the price and the link. Zuri Bag
+  src\data\steps.json:14  [Zuri]  "body": "Tap Order on WhatsApp. Your message is written for you with the bag, the price and the link. Zuri Bag
+  src\lib\products.ts:118  [Zuri]  /** First visible product with photos, preferring Zuri's own bags. */
+  src\lib\whatsapp.ts:18  [Zuri Bags]  /** "Hello Zuri Bags, I'd like to order the Chrisbella Handbag (KES 5,300). <link>" */
+  src\lib\whatsapp.ts:18  [Zuri]  /** "Hello Zuri Bags, I'd like to order the Chrisbella Handbag (KES 5,300). <link>" */
+  src\lib\whatsapp.ts:18  [Chrisbella]  /** "Hello Zuri Bags, I'd like to order the Chrisbella Handbag (KES 5,300). <link>" */
+  public\brand\zuri-logo.svg:1  [Zuri Bags]  <svg xmlns="http://www.w3.org/2000/svg" viewBox="90 84 436 312" role="img" aria-label="Zuri Bags">
+  public\brand\zuri-logo.svg:1  [Zuri]  <svg xmlns="http://www.w3.org/2000/svg" viewBox="90 84 436 312" role="img" aria-label="Zuri Bags">
+  public\brand\zuri-logo.svg:3  [ZB-]  <linearGradient id="zb-panel" gradientUnits="userSpaceOnUse" x1="186" y1="166" x2="300" y2="300"><stop offset=
+  public\brand\zuri-logo.svg:4  [ZB-]  <linearGradient id="zb-word" gradientUnits="userSpaceOnUse" x1="306" y1="0" x2="514" y2="0"><stop offset="0" s
+  public\brand\zuri-logo.svg:5  [ZB-]  <linearGradient id="zb-script" gradientUnits="userSpaceOnUse" x1="352" y1="0" x2="464" y2="0"><stop offset="0"
+  public\brand\zuri-logo.svg:7  [ZB-]  <g class="zb-mark">
+  public\brand\zuri-logo.svg:12  [ZB-]  <path d="M186,166 H352 L349,226 C345,252 304,262 282,284 C259,308 248,340 246,385 H181 Z" fill="url(#zb-panel)
+  public\brand\zuri-logo.svg:14  [ZB-]  <g class="zb-word" fill="url(#zb-word)" stroke="url(#zb-word)">
+  public\brand\zuri-logo.svg:20  [ZB-]  <g class="zb-script" fill="none" stroke="url(#zb-script)" stroke-width="6.5" stroke-linecap="round" stroke-lin
+  public\brand\zuri-mark.svg:1  [Zuri Bags]  <svg xmlns="http://www.w3.org/2000/svg" viewBox="84 82 284 312" role="img" aria-label="Zuri Bags">
+  public\brand\zuri-mark.svg:1  [Zuri]  <svg xmlns="http://www.w3.org/2000/svg" viewBox="84 82 284 312" role="img" aria-label="Zuri Bags">
+  public\brand\zuri-mark.svg:3  [ZB-]  <linearGradient id="zb-panel" gradientUnits="userSpaceOnUse" x1="186" y1="166" x2="300" y2="300"><stop offset=
+  public\brand\zuri-mark.svg:4  [ZB-]  <linearGradient id="zb-word" gradientUnits="userSpaceOnUse" x1="306" y1="0" x2="514" y2="0"><stop offset="0" s
+  public\brand\zuri-mark.svg:5  [ZB-]  <linearGradient id="zb-script" gradientUnits="userSpaceOnUse" x1="352" y1="0" x2="464" y2="0"><stop offset="0"
+  public\brand\zuri-mark.svg:7  [ZB-]  <g class="zb-mark">
+  public\brand\zuri-mark.svg:12  [ZB-]  <path d="M186,166 H352 L349,226 C345,252 304,262 282,284 C259,308 248,340 246,385 H181 Z" fill="url(#zb-panel)
+  docs\BRIEF.md:1  [Zuri Bags]  # Zuri Bags — full brief
+  docs\BRIEF.md:1  [Zuri]  # Zuri Bags — full brief
+  docs\BRIEF.md:5  [Zuri Bags]  - **Name:** Zuri Bags ("zuri" means beautiful in Kiswahili; don't claim that is why they chose it).
+  docs\BRIEF.md:5  [Zuri]  - **Name:** Zuri Bags ("zuri" means beautiful in Kiswahili; don't claim that is why they chose it).
+  docs\BRIEF.md:6  [Chrisbella]  - **What:** women's handbags. Their hashtags: sling bags, tote bags, office bags, clutch bags, and the Chrisbe
+  docs\BRIEF.md:7  [0717 840 894]  - **Phone / WhatsApp:** 0717 840 894 (`254717840894`). "Whatsapp 0717840894 to order."
+  docs\BRIEF.md:7  [0717840894]  - **Phone / WhatsApp:** 0717 840 894 (`254717840894`). "Whatsapp 0717840894 to order."
+  docs\BRIEF.md:7  [254717840894]  - **Phone / WhatsApp:** 0717 840 894 (`254717840894`). "Whatsapp 0717840894 to order."
+  docs\BRIEF.md:8  [5242805]  - **Payment:** M-Pesa Till **5242805**.
+  docs\BRIEF.md:10  [Sasa Mall]  - Sasa Mall, G16, Moi Avenue (in the bio; not in their latest posts → confirm it is still open)
+  docs\BRIEF.md:10  [Moi Avenue]  - Sasa Mall, G16, Moi Avenue (in the bio; not in their latest posts → confirm it is still open)
+  docs\BRIEF.md:10  [G16]  - Sasa Mall, G16, Moi Avenue (in the bio; not in their latest posts → confirm it is still open)
+  docs\BRIEF.md:11  [Sawa Mall]  - Sawa Mall, G12, along Moi Avenue
+  docs\BRIEF.md:11  [Moi Avenue]  - Sawa Mall, G12, along Moi Avenue
+  docs\BRIEF.md:11  [G12]  - Sawa Mall, G12, along Moi Avenue
+  docs\BRIEF.md:12  [Star Mall]  - Star Mall, M12, along Tom Mboya Street
+  docs\BRIEF.md:12  [M12]  - Star Mall, M12, along Tom Mboya Street
+  docs\BRIEF.md:15  [Carry elegance]  - "Carry elegance. Carry confidence. Carry Chrisbella. Perfect for work, outings or elevating your everyday lo
+  docs\BRIEF.md:15  [Carry confidence]  - "Carry elegance. Carry confidence. Carry Chrisbella. Perfect for work, outings or elevating your everyday lo
+  docs\BRIEF.md:15  [Chrisbella]  - "Carry elegance. Carry confidence. Carry Chrisbella. Perfect for work, outings or elevating your everyday lo
+  docs\BRIEF.md:15  [elevating your everyday look]  - "Carry elegance. Carry confidence. Carry Chrisbella. Perfect for work, outings or elevating your everyday lo
+  docs\BRIEF.md:16  [simple]  - "A timeless piece for the woman who loves her style simple, elegant & classy." (Ksh 4,500)
+  docs\BRIEF.md:16  [elegant & classy]  - "A timeless piece for the woman who loves her style simple, elegant & classy." (Ksh 4,500)
+  docs\BRIEF.md:17  [Chrisbella]  - Unknown (hide until provided): Instagram handle, email, opening hours, delivery areas/fees/times, founding s
+  docs\BRIEF.md:23  [Zuri]  3. **No superlatives or authenticity claims**: no "best", "#1", "cheapest", "original", "authentic", "genuine 
+  docs\BRIEF.md:25  [ZB-]  5. **Own products** (ZB-001, ZB-002): copy built only from their posts. No materials, dimensions or colours un
+  docs\BRIEF.md:26  [ZB-]  6. **Samples** (ZB-003–ZB-029) are from another Nairobi shop's public site, used to show the design. With `NEX
+  docs\BRIEF.md:27  [Zuri Bags]  - a slim site-wide notice: "Preview: most bags shown are samples while Zuri Bags' own photos are added."
+  docs\BRIEF.md:27  [Zuri]  - a slim site-wide notice: "Preview: most bags shown are samples while Zuri Bags' own photos are added."
+  docs\BRIEF.md:33  [Zuri Bags]  7. **WhatsApp ordering**: buttons open `https://wa.me/254717840894?text=…`. Copy says "Order on WhatsApp" / "S
+  docs\BRIEF.md:33  [Zuri]  7. **WhatsApp ordering**: buttons open `https://wa.me/254717840894?text=…`. Copy says "Order on WhatsApp" / "S
+  docs\BRIEF.md:33  [254717840894]  7. **WhatsApp ordering**: buttons open `https://wa.me/254717840894?text=…`. Copy says "Order on WhatsApp" / "S
+  docs\BRIEF.md:42  [Zuri Bags]  name: "Zuri Bags",
+  docs\BRIEF.md:42  [Zuri]  name: "Zuri Bags",
+  docs\BRIEF.md:43  [Carry elegance]  tagline: "Carry elegance. Carry confidence.",        // their words
+  docs\BRIEF.md:43  [Carry confidence]  tagline: "Carry elegance. Carry confidence.",        // their words
+  docs\BRIEF.md:45  [Carry elegance]  "Carry elegance. Carry confidence. Carry Chrisbella.",
+  docs\BRIEF.md:45  [Carry confidence]  "Carry elegance. Carry confidence. Carry Chrisbella.",
+  docs\BRIEF.md:45  [Chrisbella]  "Carry elegance. Carry confidence. Carry Chrisbella.",
+  docs\BRIEF.md:46  [elevating your everyday look]  "Perfect for work, outings or elevating your everyday look.",
+  docs\BRIEF.md:47  [simple]  "A timeless piece for the woman who loves her style simple, elegant & classy.",
+  docs\BRIEF.md:47  [elegant & classy]  "A timeless piece for the woman who loves her style simple, elegant & classy.",
+  docs\BRIEF.md:49  [0717 840 894]  phoneDisplay: "0717 840 894",
+  docs\BRIEF.md:49  [0717840894]  phoneDisplay: "0717 840 894",
+  docs\BRIEF.md:50  [254717840894]  phoneTel: "+254717840894",
+  docs\BRIEF.md:50  [+254717840894]  phoneTel: "+254717840894",
+  docs\BRIEF.md:51  [254717840894]  whatsapp: "254717840894",
+  docs\BRIEF.md:52  [5242805]  mpesaTill: "5242805",
+  docs\BRIEF.md:58  [Sasa Mall]  { key: "sasa", mall: "Sasa Mall", unit: "G16", street: "Moi Avenue", confirm: true },
+  docs\BRIEF.md:58  [Moi Avenue]  { key: "sasa", mall: "Sasa Mall", unit: "G16", street: "Moi Avenue", confirm: true },
+  docs\BRIEF.md:58  [G16]  { key: "sasa", mall: "Sasa Mall", unit: "G16", street: "Moi Avenue", confirm: true },
+  docs\BRIEF.md:59  [Sawa Mall]  { key: "sawa", mall: "Sawa Mall", unit: "G12", street: "Moi Avenue", confirm: false },
+  docs\BRIEF.md:59  [Moi Avenue]  { key: "sawa", mall: "Sawa Mall", unit: "G12", street: "Moi Avenue", confirm: false },
+  docs\BRIEF.md:59  [G12]  { key: "sawa", mall: "Sawa Mall", unit: "G12", street: "Moi Avenue", confirm: false },
+  docs\BRIEF.md:60  [Star Mall]  { key: "star", mall: "Star Mall", unit: "M12", street: "Tom Mboya Street", confirm: false },
+  docs\BRIEF.md:60  [M12]  { key: "star", mall: "Star Mall", unit: "M12", street: "Tom Mboya Street", confirm: false },
+  docs\BRIEF.md:83  [Zuri Bags]  demoNotice: "Preview: most bags shown are samples while Zuri Bags' own photos are added.",
+  docs\BRIEF.md:83  [Zuri]  demoNotice: "Preview: most bags shown are samples while Zuri Bags' own photos are added.",
+  docs\BRIEF.md:84  [Zuri Bags]  articleNotice: "This article is general styling and care advice from Zuri Bags.",
+  docs\BRIEF.md:84  [Zuri]  articleNotice: "This article is general styling and care advice from Zuri Bags.",
+  docs\BRIEF.md:90  [Gilded Plum]  ## 4. Design system — "Gilded Plum"
+  docs\BRIEF.md:109  [ZB-]  1. **Hero** on plum: "Carry *elegance*. Carry *confidence*." (their words) in Cormorant with goldLight italics
+  docs\BRIEF.md:110  [elevating your everyday look]  2. **Shop by occasion**: four tiles Work · Outings · Evening · Everyday, captioned with their own line "Perfec
+  docs\BRIEF.md:115  [Sasa Mall]  7. **Visit our shops** band on plum: three shop cards (mall, unit, street, "Get directions", "Call"), and a **
+  docs\BRIEF.md:115  [Moi Avenue]  7. **Visit our shops** band on plum: three shop cards (mall, unit, street, "Get directions", "Call"), and a **
+  docs\BRIEF.md:116  [Zuri Bags]  8. **M-Pesa Till card**: a neat card "Pay via M-Pesa · Till 5242805" with a copy button and steps (Lipa na M-P
+  docs\BRIEF.md:116  [Zuri]  8. **M-Pesa Till card**: a neat card "Pay via M-Pesa · Till 5242805" with a copy button and steps (Lipa na M-P
+  docs\BRIEF.md:116  [5242805]  8. **M-Pesa Till card**: a neat card "Pay via M-Pesa · Till 5242805" with a copy button and steps (Lipa na M-P
+  docs\BRIEF.md:124  [Zuri]  - **`/` Home.** Hero → occasions → category row → "New in" rail (`isNew`) → Bag Finder band (plum, the first q
+  docs\BRIEF.md:124  [ZB-]  - **`/` Home.** Hero → occasions → category row → "New in" rail (`isNew`) → Bag Finder band (plum, the first q
+  docs\BRIEF.md:124  [simple]  - **`/` Home.** Hero → occasions → category row → "New in" rail (`isNew`) → Bag Finder band (plum, the first q
+  docs\BRIEF.md:124  [elegant & classy]  - **`/` Home.** Hero → occasions → category row → "New in" rail (`isNew`) → Bag Finder band (plum, the first q
+  docs\BRIEF.md:129  [Zuri Bags]  - **`/basket`.** Line items (image, name, price, quantity stepper 1–5, remove with Undo), subtotal, choice: "P
+  docs\BRIEF.md:129  [Zuri]  - **`/basket`.** Line items (image, name, price, quantity stepper 1–5, remove with Undo), subtotal, choice: "P
+  docs\BRIEF.md:133  [Chrisbella]  - **`/faqs`.** 8 drafts answered only from known facts (how to order, how to pay, where the shops are, exchang
+  docs\BRIEF.md:152  [ZB-]  images: string[];        // remote sample photos; [] for ZB-001/002
+  docs\BRIEF.md:159  [Zuri]  Phase 2 rules: `summary` ≤ 140 characters; `description` 2–3 sentences in Zuri's voice; `features` 3–6 short l
+  docs\BRIEF.md:159  [ZB-]  Phase 2 rules: `summary` ≤ 140 characters; `description` 2–3 sentences in Zuri's voice; `features` 3–6 short l
+  docs\BRIEF.md:169  [simple]  - `/api/contact`: zod, honeypot, minimum fill time (3s), simple in-memory rate limit, Resend when `RESEND_API_
+  docs\BRIEF.md:170  [Zuri Bags]  - Metadata per page; title template `%s · Zuri Bags`; `opengraph-image.jpg`, icons and `manifest.ts` from the 
+  docs\BRIEF.md:170  [Zuri]  - Metadata per page; title template `%s · Zuri Bags`; `opengraph-image.jpg`, icons and `manifest.ts` from the 
+  docs\BRIEF.md:194  [Zuri Bags]  How to run and deploy; demo mode and what turns off; how to add Zuri's own products and photos (`public/produc
+  docs\BRIEF.md:194  [Zuri]  How to run and deploy; demo mode and what turns off; how to add Zuri's own products and photos (`public/produc
+  docs\BRIEF.md:194  [ZB-]  How to run and deploy; demo mode and what turns off; how to add Zuri's own products and photos (`public/produc
+  docs\BRIEF.md:194  [Sasa Mall]  How to run and deploy; demo mode and what turns off; how to add Zuri's own products and photos (`public/produc
+  docs\BRIEF.md:194  [G16]  How to run and deploy; demo mode and what turns off; how to add Zuri's own products and photos (`public/produc
+  docs\PHASES.md:12  [Zuri]  2. `npx create-next-app@latest zuribags-scaffold --ts --tailwind --eslint --app --src-dir --import-alias "@/*"
+  docs\PHASES.md:12  [zuribags]  2. `npx create-next-app@latest zuribags-scaffold --ts --tailwind --eslint --app --src-dir --import-alias "@/*"
+  docs\PHASES.md:15  [ZB-]  5. `src/config/brand.ts` (BRIEF §3), then `node scripts/prepare-assets.mjs`. Copy `public/brand/favicon-256.pn
+  docs\PHASES.md:18  [Zuri]  8. Brand components: Logo (inline `assets/zuri-logo.svg` and `zuri-mark.svg`, unique gradient ids per instance
+  docs\PHASES.md:22  [ZB-]  ## Phase 2 — Product content (ZB-001, ZB-002 + 27 samples)
+  docs\PHASES.md:24  [ZB-]  ZB-001 and ZB-002: `summary` and `description` from their own words only; `features` stay empty. ZB-003 to ZB-
+  docs\PHASES.md:29  [Zuri Bags]  Write `finder.json`, `steps.json`, `faqs.json` (8), `about.json`, then `blog.json` (6 posts: choosing a work b
+  docs\PHASES.md:29  [Zuri]  Write `finder.json`, `steps.json`, `faqs.json` (8), `about.json`, then `blog.json` (6 posts: choosing a work b
+  docs\PHASES.md:34  [Zuri]  All Home sections, meeting the personality mandate (hero with handle arch and wave, occasions, category row, N
+  docs\PHASES.md:38  [ZB-]  `/shop` (URL-synced filters inside `<Suspense>`, bottom sheet on mobile, chips, sort, search, category heading
+  docs\PHASES.md:55  [Zuri]  1. **Personality review**: go through BRIEF §5 point by point, name the component that delivers each, and impr
+  docs\PHASES.md:55  [ZB-]  1. **Personality review**: go through BRIEF §5 point by point, name the component that delivers each, and impr
+  docs\PHASES.md:57  [ZB-]  3. Demo mode off: build once with `NEXT_PUBLIC_DEMO_MODE=false` and confirm samples disappear and pages still 
+  docs\PHASES.md:60  [Zuri Bags]  6. Short report: built, sample or draft, blocked, and what Zuri Bags needs to provide.
+  docs\PHASES.md:60  [Zuri]  6. Short report: built, sample or draft, blocked, and what Zuri Bags needs to provide.
+  docs\PROGRESS.md:7  [ZB-]  - [x] Phase 2 — Product content (ZB-001, ZB-002 + 27 samples)
+  docs\PROGRESS.md:17  [ZB-]  - [x] ZB-001, ZB-002 (own bags — their words only)
+  docs\PROGRESS.md:18  [ZB-]  - [x] ZB-003 – ZB-011
+  docs\PROGRESS.md:19  [ZB-]  - [x] ZB-012 – ZB-020
+  docs\PROGRESS.md:20  [ZB-]  - [x] ZB-021 – ZB-029
+  docs\PROGRESS.md:23  [ZB-]  - **Phase 1**: Next 16.4 scaffold merged (cacheComponents + partialPrefetching kept from the scaffold). brand.
+  docs\PROGRESS.md:24  [ZB-]  - **Phase 2**: ZB-001/002 copy is their own words only, features empty. ZB-003–029 rewritten from notes in thr
+  docs\PROGRESS.md:26  [Zuri]  - **Phase 4**: Home built: plum hero (handle-arch image, wave, two CTAs), occasions, category arch row (snap r
+  docs\PROGRESS.md:27  [ZB-]  - **Phase 5**: /shop (URL-synced filters in Suspense, sidebar on desktop, bottom sheet on mobile, chips, sort,
+  docs\PROGRESS.md:28  [Zuri Bags]  - **Phase 6**: /basket (stepper 1–5, remove with Undo, pickup shop select or delivery area with "Zuri Bags wil
+  docs\PROGRESS.md:28  [Zuri]  - **Phase 6**: /basket (stepper 1–5, remove with Undo, pickup shop select or delivery area with "Zuri Bags wil
+  docs\PROGRESS.md:30  [ZB-]  - **Phase 8**: audit-content run. All 15 checks PASS after fixes: (5) Till number removed from a code comment 
+  docs\PROGRESS.md:31  [ZB-]  - **Phase 9**: Personality review (BRIEF §5): 1 Hero → components/home/Hero; 2 occasions → home/Occasions; 3 c
+  docs\PROGRESS.md:40  [Zuri Bags]  ## Open questions (for Zuri Bags — copy into the README checklist)
+  docs\PROGRESS.md:40  [Zuri]  ## Open questions (for Zuri Bags — copy into the README checklist)
+  docs\PROGRESS.md:41  [ZB-]  - Photos, names and prices of their own bags (ZB-001 and ZB-002 have none yet).
+  docs\PROGRESS.md:42  [ZB-]  - The name of the KES 4,500 bag (ZB-002 is a placeholder name).
+  docs\PROGRESS.md:43  [Sasa Mall]  - Is Sasa Mall G16 still open? (It is in the bio but not in recent posts.)
+  docs\PROGRESS.md:43  [G16]  - Is Sasa Mall G16 still open? (It is in the bio but not in recent posts.)
+  docs\PROGRESS.md:47  [Chrisbella]  - Brands stocked besides Chrisbella; a short story of the shop.
+  README.md:1  [Zuri Bags]  # Zuri Bags website
+  README.md:1  [Zuri]  # Zuri Bags website
+  README.md:3  [Zuri Bags]  An online shop for **Zuri Bags**, women's handbags in Nairobi CBD (Sawa Mall, Star Mall and Sasa Mall). "Carry
+  README.md:3  [Zuri]  An online shop for **Zuri Bags**, women's handbags in Nairobi CBD (Sawa Mall, Star Mall and Sasa Mall). "Carry
+  README.md:3  [Carry elegance]  An online shop for **Zuri Bags**, women's handbags in Nairobi CBD (Sawa Mall, Star Mall and Sasa Mall). "Carry
+  README.md:3  [Carry confidence]  An online shop for **Zuri Bags**, women's handbags in Nairobi CBD (Sawa Mall, Star Mall and Sasa Mall). "Carry
+  README.md:3  [Sasa Mall]  An online shop for **Zuri Bags**, women's handbags in Nairobi CBD (Sawa Mall, Star Mall and Sasa Mall). "Carry
+  README.md:3  [Sawa Mall]  An online shop for **Zuri Bags**, women's handbags in Nairobi CBD (Sawa Mall, Star Mall and Sasa Mall). "Carry
+  README.md:3  [Star Mall]  An online shop for **Zuri Bags**, women's handbags in Nairobi CBD (Sawa Mall, Star Mall and Sasa Mall). "Carry
+  README.md:4  [0717 840 894]  Orders go through **WhatsApp 0717 840 894**; payment is **M-Pesa Till 5242805** or at the shop. There is no on
+  README.md:4  [0717840894]  Orders go through **WhatsApp 0717 840 894**; payment is **M-Pesa Till 5242805** or at the shop. There is no on
+  README.md:4  [5242805]  Orders go through **WhatsApp 0717 840 894**; payment is **M-Pesa Till 5242805** or at the shop. There is no on
+  README.md:34  [Zuri Bags]  27 of the 29 bags (ZB-003 to ZB-029) are **samples** from another Nairobi shop's public website. They show the
+  README.md:34  [Zuri]  27 of the 29 bags (ZB-003 to ZB-029) are **samples** from another Nairobi shop's public website. They show the
+  README.md:34  [ZB-]  27 of the 29 bags (ZB-003 to ZB-029) are **samples** from another Nairobi shop's public website. They show the
+  README.md:37  [Zuri Bags]  - a slim notice on every page: "Preview: most bags shown are samples while Zuri Bags' own photos are added."
+  README.md:37  [Zuri]  - a slim notice on every page: "Preview: most bags shown are samples while Zuri Bags' own photos are added."
+  README.md:38  [Zuri]  - "Sample" tags and "Sample price" on samples; "Zuri Collection" on ZB-001 and ZB-002
+  README.md:38  [ZB-]  - "Sample" tags and "Sample price" on samples; "Zuri Collection" on ZB-001 and ZB-002
+  README.md:42  [ZB-]  With `NEXT_PUBLIC_DEMO_MODE=false`, every sample disappears (pages, shop, finder, sitemap), search engines are
+  README.md:44  [Zuri]  **Before launch:** add Zuri's own bags, then set `NEXT_PUBLIC_DEMO_MODE=false`.
+  README.md:46  [Zuri]  ## Adding Zuri's own bags and photos
+  README.md:48  [ZB-]  1. Put photos in `public/products/<id>/`, for example `public/products/zb-001/1.jpg`, `2.jpg` (portrait 4:5 wo
+  README.md:49  [ZB-]  2. In `src/data/products.json`, edit the bag: set `"images": ["/products/zb-001/1.jpg", "/products/zb-001/2.jp
+  README.md:50  [Zuri]  3. For a new bag, copy ZB-001's entry, give it a new `id` and `slug`, `"status": "own"`, and write `summary` a
+  README.md:50  [ZB-]  3. For a new bag, copy ZB-001's entry, give it a new `id` and `slug`, `"status": "own"`, and write `summary` a
+  README.md:51  [ZB-]  4. Rename ZB-002 when its name is confirmed, and remove `"nameConfirmed": false`.
+  README.md:55  [ZB-]  Either set `NEXT_PUBLIC_DEMO_MODE=false` (samples are hidden), or delete the ZB-003 to ZB-029 entries from `sr
+  README.md:70  [Zuri Bags]  ## For Zuri Bags to provide
+  README.md:70  [Zuri]  ## For Zuri Bags to provide
+  README.md:74  [ZB-]  - [ ] **Photos, names and prices of their bags** (ZB-001 Chrisbella Handbag KES 5,300 and ZB-002 KES 4,500 hav
+  README.md:74  [Chrisbella]  - [ ] **Photos, names and prices of their bags** (ZB-001 Chrisbella Handbag KES 5,300 and ZB-002 KES 4,500 hav
+  README.md:75  [ZB-]  - [ ] **The name of the KES 4,500 bag** (ZB-002 is shown as "Classic Everyday Handbag", a placeholder).
+  README.md:76  [Sasa Mall]  - [ ] **Is Sasa Mall, G16, Moi Avenue still open?** It is in the bio but not in recent posts. It is shown with
+  README.md:76  [Moi Avenue]  - [ ] **Is Sasa Mall, G16, Moi Avenue still open?** It is in the bio but not in recent posts. It is shown with
+  README.md:76  [G16]  - [ ] **Is Sasa Mall, G16, Moi Avenue still open?** It is in the bio but not in recent posts. It is shown with
+  README.md:80  [Zuri Bags]  - [ ] **Delivery:** do they deliver? Areas, fees and times. The site currently says only "Ask us on WhatsApp" 
+  README.md:80  [Zuri]  - [ ] **Delivery:** do they deliver? Areas, fees and times. The site currently says only "Ask us on WhatsApp" 
+  README.md:82  [Chrisbella]  - [ ] **Brands stocked** besides Chrisbella.
+  CLAUDE.md:1  [Zuri Bags]  # Zuri Bags — website
+  CLAUDE.md:1  [Zuri]  # Zuri Bags — website
+  CLAUDE.md:3  [Zuri Bags]  An online shop for **Zuri Bags**, a women's handbag shop in Nairobi's CBD with shops in Sasa Mall, Sawa Mall (
+  CLAUDE.md:3  [Zuri]  An online shop for **Zuri Bags**, a women's handbag shop in Nairobi's CBD with shops in Sasa Mall, Sawa Mall (
+  CLAUDE.md:3  [0717 840 894]  An online shop for **Zuri Bags**, a women's handbag shop in Nairobi's CBD with shops in Sasa Mall, Sawa Mall (
+  CLAUDE.md:3  [0717840894]  An online shop for **Zuri Bags**, a women's handbag shop in Nairobi's CBD with shops in Sasa Mall, Sawa Mall (
+  CLAUDE.md:3  [5242805]  An online shop for **Zuri Bags**, a women's handbag shop in Nairobi's CBD with shops in Sasa Mall, Sawa Mall (
+  CLAUDE.md:3  [Carry elegance]  An online shop for **Zuri Bags**, a women's handbag shop in Nairobi's CBD with shops in Sasa Mall, Sawa Mall (
+  CLAUDE.md:3  [Carry confidence]  An online shop for **Zuri Bags**, a women's handbag shop in Nairobi's CBD with shops in Sasa Mall, Sawa Mall (
+  CLAUDE.md:3  [Sasa Mall]  An online shop for **Zuri Bags**, a women's handbag shop in Nairobi's CBD with shops in Sasa Mall, Sawa Mall (
+  CLAUDE.md:3  [Sawa Mall]  An online shop for **Zuri Bags**, a women's handbag shop in Nairobi's CBD with shops in Sasa Mall, Sawa Mall (
+  CLAUDE.md:3  [Star Mall]  An online shop for **Zuri Bags**, a women's handbag shop in Nairobi's CBD with shops in Sasa Mall, Sawa Mall (
+  CLAUDE.md:3  [Moi Avenue]  An online shop for **Zuri Bags**, a women's handbag shop in Nairobi's CBD with shops in Sasa Mall, Sawa Mall (
+  CLAUDE.md:23  [Zuri]  - `src/data/products.json` is provided (29 products). **ZB-001 (Chrisbella Handbag, KES 5,300) and ZB-002 (KES
+  CLAUDE.md:23  [ZB-]  - `src/data/products.json` is provided (29 products). **ZB-001 (Chrisbella Handbag, KES 5,300) and ZB-002 (KES
+  CLAUDE.md:23  [Chrisbella]  - `src/data/products.json` is provided (29 products). **ZB-001 (Chrisbella Handbag, KES 5,300) and ZB-002 (KES
+  CLAUDE.md:27  [Zuri Bags]  1. **Never invent facts about Zuri Bags**: no founding year, customer counts, ratings, team, brands stocked (b
+  CLAUDE.md:27  [Zuri]  1. **Never invent facts about Zuri Bags**: no founding year, customer counts, ratings, team, brands stocked (b
+  CLAUDE.md:27  [Chrisbella]  1. **Never invent facts about Zuri Bags**: no founding year, customer counts, ratings, team, brands stocked (b
+  CLAUDE.md:29  [Zuri]  3. **No "best", "#1", "cheapest", "genuine leather guaranteed", "original", "authentic" claims** about Zuri's 
+  CLAUDE.md:32  [Zuri]  6. **Sample products** come from another shop's public site. With `NEXT_PUBLIC_DEMO_MODE=true`: site-wide noti
+  CLAUDE.md:32  [ZB-]  6. **Sample products** come from another shop's public site. With `NEXT_PUBLIC_DEMO_MODE=true`: site-wide noti
+  CLAUDE.md:35  [Zuri]  9. **Drafts flagged** (`status: "draft"` + `<DraftBadge />` when `NEXT_PUBLIC_SHOW_DRAFT_FLAGS === "true"`). E
+  CLAUDE.md:37  [Gilded Plum]  ## Design essentials — "Gilded Plum" (BRIEF §4–5)
+  CLAUDE.md:40  [Zuri]  - **Cormorant Garamond** (display, italic for key words) + **Jost** (body; geometric like the "ZURI" letters; 
+  CLAUDE.md:51  [Zuri]  - `create-next-app` refuses non-empty folders: scaffold into `zuribags-scaffold/` and **merge** into the exist
+  CLAUDE.md:51  [zuribags]  - `create-next-app` refuses non-empty folders: scaffold into `zuribags-scaffold/` and **merge** into the exist
+  package.json:2  [Zuri]  "name": "zuribags",
+  package.json:2  [zuribags]  "name": "zuribags",
+  next.config.ts:10  [Zuri Bags]  // Sample photos only (demo mode). Replace with Zuri Bags' own photos in public/products/.
+  next.config.ts:10  [Zuri]  // Sample photos only (demo mode). Replace with Zuri Bags' own photos in public/products/.
+
+Hex colours outside src/config/brand.ts (src/ only; SVG brand files excluded):
+  src\config\brand.ts:27  ivory: "#FBF8F2", // page
+  src\config\brand.ts:28  champagne: "#F4EDE0", // alternate sections, cards
+  src\config\brand.ts:29  lilac: "#EEE8F4", // soft accent surface
+  src\config\brand.ts:30  ink: "#1E1529", // text
+  src\config\brand.ts:31  muted: "#6B6275", // secondary text
+  src\config\brand.ts:32  plum: "#2E0A5C", // logo purple: dark sections, primary buttons
+  src\config\brand.ts:33  plumDeep: "#1C0638", // footer
+  src\config\brand.ts:34  plumSoft: "#5B3A8C", // links/hover on light
+  src\config\brand.ts:35  gold: "#D4A84A", // accents on plum (never text on light)
+  src\config\brand.ts:36  goldLight: "#EEDC88", // highlights on plum
+  src\config\brand.ts:37  goldDeep: "#A87A2C", // gradient end only (decorative)
+  src\config\brand.ts:38  goldText: "#7A5A1E", // gold-coloured TEXT on light
+  src\config\brand.ts:39  lilacText: "#C9B8DE", // secondary text on plum
+  src\config\brand.ts:40  line: "#E7DECF", // hairlines (decorative)
+  src\config\brand.ts:41  white: "#FFFFFF",
+  src\config\brand.ts:42  success: "#2F6B45",
+  src\config\brand.ts:43  danger: "#A3322A",
+
+
+Total: 517 old-brand hits, 17 stray hex codes.
+

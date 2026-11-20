@@ -45,7 +45,7 @@ export function FitsRow({
   if (!fits.length) return null;
   return (
     <div>
-      <H className={`eyebrow ${tone === "dark" ? "text-gold" : "text-gold-text"}`}>{title}</H>
+      <H className={`eyebrow ${tone === "dark" ? "text-accent" : "text-accent-text"}`}>{title}</H>
       <ul className="mt-3 flex flex-wrap gap-2">
         {fits.map((f) => {
           const Icon = icons[f] ?? Smartphone;
@@ -53,10 +53,10 @@ export function FitsRow({
             <li
               key={f}
               className={`flex items-center gap-2 rounded-full py-2 pl-2 pr-4 text-sm ${
-                tone === "dark" ? "bg-white/8 text-ivory ring-1 ring-white/15" : "bg-lilac text-plum"
+                tone === "dark" ? "bg-white/8 text-surface ring-1 ring-white/15" : "bg-surface-soft text-primary"
               }`}
             >
-              <span className={`grid h-7 w-7 place-items-center rounded-full ${tone === "dark" ? "bg-plum-deep text-gold" : "bg-ivory text-plum"}`}>
+              <span className={`grid h-7 w-7 place-items-center rounded-full ${tone === "dark" ? "bg-primary-deep text-accent" : "bg-surface text-primary"}`}>
                 <Icon aria-hidden="true" className="h-4 w-4" strokeWidth={1.5} />
               </span>
               {fitLabels[f] ?? f}

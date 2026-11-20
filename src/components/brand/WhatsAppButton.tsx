@@ -8,7 +8,7 @@ import { brand } from "@/config/brand";
 type Props = {
   message?: string;
   label?: string;
-  variant?: "primary" | "gold" | "outline" | "outline-light";
+  variant?: "primary" | "accent" | "outline" | "outline-light";
   size?: "md" | "sm";
   className?: string;
   /** Show "Finish your order in WhatsApp…" after the click */
@@ -30,7 +30,7 @@ export function WhatsAppButton({
   const [opened, setOpened] = useState(false);
   const cls = {
     primary: "btn-primary",
-    gold: "btn-gold",
+    accent: "btn-accent",
     outline: "btn-outline",
     "outline-light": "btn-outline-light",
   }[variant];
@@ -54,7 +54,7 @@ export function WhatsAppButton({
       {orderHint && (
         <p
           aria-live="polite"
-          className={`mt-2 text-sm ${variant === "gold" || variant === "outline-light" ? "text-lilac-text" : "text-muted"} ${opened ? "" : "sr-only"}`}
+          className={`mt-2 text-sm ${variant === "accent" || variant === "outline-light" ? "text-muted-on-dark" : "text-muted"} ${opened ? "" : "sr-only"}`}
         >
           {opened ? `Finish your order in WhatsApp. ${brand.name} will reply to confirm.` : ""}
         </p>

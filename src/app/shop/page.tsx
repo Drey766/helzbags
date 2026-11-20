@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 
 function ShopFallback() {
   return (
-    <div className="container-zb pb-24 pt-12">
-      <h1 className="display h-section text-plum">All bags</h1>
+    <div className="container-hz pb-24 pt-12">
+      <h1 className="display h-section text-primary">All bags</h1>
       <BrandLoader label="Loading the collection" className="py-24" />
     </div>
   );

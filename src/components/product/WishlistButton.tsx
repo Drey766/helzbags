@@ -27,7 +27,7 @@ export function WishlistButton({ product, className = "", variant = "overlay" }:
       aria-label={on ? `Remove ${product.name} from wishlist` : `Save ${product.name} to wishlist`}
       className={
         variant === "overlay"
-          ? `grid h-11 w-11 place-items-center rounded-full bg-ivory/90 text-plum shadow-sm backdrop-blur transition-colors hover:bg-ivory ${className}`
+          ? `grid h-11 w-11 place-items-center rounded-full bg-surface/90 text-primary shadow-sm backdrop-blur transition-colors hover:bg-surface ${className}`
           : `btn btn-outline btn-sm ${className}`
       }
     >

@@ -8,10 +8,10 @@ export const metadata: Metadata = {
 
 export default function BasketPage() {
   return (
-    <div className="container-zb pb-24 pt-10 md:pt-14">
-      <h1 className="display h-section text-plum">Basket</h1>
+    <div className="container-hz pb-24 pt-10 md:pt-14">
+      <h1 className="display h-section text-primary">Basket</h1>
       <p className="mt-3 max-w-xl text-muted">
-        Your basket stays on this device. When you are ready, send the order on WhatsApp and Zuri Bags will reply to confirm.
+        Your basket stays on this device. When you are ready, send the order on WhatsApp and Heiz Bags will reply to confirm.
       </p>
       <div className="mt-10">
         <BasketView />

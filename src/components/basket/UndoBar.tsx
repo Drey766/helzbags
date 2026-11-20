@@ -10,7 +10,7 @@ export function UndoBar({ className = "" }: { className?: string }) {
 
   if (!lastRemoved || !name) return null;
   return (
-    <div className={`flex items-center justify-between gap-3 rounded-2xl bg-lilac px-4 py-2 text-sm text-ink ${className}`}>
+    <div className={`flex items-center justify-between gap-3 rounded-2xl bg-surface-soft px-4 py-2 text-sm text-ink ${className}`}>
       <span>
         Removed <span className="font-medium">{name}</span>.
       </span>
@@ -20,7 +20,7 @@ export function UndoBar({ className = "" }: { className?: string }) {
           undoRemove();
           announce(`${name} put back in your basket`);
         }}
-        className="min-h-11 rounded-full px-3 font-medium text-plum underline underline-offset-4"
+        className="min-h-11 rounded-full px-3 font-medium text-primary underline underline-offset-4"
       >
         Undo
       </button>

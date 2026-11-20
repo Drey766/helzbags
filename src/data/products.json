@@ -65,58 +65,76 @@
   ],
   "products": [
     {
-      "id": "ZB-001",
-      "slug": "chrisbella-handbag",
-      "name": "Chrisbella Handbag",
-      "status": "own",
-      "category": "handbags",
-      "occasions": [
-        "work",
-        "outings",
-        "everyday"
-      ],
-      "carry": [],
-      "size": null,
-      "fits": [],
-      "priceKes": 5300,
-      "isNew": true,
-      "images": [],
-      "summary": "Carry elegance. Carry confidence. Carry Chrisbella.",
-      "description": "Carry elegance. Carry confidence. Carry Chrisbella. Perfect for work, outings or elevating your everyday look.",
-      "features": [],
-      "idealFor": [
-        "work",
-        "outings",
-        "everyday"
-      ]
-    },
-    {
-      "id": "ZB-002",
-      "slug": "classic-everyday-handbag",
-      "name": "Classic Everyday Handbag",
-      "nameConfirmed": false,
+      "id": "HZ-001",
+      "slug": "hw-mini-handbag",
+      "name": "HW Mini-Handbag",
       "status": "own",
       "category": "handbags",
       "occasions": [
         "everyday",
-        "work"
+        "outings"
       ],
       "carry": [],
       "size": null,
-      "fits": [],
-      "priceKes": 4500,
-      "isNew": true,
+      "fits": [
+        "bottles",
+        "wallet"
+      ],
+      "priceKes": 2200,
+      "isNew": false,
       "images": [],
-      "summary": "A timeless piece for the woman who loves her style simple, elegant & classy.",
-      "description": "A timeless piece for the woman who loves her style simple, elegant & classy.",
-      "features": [],
+      "summary": "Spacious enough to fit a bottle, notebook, wallet, small umbrella, wipes, charger and other essentials.",
+      "description": "Spacious enough to fit a bottle, notebook, wallet, small umbrella, wipes, charger and other essentials.",
+      "features": [
+        "Good quality",
+        "Has a zip to keep your essentials safe",
+        "Adjustable straps",
+        "Colours: tan and black"
+      ],
       "idealFor": [
         "everyday",
-        "work"
+        "outings"
       ]
     },
     {
-      "id": "ZB-003",
+      "id": "HZ-002",
+      "slug": "heiz-laptop-handbag",
+      "name": "Heiz Laptop Handbag",
+      "status": "own",
+      "category": "office",
+      "occasions": [
+        "work",
+        "travel"
+      ],
+      "carry": [
+        "shoulder"
+      ],
+      "size": null,
+      "fits": [
+        "laptop-14"
+      ],
+      "priceKes": 2800,
+      "isNew": false,
+      "images": [],
+      "summary": "Fits up to a 14-inch laptop, with a padded laptop compartment.",
+      "description": "Fits up to a 14-inch laptop. Has a padded laptop compartment.",
+      "features": [
+        "Good quality",
+        "Fits up to a 14-inch laptop",
+        "Has a padded laptop compartment",
+        "Spacious enough",
+        "Has a back sleeve for a suitcase handle to slide in while travelling",
+        "Adjustable straps",
+        "Has a long shoulder strap",
+        "Available in black, tan, brown, coffee and grey"
+      ],
+      "idealFor": [
+        "work",
+        "travel"
+      ]
+    },
+    {
+      "id": "HZ-003",
       "slug": "mwanga-carry-all",
       "name": "Mwanga Carry-All",
       "status": "sample",
@@ -157,7 +175,7 @@
       ]
     },
     {
-      "id": "ZB-004",
+      "id": "HZ-004",
       "slug": "jioni-clutch",
       "name": "Jioni Clutch",
       "status": "sample",
@@ -189,7 +207,7 @@
       ]
     },
     {
-      "id": "ZB-005",
+      "id": "HZ-005",
       "slug": "nyota-hair-on-shoulder-bag",
       "name": "Nyota Hair-On Shoulder Bag",
       "status": "sample",
@@ -225,7 +243,7 @@
       ]
     },
     {
-      "id": "ZB-006",
+      "id": "HZ-006",
       "slug": "amani-bag-wallet-set",
       "name": "Amani Bag & Wallet Set",
       "status": "sample",
@@ -268,7 +286,7 @@
       ]
     },
     {
-      "id": "ZB-007",
+      "id": "HZ-007",
       "slug": "pindo-fringe-bag",
       "name": "Pindo Fringe Bag",
       "status": "sample",
@@ -305,7 +323,7 @@
       ]
     },
     {
-      "id": "ZB-008",
+      "id": "HZ-008",
       "slug": "kito-statement-bag",
       "name": "Kito Statement Bag",
       "status": "sample",
@@ -342,7 +360,7 @@
       ]
     },
     {
-      "id": "ZB-009",
+      "id": "HZ-009",
       "slug": "bahari-two-tone-tote",
       "name": "Bahari Two-Tone Tote",
       "status": "sample",
@@ -376,7 +394,7 @@
       ]
     },
     {
-      "id": "ZB-010",
+      "id": "HZ-010",
       "slug": "safari-canvas-tote",
       "name": "Safari Canvas Tote",
       "status": "sample",
@@ -411,7 +429,7 @@
       ]
     },
     {
-      "id": "ZB-011",
+      "id": "HZ-011",
       "slug": "kazi-laptop-bag",
       "name": "Kazi Laptop Bag",
       "status": "sample",
@@ -448,7 +466,7 @@
       ]
     },
     {
-      "id": "ZB-012",
+      "id": "HZ-012",
       "slug": "siku-wallet",
       "name": "Siku Wallet",
       "status": "sample",
@@ -484,7 +502,7 @@
       ]
     },
     {
-      "id": "ZB-013",
+      "id": "HZ-013",
       "slug": "tulia-zip-wallet",
       "name": "Tulia Zip Wallet",
       "status": "sample",
@@ -525,7 +543,7 @@
       ]
     },
     {
-      "id": "ZB-014",
+      "id": "HZ-014",
       "slug": "shanga-phone-wallet",
       "name": "Shanga Phone Wallet",
       "status": "sample",
@@ -567,7 +585,7 @@
       ]
     },
     {
-      "id": "ZB-015",
+      "id": "HZ-015",
       "slug": "urembo-make-up-bag",
       "name": "Urembo Make-Up Bag",
       "status": "sample",
@@ -606,7 +624,7 @@
       ]
     },
     {
-      "id": "ZB-016",
+      "id": "HZ-016",
       "slug": "shanga-crossbody",
       "name": "Shanga Crossbody",
       "status": "sample",
@@ -651,7 +669,7 @@
       ]
     },
     {
-      "id": "ZB-017",
+      "id": "HZ-017",
       "slug": "pambo-toiletry-bag",
       "name": "Pambo Toiletry Bag",
       "status": "sample",
@@ -687,7 +705,7 @@
       ]
     },
     {
-      "id": "ZB-018",
+      "id": "HZ-018",
       "slug": "kikapu-mini-tote",
       "name": "Kikapu Mini Tote",
       "status": "sample",
@@ -721,7 +739,7 @@
       ]
     },
     {
-      "id": "ZB-019",
+      "id": "HZ-019",
       "slug": "malkia-structured-tote",
       "name": "Malkia Structured Tote",
       "status": "sample",
@@ -759,7 +777,7 @@
       ]
     },
     {
-      "id": "ZB-020",
+      "id": "HZ-020",
       "slug": "haradali-portrait-tote",
       "name": "Haradali Portrait Tote",
       "status": "sample",
@@ -794,7 +812,7 @@
       ]
     },
     {
-      "id": "ZB-021",
+      "id": "HZ-021",
       "slug": "neema-hair-on-bag",
       "name": "Neema Hair-On Bag",
       "status": "sample",
@@ -830,7 +848,7 @@
       ]
     },
     {
-      "id": "ZB-022",
+      "id": "HZ-022",
       "slug": "dhahabu-buckle-sling",
       "name": "Dhahabu Buckle Sling",
       "status": "sample",
@@ -867,7 +885,7 @@
       ]
     },
     {
-      "id": "ZB-023",
+      "id": "HZ-023",
       "slug": "lulu-crossbody-clutch",
       "name": "Lulu Crossbody Clutch",
       "status": "sample",
@@ -907,7 +925,7 @@
       ]
     },
     {
-      "id": "ZB-024",
+      "id": "HZ-024",
       "slug": "upinde-colour-block-bag",
       "name": "Upinde Colour-Block Bag",
       "status": "sample",
@@ -946,7 +964,7 @@
       ]
     },
     {
-      "id": "ZB-025",
+      "id": "HZ-025",
       "slug": "imara-hair-on-tote",
       "name": "Imara Hair-On Tote",
       "status": "sample",
@@ -987,7 +1005,7 @@
       ]
     },
     {
-      "id": "ZB-026",
+      "id": "HZ-026",
       "slug": "faraja-everyday-bag",
       "name": "Faraja Everyday Bag",
       "status": "sample",
@@ -1022,7 +1040,7 @@
       ]
     },
     {
-      "id": "ZB-027",
+      "id": "HZ-027",
       "slug": "mrembo-mini-top-handle",
       "name": "Mrembo Mini Top-Handle",
       "status": "sample",
@@ -1063,7 +1081,7 @@
       ]
     },
     {
-      "id": "ZB-028",
+      "id": "HZ-028",
       "slug": "porini-sling",
       "name": "Porini Sling",
       "status": "sample",
@@ -1097,7 +1115,7 @@
       ]
     },
     {
-      "id": "ZB-029",
+      "id": "HZ-029",
       "slug": "matembezi-mum-backpack",
       "name": "Matembezi Mum Backpack",
       "status": "sample",

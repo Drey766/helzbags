@@ -28,7 +28,7 @@ const jost = Jost({
   display: "swap",
 });
 
-const description = `Women's handbags in Nairobi CBD: totes, office bags, slings, clutches and Chrisbella. Order on WhatsApp ${brand.phoneDisplay}, pay via M-Pesa Till ${brand.mpesaTill}.`;
+const description = `Women's handbags from Heiz Bags, Dynamic Mall, Tom Mboya Street, Nairobi. Order on WhatsApp ${brand.phoneDisplay}. ${brand.ownWords.delivery}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: brand.colors.plum,
+  themeColor: brand.colors.primary,
   width: "device-width",
   initialScale: 1,
 };
@@ -56,12 +56,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en-KE" className={`${cormorant.variable} ${jost.variable}`}>
       <head>
-        <style id="zb-brand-vars" dangerouslySetInnerHTML={{ __html: brandCssVars() }} />
+        <style id="hz-brand-vars" dangerouslySetInnerHTML={{ __html: brandCssVars() }} />
       </head>
-      <body className="min-h-dvh bg-ivory text-ink">
+      <body className="min-h-dvh bg-surface text-ink">
         <a
           href="#main"
-          className="sr-only z-[100] rounded-full bg-plum px-5 py-3 text-ivory focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
+          className="sr-only z-[100] rounded-full bg-primary px-5 py-3 text-surface focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
         >
           Skip to content
         </a>

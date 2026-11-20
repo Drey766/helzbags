@@ -38,7 +38,7 @@ export function QuickViewProvider({ children }: { children: React.ReactNode }) {
       >
         {product && (
           <div className="px-5 pb-8">
-            <div className="relative aspect-[4/5] overflow-hidden bg-champagne" style={{ borderRadius: "var(--radius-arch)" }}>
+            <div className="relative aspect-[4/5] overflow-hidden bg-surface-alt" style={{ borderRadius: "var(--radius-arch)" }}>
               {product.images.length ? (
                 <SmartImage src={product.images[active]} alt={productAlt(product, active)} sizes="(min-width: 768px) 420px, 100vw" />
               ) : (
@@ -54,7 +54,7 @@ export function QuickViewProvider({ children }: { children: React.ReactNode }) {
                     onClick={() => setActive(i)}
                     aria-label={`Show photo ${i + 1}`}
                     aria-current={i === active}
-                    className={`relative h-16 w-14 shrink-0 overflow-hidden rounded-xl ring-offset-2 ring-offset-ivory ${i === active ? "ring-2 ring-plum" : "opacity-70"}`}
+                    className={`relative h-16 w-14 shrink-0 overflow-hidden rounded-xl ring-offset-2 ring-offset-surface ${i === active ? "ring-2 ring-primary" : "opacity-70"}`}
                   >
                     <SmartImage src={src} alt="" sizes="56px" />
                   </button>
@@ -64,7 +64,7 @@ export function QuickViewProvider({ children }: { children: React.ReactNode }) {
             <div className="mt-5 flex items-center gap-2">
               <SampleTag product={product} />
             </div>
-            <h3 className="display mt-2 text-3xl leading-tight text-plum">{product.name}</h3>
+            <h3 className="display mt-2 text-3xl leading-tight text-primary">{product.name}</h3>
             <Price product={product} size="lg" className="mt-1" />
             {product.summary && <p className="mt-3 text-muted">{product.summary}</p>}
             <div className="mt-5">
@@ -85,7 +85,7 @@ export function QuickViewProvider({ children }: { children: React.ReactNode }) {
                 <ShoppingBag aria-hidden="true" className="h-[18px] w-[18px]" strokeWidth={1.5} />
                 Add to basket
               </button>
-              <Link href={`/shop/${product.slug}`} onClick={() => setSlug(null)} className="btn w-full text-plum underline-offset-4 hover:underline">
+              <Link href={`/shop/${product.slug}`} onClick={() => setSlug(null)} className="btn w-full text-primary underline-offset-4 hover:underline">
                 View details
               </Link>
             </div>
@@ -102,7 +102,7 @@ export function QuickViewButton({ slug, name }: { slug: string; name: string }) 
     <button
       type="button"
       onClick={() => open(slug)}
-      className="pointer-events-auto flex min-h-11 w-full items-center justify-center gap-2 rounded-full bg-ivory/95 text-sm font-medium tracking-wide text-plum shadow-sm backdrop-blur transition-colors hover:bg-plum hover:text-ivory"
+      className="pointer-events-auto flex min-h-11 w-full items-center justify-center gap-2 rounded-full bg-surface/95 text-sm font-medium tracking-wide text-primary shadow-sm backdrop-blur transition-colors hover:bg-primary hover:text-surface"
       aria-label={`Quick view ${name}`}
       aria-haspopup="dialog"
     >

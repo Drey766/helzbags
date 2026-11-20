@@ -19,8 +19,8 @@ export function RecentlyViewed({ current }: { current: string }) {
   if (!items.length) return null;
 
   return (
-    <section className="container-zb pb-20" aria-labelledby="recent-title">
-      <h2 id="recent-title" className="display text-3xl text-plum">
+    <section className="container-hz pb-20" aria-labelledby="recent-title">
+      <h2 id="recent-title" className="display text-3xl text-primary">
         Recently viewed
       </h2>
       <ul className="mt-8 grid grid-cols-2 gap-x-3 gap-y-10 md:grid-cols-4 md:gap-x-6">

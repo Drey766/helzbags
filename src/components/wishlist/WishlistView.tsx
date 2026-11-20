@@ -20,9 +20,9 @@ export function WishlistView() {
     return (
       <div className="mx-auto flex max-w-md flex-col items-center py-12 text-center">
         <HandleArch className="w-28" frameClassName="velvet aspect-[4/5] grid place-items-center">
-          <Heart aria-hidden="true" className="h-8 w-8 text-gold-light" strokeWidth={1.25} />
+          <Heart aria-hidden="true" className="h-8 w-8 text-accent-light" strokeWidth={1.25} />
         </HandleArch>
-        <p className="display mt-6 text-3xl text-plum">Nothing saved yet.</p>
+        <p className="display mt-6 text-3xl text-primary">Nothing saved yet.</p>
         <p className="mt-3 text-muted">Tap the heart on any bag to keep it here for later.</p>
         <Link href="/shop" className="btn btn-primary mt-6">
           Shop the collection
@@ -60,7 +60,7 @@ export function WishlistView() {
             <ProductCard product={p!} />
             <button
               type="button"
-              className="mt-3 flex min-h-11 items-center gap-2 px-1 text-sm text-plum underline-offset-4 hover:underline"
+              className="mt-3 flex min-h-11 items-center gap-2 px-1 text-sm text-primary underline-offset-4 hover:underline"
               onClick={() => {
                 addToBasket(p!.slug);
                 announce(`${p!.name} added to basket`);

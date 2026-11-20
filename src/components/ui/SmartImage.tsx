@@ -16,12 +16,12 @@ type Props = {
 };
 
 /**
- * next/image with a soft shimmer while loading, one retry, a fade-in, and a designed plum
+ * next/image with a soft shimmer while loading, one retry, a fade-in, and a designed primary
  * fallback (logo mark) when there is no photo or it still fails.
  *
  * Remote sample photos skip the optimiser: Next.js gives up on upstream images after 7s,
  * and the sample host is often slower than that. The browser has no such cut-off.
- * Zuri's own photos (in /public) are still optimised.
+ * Heiz Bags' own photos (in /public) are still optimised.
  */
 export function SmartImage({ src, alt, sizes, className = "", priority, fill = true, width, height }: Props) {
   const [attempt, setAttempt] = useState(0);
@@ -44,7 +44,7 @@ export function SmartImage({ src, alt, sizes, className = "", priority, fill = t
 
   return (
     <>
-      {!loaded && <span aria-hidden="true" className="zb-shimmer absolute inset-0" />}
+      {!loaded && <span aria-hidden="true" className="hz-shimmer absolute inset-0" />}
       <Image
         key={url}
         src={url}

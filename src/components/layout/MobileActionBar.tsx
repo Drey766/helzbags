@@ -20,16 +20,16 @@ export function MobileActionBar() {
     <nav
       aria-label="Quick actions"
       data-tone="dark"
-      className="fixed inset-x-0 bottom-0 z-40 border-t border-gold/30 bg-plum pb-[env(safe-area-inset-bottom)] text-ivory shadow-[0_-10px_30px_-15px_rgba(0,0,0,0.5)] md:hidden"
+      className="fixed inset-x-0 bottom-0 z-40 border-t border-accent/30 bg-primary pb-[env(safe-area-inset-bottom)] text-surface shadow-[0_-10px_30px_-15px_rgba(0,0,0,0.5)] md:hidden"
     >
       <div className="flex items-stretch">
         <a href={waUrl(generalMessage())} target="_blank" rel="noopener noreferrer" className={item}>
-          <MessageCircle aria-hidden="true" className="h-5 w-5 text-gold" strokeWidth={1.5} />
+          <MessageCircle aria-hidden="true" className="h-5 w-5 text-accent" strokeWidth={1.5} />
           WhatsApp
           <span className="sr-only">(opens WhatsApp)</span>
         </a>
         <a href={telUrl()} className={item}>
-          <Phone aria-hidden="true" className="h-5 w-5 text-gold" strokeWidth={1.5} />
+          <Phone aria-hidden="true" className="h-5 w-5 text-accent" strokeWidth={1.5} />
           Call
         </a>
         {product ? (
@@ -37,7 +37,7 @@ export function MobileActionBar() {
             href={waUrl(productOrderMessage(product))}
             target="_blank"
             rel="noopener noreferrer"
-            className="m-1.5 flex flex-[1.6] items-center justify-center gap-1.5 rounded-full bg-gradient-to-br from-gold-light via-gold to-gold-deep px-3 text-[13px] font-medium text-plum"
+            className="m-1.5 flex flex-[1.6] items-center justify-center gap-1.5 rounded-full bg-gradient-to-br from-accent-light via-accent to-accent-deep px-3 text-[13px] font-medium text-primary"
           >
             <MessageCircle aria-hidden="true" className="h-4 w-4" strokeWidth={1.5} />
             Order this bag
@@ -45,7 +45,7 @@ export function MobileActionBar() {
           </a>
         ) : (
           <Link href="/shop" className={item}>
-            <Store aria-hidden="true" className="h-5 w-5 text-gold" strokeWidth={1.5} />
+            <Store aria-hidden="true" className="h-5 w-5 text-accent" strokeWidth={1.5} />
             Shop
           </Link>
         )}
@@ -56,9 +56,9 @@ export function MobileActionBar() {
           aria-label={`Basket${hydrated && basketCount ? `, ${basketCount} item${basketCount === 1 ? "" : "s"}` : ", empty"}`}
         >
           <span className="relative">
-            <ShoppingBag aria-hidden="true" className="h-5 w-5 text-gold" strokeWidth={1.5} />
+            <ShoppingBag aria-hidden="true" className="h-5 w-5 text-accent" strokeWidth={1.5} />
             {hydrated && basketCount > 0 && (
-              <span className="tabular absolute -right-2.5 -top-1.5 grid h-4 min-w-4 place-items-center rounded-full bg-gold-light px-1 text-[10px] font-medium text-plum">
+              <span className="tabular absolute -right-2.5 -top-1.5 grid h-4 min-w-4 place-items-center rounded-full bg-accent-light px-1 text-[10px] font-medium text-primary">
                 {basketCount}
               </span>
             )}

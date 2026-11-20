@@ -5,19 +5,19 @@
       "key": "order",
       "status": "draft",
       "q": "How do I order?",
-      "a": "Choose a bag and tap Order on WhatsApp. A message with the bag, its price and its link opens in WhatsApp. Send it, and Zuri Bags will reply to confirm. You can also add several bags to your basket and send them in one message."
+      "a": "Choose a bag and tap Order on WhatsApp. A message with the bag, its price and its link opens in WhatsApp. Send it, and Heiz Bags will reply to confirm. You can also add several bags to your basket and send them in one message."
     },
     {
       "key": "pay",
       "status": "draft",
       "q": "How do I pay?",
-      "a": "Pay via M-Pesa: Lipa na M-Pesa, Buy Goods and Services, Till number {till}, enter the amount and your PIN. Please send your order on WhatsApp first so Zuri Bags can confirm availability. You can also pay when you visit a shop."
+      "a": "Ask us on WhatsApp when you send your order."
     },
     {
       "key": "shops",
       "status": "draft",
-      "q": "Where are your shops?",
-      "a": "Zuri Bags has shops in Nairobi CBD: {shops}. See the Visit page for directions."
+      "q": "Where can I find you?",
+      "a": "Our pick-up point is at {shops}, opposite Ambassadeur Hotel, Nairobi. In our words: \"You will find the bags already available there.\" See the Find us page for directions."
     },
     {
       "key": "exchange",
@@ -29,25 +29,25 @@
       "key": "see",
       "status": "draft",
       "q": "Can I see a bag before I buy it?",
-      "a": "Yes. Visit one of the shops to see bags in person. Send a WhatsApp message first if you would like to check that a particular bag is there."
+      "a": "Yes. Visit our pick-up point to see bags in person. Send a WhatsApp message first if you would like to check that a particular bag is there."
     },
     {
       "key": "delivery",
       "status": "draft",
       "q": "Do you deliver?",
-      "a": "Ask us on WhatsApp. Tell us where you are and Zuri Bags will advise."
+      "a": "Yes. In Heiz Bags' words: \"Deliveries are done countrywide at a small fee.\" Tell us where you are on WhatsApp and Heiz Bags will advise."
     },
     {
       "key": "stock",
       "status": "draft",
       "q": "Are the bags on the website in stock?",
-      "a": "Ask on WhatsApp to confirm. Zuri Bags will confirm availability when you send your order."
+      "a": "Ask on WhatsApp to confirm. Heiz Bags will confirm availability when you send your order."
     },
     {
-      "key": "chrisbella",
+      "key": "laptop",
       "status": "draft",
-      "q": "Do you sell Chrisbella bags?",
-      "a": "Yes. In Zuri Bags' words: \"Carry elegance. Carry confidence. Carry Chrisbella.\" Ask on WhatsApp about the Chrisbella bags available now."
+      "q": "Do you have laptop bags?",
+      "a": "Yes. The Heiz laptop handbag fits up to a 14-inch laptop and has a padded laptop compartment. Ask on WhatsApp about the colours available now."
     }
   ]
 }

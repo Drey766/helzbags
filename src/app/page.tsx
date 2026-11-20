@@ -3,7 +3,7 @@ import { Occasions } from "@/components/home/Occasions";
 import { CategoryRow } from "@/components/home/CategoryRow";
 import { NewIn } from "@/components/home/NewIn";
 import { FinderBand } from "@/components/home/FinderBand";
-import { ZuriCollection } from "@/components/home/ZuriCollection";
+import { HeizCollection } from "@/components/home/HeizCollection";
 import { EditorialSplit } from "@/components/home/EditorialSplit";
 import { OrderingSteps } from "@/components/home/OrderingSteps";
 import { ShopsBand } from "@/components/shops/ShopsBand";
@@ -19,7 +19,7 @@ export default function Home() {
       <CategoryRow />
       <NewIn />
       <FinderBand />
-      <ZuriCollection />
+      <HeizCollection />
       <EditorialSplit />
       <OrderingSteps />
       <ShopsBand />

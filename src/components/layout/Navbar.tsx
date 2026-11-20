@@ -67,13 +67,13 @@ export function Navbar() {
   return (
     <header
       className={`sticky top-0 z-50 border-b transition-[background-color,box-shadow,border-color] duration-300 ${
-        scrolled ? "border-line bg-ivory/92 shadow-[0_6px_24px_-18px_rgba(0,0,0,0.25)] backdrop-blur" : "border-transparent bg-ivory"
+        scrolled ? "border-line bg-surface/92 shadow-[0_6px_24px_-18px_rgba(0,0,0,0.25)] backdrop-blur" : "border-transparent bg-surface"
       }`}
     >
-      <div className="container-zb flex h-16 items-center gap-2 md:h-[76px]">
+      <div className="container-hz flex h-16 items-center gap-2 md:h-[76px]">
         <button
           type="button"
-          className="-ml-2 grid h-11 w-11 place-items-center rounded-full text-plum lg:hidden"
+          className="-ml-2 grid h-11 w-11 place-items-center rounded-full text-primary lg:hidden"
           onClick={() => setMenuOpen(true)}
           aria-label="Open menu"
           aria-haspopup="dialog"
@@ -82,7 +82,7 @@ export function Navbar() {
         </button>
 
         <Link href="/" className="flex items-center rounded-md lg:mr-6" aria-label={`${brand.name}, home`}>
-          <Logo className="h-11 w-auto md:h-[52px]" decorative />
+          <Logo className="h-9 w-auto md:h-11" decorative />
         </Link>
 
         <nav aria-label="Main" className="hidden flex-1 lg:block">
@@ -93,8 +93,8 @@ export function Navbar() {
                   <div className="flex items-center">
                     <Link
                       href="/shop"
-                      className={`flex min-h-11 items-center rounded-full px-3 text-[0.72rem] font-medium uppercase tracking-[0.2em] transition-colors hover:text-plum-soft ${
-                        isActive("/shop") ? "text-plum" : "text-ink"
+                      className={`flex min-h-11 items-center rounded-full px-3 text-[0.72rem] font-medium uppercase tracking-[0.2em] transition-colors hover:text-primary-raised ${
+                        isActive("/shop") ? "text-primary" : "text-ink"
                       }`}
                       aria-current={isActive("/shop") ? "page" : undefined}
                     >
@@ -102,7 +102,7 @@ export function Navbar() {
                     </Link>
                     <button
                       type="button"
-                      className="-ml-2 grid h-11 w-8 place-items-center rounded-full text-plum"
+                      className="-ml-2 grid h-11 w-8 place-items-center rounded-full text-primary"
                       aria-expanded={megaOpen}
                       aria-controls="mega-menu"
                       aria-label="Show shop categories"
@@ -118,19 +118,19 @@ export function Navbar() {
                   {megaOpen && (
                     <div
                       id="mega-menu"
-                      className="anim-fade absolute left-0 top-full z-50 mt-2 w-[min(760px,80vw)] overflow-hidden rounded-3xl border border-line bg-ivory shadow-[0_30px_60px_-30px_rgba(0,0,0,0.35)]"
+                      className="anim-fade absolute left-0 top-full z-50 mt-2 w-[min(760px,80vw)] overflow-hidden rounded-3xl border border-line bg-surface shadow-[0_30px_60px_-30px_rgba(0,0,0,0.35)]"
                     >
                       <div className="grid grid-cols-[1.4fr_1fr]">
                         <div className="p-7">
-                          <p className="eyebrow text-gold-text">Categories</p>
+                          <p className="eyebrow text-accent-text">Categories</p>
                           <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-1">
                             {cats.map((c) => (
                               <li key={c.key}>
                                 <Link
                                   href={`/shop?category=${c.key}`}
-                                  className="group block rounded-xl px-3 py-2.5 transition-colors hover:bg-champagne"
+                                  className="group block rounded-xl px-3 py-2.5 transition-colors hover:bg-surface-alt"
                                 >
-                                  <span className="display block text-xl text-plum">{c.name}</span>
+                                  <span className="display block text-xl text-primary">{c.name}</span>
                                   <span className="block text-[13px] leading-snug text-muted">{c.blurb}</span>
                                 </Link>
                               </li>
@@ -138,7 +138,7 @@ export function Navbar() {
                           </ul>
                         </div>
                         <div className="velvet relative p-7" data-tone="dark">
-                          <p className="eyebrow text-gold">Shop by occasion</p>
+                          <p className="eyebrow text-accent">Shop by occasion</p>
                           <ul className="mt-4 space-y-1">
                             {occasions
                               .filter((o) => o.key !== "travel")
@@ -146,17 +146,17 @@ export function Navbar() {
                                 <li key={o.key}>
                                   <Link
                                     href={`/shop?occasion=${o.key}`}
-                                    className="display block rounded-lg py-1.5 text-2xl text-ivory transition-colors hover:text-gold-light"
+                                    className="display block rounded-lg py-1.5 text-2xl text-surface transition-colors hover:text-accent-light"
                                   >
                                     {o.name}
                                   </Link>
                                 </li>
                               ))}
                           </ul>
-                          <p className="mt-6 text-sm italic leading-relaxed text-lilac-text">
-                            &ldquo;{brand.ownWords[1]}&rdquo;
+                          <p className="mt-6 text-sm italic leading-relaxed text-muted-on-dark">
+                            &ldquo;{brand.ownWords.bio}&rdquo;
                           </p>
-                          <Link href="/bag-finder" className="btn btn-gold btn-sm mt-6">
+                          <Link href="/bag-finder" className="btn btn-accent btn-sm mt-6">
                             Try the Bag Finder
                           </Link>
                         </div>
@@ -168,12 +168,12 @@ export function Navbar() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`flex min-h-11 items-center rounded-full px-3 text-[0.72rem] font-medium uppercase tracking-[0.2em] transition-colors hover:text-plum-soft ${
-                      isActive(item.href) ? "text-plum" : "text-ink"
+                    className={`flex min-h-11 items-center rounded-full px-3 text-[0.72rem] font-medium uppercase tracking-[0.2em] transition-colors hover:text-primary-raised ${
+                      isActive(item.href) ? "text-primary" : "text-ink"
                     }`}
                     aria-current={isActive(item.href) ? "page" : undefined}
                   >
-                    <span className={isActive(item.href) ? "border-b border-gold-text pb-0.5" : ""}>{item.label}</span>
+                    <span className={isActive(item.href) ? "border-b border-accent-text pb-0.5" : ""}>{item.label}</span>
                   </Link>
                 </li>
               ),
@@ -185,7 +185,7 @@ export function Navbar() {
           <button
             type="button"
             onClick={() => setSearchOpen(true)}
-            className="grid h-11 w-11 place-items-center rounded-full text-plum transition-colors hover:bg-champagne"
+            className="grid h-11 w-11 place-items-center rounded-full text-primary transition-colors hover:bg-surface-alt"
             aria-label="Search bags"
             aria-haspopup="dialog"
           >
@@ -193,7 +193,7 @@ export function Navbar() {
           </button>
           <Link
             href="/wishlist"
-            className="relative hidden h-11 w-11 place-items-center rounded-full text-plum transition-colors hover:bg-champagne sm:grid"
+            className="relative hidden h-11 w-11 place-items-center rounded-full text-primary transition-colors hover:bg-surface-alt sm:grid"
             aria-label={`Wishlist${hydrated && wishlist.length ? `, ${wishlist.length} saved` : ""}`}
           >
             <Heart aria-hidden="true" className="h-[21px] w-[21px]" strokeWidth={1.5} />
@@ -202,7 +202,7 @@ export function Navbar() {
           <button
             type="button"
             onClick={() => setBasketOpen(true)}
-            className="relative -mr-2 grid h-11 w-11 place-items-center rounded-full text-plum transition-colors hover:bg-champagne"
+            className="relative -mr-2 grid h-11 w-11 place-items-center rounded-full text-primary transition-colors hover:bg-surface-alt"
             aria-label={`Basket${hydrated && basketCount ? `, ${basketCount} item${basketCount === 1 ? "" : "s"}` : ", empty"}`}
             aria-haspopup="dialog"
           >
@@ -244,7 +244,7 @@ function CountDot({ n }: { n: number }) {
   return (
     <span
       aria-hidden="true"
-      className="tabular absolute right-0.5 top-0.5 grid h-[18px] min-w-[18px] place-items-center rounded-full bg-plum px-1 text-[10px] font-medium leading-none text-gold-light ring-2 ring-ivory"
+      className="tabular absolute right-0.5 top-0.5 grid h-[18px] min-w-[18px] place-items-center rounded-full bg-primary px-1 text-[10px] font-medium leading-none text-accent-light ring-2 ring-surface"
     >
       {n}
     </span>

@@ -51,11 +51,11 @@ export function ProductActions({ product }: { product: Product }) {
           )}
           {added ? "Added" : "Add to basket"}
         </button>
-        <WishlistButton product={product} variant="overlay" className="!h-[52px] !w-[52px] border border-plum !bg-transparent" />
+        <WishlistButton product={product} variant="overlay" className="!h-[52px] !w-[52px] border border-primary !bg-transparent" />
         <button
           type="button"
           onClick={share}
-          className="grid h-[52px] w-[52px] place-items-center rounded-full border border-plum text-plum hover:bg-plum hover:text-ivory"
+          className="grid h-[52px] w-[52px] place-items-center rounded-full border border-primary text-primary hover:bg-primary hover:text-surface"
           aria-label="Share this bag"
         >
           <Share2 aria-hidden="true" className="h-[18px] w-[18px]" strokeWidth={1.5} />

@@ -8,8 +8,8 @@ export function EmptyBasket({ onNavigate, compact }: { onNavigate?: () => void; 
       <HandleArch className="w-28" frameClassName="velvet aspect-[4/5] grid place-items-center">
         <Logo variant="mark" tone="dark" decorative className="h-12 w-12 opacity-80" />
       </HandleArch>
-      <p className="display mt-6 text-3xl leading-tight text-plum">
-        Your basket is waiting for something <em className="text-plum-soft">beautiful</em>.
+      <p className="display mt-6 text-3xl leading-tight text-primary">
+        Your basket is waiting for something <em className="text-primary-raised">beautiful</em>.
       </p>
       <p className="mt-3 text-muted">Add a bag or two, then send your order on WhatsApp.</p>
       <div className="mt-6 flex flex-wrap justify-center gap-3">

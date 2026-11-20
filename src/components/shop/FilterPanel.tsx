@@ -87,7 +87,7 @@ export function FilterPanel({ filters: f, onChange, idPrefix }: Props) {
           type="checkbox"
           checked={!!f.isNew}
           onChange={(e) => onChange({ ...f, isNew: e.target.checked })}
-          className="h-5 w-5 accent-plum"
+          className="h-5 w-5 accent-primary"
         />
         <span>New only</span>
       </label>
@@ -98,7 +98,7 @@ export function FilterPanel({ filters: f, onChange, idPrefix }: Props) {
 function Group({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <fieldset aria-labelledby={id}>
-      <legend id={id} className="eyebrow mb-3 text-gold-text">
+      <legend id={id} className="eyebrow mb-3 text-accent-text">
         {title}
       </legend>
       {children}
@@ -123,10 +123,10 @@ function Pill({
       onClick={onClick}
       aria-pressed={selected}
       className={`inline-flex min-h-11 items-center gap-1.5 rounded-full border px-4 text-sm transition-colors ${
-        selected ? "border-plum bg-plum text-ivory" : "border-line bg-white text-ink hover:border-plum-soft"
+        selected ? "border-primary bg-primary text-surface" : "border-line bg-white text-ink hover:border-primary-raised"
       }`}
     >
-      {multi && selected && <Check aria-hidden="true" className="h-3.5 w-3.5 text-gold-light" strokeWidth={2} />}
+      {multi && selected && <Check aria-hidden="true" className="h-3.5 w-3.5 text-accent-light" strokeWidth={2} />}
       {children}
     </button>
   );

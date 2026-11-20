@@ -5,7 +5,7 @@ import { PostCard } from "@/components/blog/PostCard";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Styling and care notes for handbags, from Zuri Bags.",
+  description: "Styling and care notes for handbags, from Heiz Bags.",
 };
 
 export default function BlogPage() {
@@ -14,13 +14,13 @@ export default function BlogPage() {
       <PageHero
         title={
           <>
-            Style and care <em className="text-gold-light">notes</em>
+            Style and care <em className="text-accent-light">notes</em>
           </>
         }
         intro="Short reads on choosing, wearing and caring for a handbag."
       />
       <section className="section">
-        <ul className="container-zb grid gap-12 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+        <ul className="container-hz grid gap-12 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
           {posts.map((p) => (
             <li key={p.slug}>
               <PostCard post={p} />

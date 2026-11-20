@@ -56,8 +56,8 @@ export function ContactForm() {
 
   if (status === "sent") {
     return (
-      <div ref={statusRef} tabIndex={-1} role="status" className="rounded-[24px] bg-champagne p-8 outline-none">
-        <p className="display text-3xl text-plum">Message sent.</p>
+      <div ref={statusRef} tabIndex={-1} role="status" className="rounded-[24px] bg-surface-alt p-8 outline-none">
+        <p className="display text-3xl text-primary">Message sent.</p>
         <p className="mt-2 text-muted">{brand.name} will get back to you by phone or WhatsApp.</p>
       </div>
     );
@@ -138,7 +138,7 @@ export function ContactForm() {
 
       <p className="text-sm text-muted">
         We use your details only to reply. Nothing is stored on this website. See the{" "}
-        <a href="/privacy" className="text-plum underline underline-offset-4">
+        <a href="/privacy" className="text-primary underline underline-offset-4">
           privacy notice
         </a>
         .
@@ -151,7 +151,7 @@ export function ContactForm() {
       <div ref={statusRef} tabIndex={-1} aria-live="polite" className="outline-none">
         {status === "fallback" && (
           <div className="rounded-[24px] border border-line bg-white p-6">
-            <p className="display text-2xl text-plum">The form could not send right now.</p>
+            <p className="display text-2xl text-primary">The form could not send right now.</p>
             <p className="mt-2 text-muted">Your message has not been sent. Send it on WhatsApp instead, or call us.</p>
             <div className="mt-5 flex flex-wrap gap-3">
               <WhatsAppButton message={waText} label="Send on WhatsApp" />

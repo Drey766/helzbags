@@ -6,7 +6,7 @@ import { SectionHeading } from "./SectionHeading";
 export function BlogPreview() {
   return (
     <section className="section" aria-labelledby="blog-preview-title">
-      <div className="container-zb">
+      <div className="container-hz">
         <SectionHeading
           title={<span id="blog-preview-title">Style and care notes</span>}
           action={

@@ -1,7 +1,7 @@
 {
   "status": "draft",
   "title": "How ordering works",
-  "intro": "Ordering from Zuri Bags happens on WhatsApp, so you talk to a person, not a checkout.",
+  "intro": "Ordering from Heiz Bags happens on WhatsApp, so you talk to a person, not a checkout.",
   "steps": [
     {
       "key": "choose",
@@ -11,12 +11,12 @@
     {
       "key": "whatsapp",
       "title": "Send it on WhatsApp",
-      "body": "Tap Order on WhatsApp. Your message is written for you with the bag, the price and the link. Zuri Bags will reply to confirm availability."
+      "body": "Tap Order on WhatsApp. Your message is written for you with the bag, the price and the link. Heiz Bags will reply to confirm availability."
     },
     {
-      "key": "pay",
-      "title": "Pay by Till or at the shop",
-      "body": "Once your order is confirmed, pay via M-Pesa Till or when you pick up at one of the shops."
+      "key": "collect",
+      "title": "Pick up or delivery",
+      "body": "Collect your bag at our pick-up point in Dynamic Mall on Tom Mboya Street, or ask for delivery. Deliveries are done countrywide at a small fee."
     }
   ]
 }

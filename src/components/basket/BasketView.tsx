@@ -46,12 +46,12 @@ export function BasketView() {
       </div>
 
       <aside aria-labelledby="summary-title" className="lg:sticky lg:top-28 lg:self-start">
-        <div className="relative overflow-hidden rounded-[24px] bg-champagne p-6 pl-8 md:p-8 md:pl-10">
+        <div className="relative overflow-hidden rounded-[24px] bg-surface-alt p-6 pl-8 md:p-8 md:pl-10">
           <span aria-hidden="true" className="absolute inset-y-0 left-0 flex">
-            <span className="w-[5px] bg-plum" />
-            <span className="ml-[3px] w-[3px] bg-gold-light" />
+            <span className="w-[5px] bg-primary" />
+            <span className="ml-[3px] w-[3px] bg-accent-light" />
           </span>
-          <h2 id="summary-title" className="display text-3xl text-plum">
+          <h2 id="summary-title" className="display text-3xl text-primary">
             Your order
           </h2>
           <dl className="mt-4 space-y-2 text-sm">
@@ -66,22 +66,22 @@ export function BasketView() {
           </dl>
 
           <fieldset className="mt-6">
-            <legend className="eyebrow text-gold-text">Pickup or delivery</legend>
+            <legend className="eyebrow text-accent-text">Pickup or delivery</legend>
             <div className="mt-3 grid grid-cols-2 gap-2">
               {(
                 [
-                  ["pickup", "Pick up at a shop", Store],
+                  ["pickup", "Pick up", Store],
                   ["delivery", "Deliver to me", Truck],
                 ] as const
               ).map(([key, label, Icon]) => (
                 <label
                   key={key}
-                  className={`flex min-h-14 cursor-pointer items-center gap-2 rounded-2xl border px-3 text-sm transition-colors has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-plum has-[:focus-visible]:ring-offset-2 ${
-                    mode === key ? "border-plum bg-plum text-ivory" : "border-line bg-white text-ink hover:border-plum-soft"
+                  className={`flex min-h-14 cursor-pointer items-center gap-2 rounded-2xl border px-3 text-sm transition-colors has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-primary has-[:focus-visible]:ring-offset-2 ${
+                    mode === key ? "border-primary bg-primary text-surface" : "border-line bg-white text-ink hover:border-primary-raised"
                   }`}
                 >
                   <input type="radio" name="fulfilment" value={key} checked={mode === key} onChange={() => setMode(key)} className="sr-only" />
-                  <Icon aria-hidden="true" className={`h-4 w-4 shrink-0 ${mode === key ? "text-gold-light" : "text-plum"}`} strokeWidth={1.5} />
+                  <Icon aria-hidden="true" className={`h-4 w-4 shrink-0 ${mode === key ? "text-accent-light" : "text-primary"}`} strokeWidth={1.5} />
                   {label}
                 </label>
               ))}
@@ -112,10 +112,10 @@ export function BasketView() {
                 value={area}
                 onChange={(e) => setArea(e.target.value.slice(0, 80))}
                 className="input mt-1"
-                placeholder="For example, Westlands"
+                placeholder="Your town and area"
                 autoComplete="address-level2"
               />
-              <p className="mt-2 text-sm text-muted">{brand.name} will advise on delivery.</p>
+              <p className="mt-2 text-sm text-muted">{brand.ownWords.delivery} {brand.name} will advise.</p>
             </div>
           )}
 
@@ -134,7 +134,7 @@ export function BasketView() {
 
           <WhatsAppButton message={message} label="Send order on WhatsApp" fullWidth orderHint className="mt-6" />
           <details className="mt-4 text-sm">
-            <summary className="min-h-11 cursor-pointer py-2 text-plum">Preview the message</summary>
+            <summary className="min-h-11 cursor-pointer py-2 text-primary">Preview the message</summary>
             <pre className="mt-2 whitespace-pre-wrap rounded-xl bg-white p-4 font-sans text-[13px] leading-relaxed text-ink">{message}</pre>
           </details>
         </div>

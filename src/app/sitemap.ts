@@ -5,7 +5,7 @@ import { posts } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = ["", "/shop", "/bag-finder", "/how-to-order", "/visit", "/about", "/faqs", "/blog", "/contact", "/privacy", "/terms"];
-  // Samples are never listed: only Zuri's own bags.
+  // Samples are never listed: only Heiz Bags' own bags.
   const own = getProducts().filter((p) => p.status === "own");
   return [
     ...pages.map((p) => ({ url: `${siteUrl}${p}`, changeFrequency: "weekly" as const, priority: p === "" ? 1 : 0.7 })),

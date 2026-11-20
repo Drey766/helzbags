@@ -2,7 +2,7 @@ import { Resend } from "resend";
 import { contactSchema } from "@/lib/contactSchema";
 import { brand } from "@/config/brand";
 
-// Nothing is stored or logged. Personal data only travels in the email to Zuri Bags.
+// Nothing is stored or logged. Personal data only travels in the email to Heiz Bags.
 
 const WINDOW_MS = 10 * 60 * 1000;
 const MAX_PER_WINDOW = 5;
@@ -62,7 +62,7 @@ export async function POST(request: Request) {
         "",
         data.message,
         "",
-        "Sent from the contact form on the Zuri Bags website. Reply by WhatsApp or phone.",
+        "Sent from the contact form on the Heiz Bags website. Reply by WhatsApp or phone.",
       ].join("\n"),
     });
     if (error) return json(503, { ok: false, error: "email_failed" });

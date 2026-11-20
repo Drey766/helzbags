@@ -1,50 +1,60 @@
-// Single source of truth for Zuri Bags: names, contacts, shops, their own words,
+// Single source of truth for Heiz Bags: names, contacts, pick-up point, their own words,
 // policy wording, colours and fonts. No hex codes anywhere else in src/.
 
 export const brand = {
-  name: "Zuri Bags",
-  tagline: "Carry elegance. Carry confidence.", // their words
-  ownWords: [
-    "Carry elegance. Carry confidence. Carry Chrisbella.",
-    "Perfect for work, outings or elevating your everyday look.",
-    "A timeless piece for the woman who loves her style simple, elegant & classy.",
-  ],
-  phoneDisplay: "0717 840 894",
-  phoneTel: "+254717840894",
-  whatsapp: "254717840894",
-  mpesaTill: "5242805",
+  name: "Heiz Bags",
+  shortName: "Heiz Bags",
+  // Their bio line (they write it in capitals). Their own words.
+  tagline: "Elevate your style with the perfect handbag.",
+  ownWords: {
+    bio: "Elevate your style with the perfect handbag.",
+    spacious: "Spacious enough to fit a bottle, notebook, wallet, small umbrella, wipes, charger and other essentials.",
+    available: "You will find the bags already available there.",
+    delivery: "Deliveries are done countrywide at a small fee.",
+  },
+  phoneDisplay: "0113 846 224",
+  phoneTel: "+254113846224",
+  whatsapp: "254113846224",
+  mpesaTill: "", // unknown → Till card and payment lines hidden
   email: "", // unknown → hidden
   instagram: "", // unknown → hidden (open question)
   hours: "", // unknown → hidden
-  policy: { refunds: "No refund.", exchange: "Exchange within 48 hours." },
+  // Not stated by Heiz Bags → empty, and every policy line is hidden.
+  policy: { refunds: "", exchange: "" },
   policyHelp: "Ask us on WhatsApp about exchanges.",
   shops: [
-    { key: "sasa", mall: "Sasa Mall", unit: "G16", street: "Moi Avenue", confirm: true },
-    { key: "sawa", mall: "Sawa Mall", unit: "G12", street: "Moi Avenue", confirm: false },
-    { key: "star", mall: "Star Mall", unit: "M12", street: "Tom Mboya Street", confirm: false },
+    {
+      key: "dynamic",
+      mall: "Dynamic Mall",
+      floor: "5th floor",
+      unit: "Shop ML 220",
+      street: "Tom Mboya Street",
+      landmark: "Opposite Ambassadeur Hotel",
+      confirm: false,
+    },
   ],
   colors: {
-    ivory: "#FBF8F2", // page
-    champagne: "#F4EDE0", // alternate sections, cards
-    lilac: "#EEE8F4", // soft accent surface
-    ink: "#1E1529", // text
-    muted: "#6B6275", // secondary text
-    plum: "#2E0A5C", // logo purple: dark sections, primary buttons
-    plumDeep: "#1C0638", // footer
-    plumSoft: "#5B3A8C", // links/hover on light
-    gold: "#D4A84A", // accents on plum (never text on light)
-    goldLight: "#EEDC88", // highlights on plum
-    goldDeep: "#A87A2C", // gradient end only (decorative)
-    goldText: "#7A5A1E", // gold-coloured TEXT on light
-    lilacText: "#C9B8DE", // secondary text on plum
-    line: "#E7DECF", // hairlines (decorative)
+    surface: "#FAF8F3", // page
+    surfaceAlt: "#F2EDE3", // alternate sections, cards
+    surfaceSoft: "#ECE6DA", // soft accent surface (pills)
+    ink: "#171512", // text
+    muted: "#665F55", // secondary text
+    primary: "#181818", // logo black: dark sections, primary buttons
+    primaryDeep: "#0D0D0C", // footer
+    primaryRaised: "#4A4237", // links/hover on light; warm sheen on primary
+    accent: "#CBAC43", // logo gold: accents on primary (never text on light)
+    accentLight: "#ECCB5B", // highlights on primary
+    accentDeep: "#8F7425", // gradient end only (decorative)
+    accentText: "#7A6320", // gold-coloured TEXT on light
+    mutedOnDark: "#BEB6A8", // secondary text on primary
+    line: "#E5DED1", // hairlines (decorative)
     white: "#FFFFFF",
     success: "#2F6B45",
     danger: "#A3322A",
   },
   fonts: { display: "Cormorant Garamond", body: "Jost" },
-  demoNotice: "Preview: most bags shown are samples while Zuri Bags' own photos are added.",
-  articleNotice: "This article is general styling and care advice from Zuri Bags.",
+  demoNotice: "Preview: most bags shown are samples while Heiz Bags' own photos are added.",
+  articleNotice: "This article is general styling and care advice from Heiz Bags.",
 } as const;
 
 export type Shop = (typeof brand.shops)[number];
@@ -53,43 +63,48 @@ export const isDemoMode = process.env.NEXT_PUBLIC_DEMO_MODE === "true";
 export const showDraftFlags = process.env.NEXT_PUBLIC_SHOW_DRAFT_FLAGS === "true";
 export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/$/, "");
 
+/** True when the client has given a policy; every policy line is hidden otherwise. */
+export const hasPolicy = Boolean(brand.policy.refunds || brand.policy.exchange);
+/** True when the client has given an M-Pesa Till; the Till card is hidden otherwise. */
+export const hasTill = Boolean(brand.mpesaTill);
+
 export function mapsUrl(shop: Shop) {
   const q = `${shop.mall} ${shop.street} Nairobi`;
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
 }
 
 export function shopLabel(shop: Shop) {
-  return `${shop.mall}, ${shop.unit}, ${shop.street}`;
+  return `${shop.mall}, ${shop.floor}, ${shop.unit}, ${shop.street}`;
 }
 
 /** CSS custom properties generated from brand.colors, injected in the root layout. */
 export function brandCssVars(): string {
   const c = brand.colors;
   const pairs: Record<string, string> = {
-    "--zb-ivory": c.ivory,
-    "--zb-champagne": c.champagne,
-    "--zb-lilac": c.lilac,
-    "--zb-ink": c.ink,
-    "--zb-muted": c.muted,
-    "--zb-plum": c.plum,
-    "--zb-plum-deep": c.plumDeep,
-    "--zb-plum-soft": c.plumSoft,
-    "--zb-gold": c.gold,
-    "--zb-gold-light": c.goldLight,
-    "--zb-gold-deep": c.goldDeep,
-    "--zb-gold-text": c.goldText,
-    "--zb-lilac-text": c.lilacText,
-    "--zb-line": c.line,
-    "--zb-white": c.white,
-    "--zb-success": c.success,
-    "--zb-danger": c.danger,
-    "--logo-purple": c.plum,
-    "--logo-gold": c.gold,
-    "--logo-gold-light": c.goldLight,
-    "--logo-gold-deep": c.goldDeep,
-    "--wave-deep": c.goldDeep,
-    "--wave-gold": c.gold,
-    "--wave-light": c.goldLight,
+    "--hz-surface": c.surface,
+    "--hz-surface-alt": c.surfaceAlt,
+    "--hz-surface-soft": c.surfaceSoft,
+    "--hz-ink": c.ink,
+    "--hz-muted": c.muted,
+    "--hz-primary": c.primary,
+    "--hz-primary-deep": c.primaryDeep,
+    "--hz-primary-raised": c.primaryRaised,
+    "--hz-accent": c.accent,
+    "--hz-accent-light": c.accentLight,
+    "--hz-accent-deep": c.accentDeep,
+    "--hz-accent-text": c.accentText,
+    "--hz-muted-on-dark": c.mutedOnDark,
+    "--hz-line": c.line,
+    "--hz-white": c.white,
+    "--hz-success": c.success,
+    "--hz-danger": c.danger,
+    "--logo-ink": c.primary,
+    "--logo-gold": c.accent,
+    "--logo-gold-light": c.accentLight,
+    "--logo-gold-deep": c.accentDeep,
+    "--wave-deep": c.accentDeep,
+    "--wave-gold": c.accent,
+    "--wave-light": c.accentLight,
   };
   return `:root{${Object.entries(pairs)
     .map(([k, v]) => `${k}:${v}`)

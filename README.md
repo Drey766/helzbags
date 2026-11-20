@@ -1,7 +1,7 @@
-# Zuri Bags website
+# Heiz Bags website
 
-An online shop for **Zuri Bags**, women's handbags in Nairobi CBD (Sawa Mall, Star Mall and Sasa Mall). "Carry elegance. Carry confidence."
-Orders go through **WhatsApp 0717 840 894**; payment is **M-Pesa Till 5242805** or at the shop. There is no online payment.
+An online shop for **Heiz Bags**, women's handbags in Nairobi, with a pick-up point at **Dynamic Mall, 5th floor, Shop ML 220, Tom Mboya Street** (opposite Ambassadeur Hotel). "Elevate your style with the perfect handbag."
+Orders go through **WhatsApp 0113 846 224**. "Deliveries are done countrywide at a small fee." There is no online payment.
 
 Built with Next.js 16 (App Router, Cache Components), TypeScript, Tailwind CSS 4, zod, Resend and lucide-react. No database, accounts, analytics or payment SDK.
 
@@ -25,61 +25,72 @@ node scripts/prepare-assets.mjs # regenerate favicon, Apple icon and share image
 | `NEXT_PUBLIC_SHOW_DRAFT_FLAGS` | `true` shows red "Draft" / "Confirm" badges on everything written for review. |
 | `RESEND_API_KEY`, `CONTACT_TO_EMAIL`, `CONTACT_FROM_EMAIL` | Contact form email. Without them the form never claims success: it offers WhatsApp and Call with the message pre-filled. |
 
-## Deploy
+## Deploy (as a new Vercel project)
 
-Any Node host that runs Next.js 16 works (for example Vercel). Set the environment variables there, and set `NEXT_PUBLIC_SITE_URL` to the real domain. If you use Resend, verify the sending domain and use it in `CONTACT_FROM_EMAIL`.
+This site was rebranded from another client's build. Deploy it as its **own** project:
+
+1. Create a new, empty Git repository for Heiz Bags and push this folder's `main` branch to it (merge `rebrand/heiz-bags` first).
+2. In Vercel, **Add New → Project**, import that repository (framework: Next.js, defaults are fine). Do not reuse the old client's Vercel project or domain.
+3. Set the environment variables above. Keep `NEXT_PUBLIC_DEMO_MODE=true` until Heiz Bags' own photos are in.
+4. Add the Heiz Bags domain when they have one and set `NEXT_PUBLIC_SITE_URL` to it. If you use Resend, verify that domain and use it in `CONTACT_FROM_EMAIL`.
 
 ## Demo mode
 
-27 of the 29 bags (ZB-003 to ZB-029) are **samples** from another Nairobi shop's public website. They show the design until Zuri Bags' own photos arrive. Their prices (KES 3,650 to 26,000) are not Zuri's prices.
+27 of the 29 bags (HZ-003 to HZ-029) are **samples** from another Nairobi shop's public website. They show the design until Heiz Bags' own photos arrive. Their prices (KES 3,650 to 26,000) are not Heiz Bags' prices.
 
 With `NEXT_PUBLIC_DEMO_MODE=true`:
-- a slim notice on every page: "Preview: most bags shown are samples while Zuri Bags' own photos are added."
-- "Sample" tags and "Sample price" on samples; "Zuri Collection" on ZB-001 and ZB-002
+- a slim notice on every page: "Preview: most bags shown are samples while Heiz Bags' own photos are added."
+- "Sample" tags and "Sample price" on samples; "Heiz Collection" on HZ-001 and HZ-002
 - `noindex` on every page, `robots.txt` disallows everything, the sitemap lists no samples, and there is no Product/Offer structured data
-- some sample photos may show the other shop's small logo on the leather. That is acceptable only in this preview.
+- some sample photos may show the other shop's small logo. **That shop's initials are also "HB"**, the same letters as the Heiz Bags monogram, so visitors could mistake them for Heiz Bags' own bags. Acceptable only in this preview; replace the samples as soon as possible.
 
-With `NEXT_PUBLIC_DEMO_MODE=false`, every sample disappears (pages, shop, finder, sitemap), search engines are allowed in, and the notice and tags go. The site has been built and checked this way with only ZB-001 and ZB-002.
+With `NEXT_PUBLIC_DEMO_MODE=false`, every sample disappears (pages, shop, finder, sitemap), search engines are allowed in, and the notice and tags go.
 
-**Before launch:** add Zuri's own bags, then set `NEXT_PUBLIC_DEMO_MODE=false`.
+**Before launch:** add Heiz Bags' own bags, then set `NEXT_PUBLIC_DEMO_MODE=false`.
 
-## Adding Zuri's own bags and photos
+## Adding Heiz Bags' own bags and photos
 
-1. Put photos in `public/products/<id>/`, for example `public/products/zb-001/1.jpg`, `2.jpg` (portrait 4:5 works best, at least 1200px tall).
-2. In `src/data/products.json`, edit the bag: set `"images": ["/products/zb-001/1.jpg", "/products/zb-001/2.jpg"]`, and fill `carry`, `size` and `fits` (these drive the filters, Bag Finder and "What fits").
-3. For a new bag, copy ZB-001's entry, give it a new `id` and `slug`, `"status": "own"`, and write `summary` and `description` from Zuri's own words.
-4. Rename ZB-002 when its name is confirmed, and remove `"nameConfirmed": false`.
+1. Put photos in `public/products/<id>/`, for example `public/products/hz-001/1.jpg`, `2.jpg` (portrait 4:5 works best, at least 1200px tall).
+2. In `src/data/products.json`, edit the bag: set `"images": ["/products/hz-001/1.jpg", "/products/hz-001/2.jpg"]`, and check `carry`, `size` and `fits` (these drive the filters, Bag Finder and "What fits").
+3. For a new bag, copy HZ-001's entry, give it a new `id` and `slug`, `"status": "own"`, and write `summary`, `description` and `features` from Heiz Bags' own posts.
+
+## Turning on payment and policy lines
+
+Both are empty because Heiz Bags has not given them. In `src/config/brand.ts`:
+- set `mpesaTill` → the Till card appears on product, basket, How to order and Find us pages, and in the footer and menu;
+- set `policy.refunds` / `policy.exchange` to their exact words → the policy appears on product pages, How to order, About, Terms, the footer and the home strip.
 
 ## Removing the samples
 
-Either set `NEXT_PUBLIC_DEMO_MODE=false` (samples are hidden), or delete the ZB-003 to ZB-029 entries from `src/data/products.json`. When none are left, also remove `media.hbleatherke.com` from `images.remotePatterns` in `next.config.ts`.
+Either set `NEXT_PUBLIC_DEMO_MODE=false` (samples are hidden), or delete the HZ-003 to HZ-029 entries from `src/data/products.json`. When none are left, also remove `media.hbleatherke.com` from `images.remotePatterns` in `next.config.ts`.
 
 ## Where things live
 
-- `src/config/brand.ts`: name, phone, Till, shops, their own words, policy, colours and fonts. Change contact details here only.
+- `src/config/brand.ts`: name, phone, pick-up point, their own words, policy, Till, colours and fonts. Change contact details here only.
+- `src/components/brand/Logo.tsx` + `monogram.ts`: the HB monogram (traced from their logo) and wordmark.
 - `src/data/*.json`: products, Bag Finder questions, FAQs, blog, About, ordering steps. Everything written for review has `"status": "draft"`.
 - `src/lib/whatsapp.ts`: every WhatsApp message (product, basket, wishlist, contact fallback).
 - `scripts/check-finder.ts`, `scripts/check-basket.ts`: quick checks, run with
   `node --experimental-strip-types --import ./scripts/register-alias.mjs scripts/check-basket.ts`.
-- `docs/`: the brief, build phases and the progress log.
+- `docs/`: the brief, build phases and the progress log. `rebrand/REPORT.md`: what the rebrand changed.
 
 ## Privacy
 
 Basket, wishlist and recently viewed bags are kept in the visitor's browser (`localStorage`). The contact form sends one email and stores nothing; the API logs nothing. No analytics or third-party scripts. The privacy page cites the Data Protection Act, 2019 and the ODPC.
 
-## For Zuri Bags to provide
+## For Heiz Bags to provide
 
 Nothing below is shown on the site until it is provided.
 
-- [ ] **Photos, names and prices of their bags** (ZB-001 Chrisbella Handbag KES 5,300 and ZB-002 KES 4,500 have no photos yet), plus what each carries, its size and how it is worn.
-- [ ] **The name of the KES 4,500 bag** (ZB-002 is shown as "Classic Everyday Handbag", a placeholder).
-- [ ] **Is Sasa Mall, G16, Moi Avenue still open?** It is in the bio but not in recent posts. It is shown with a "Confirm" flag in draft view.
-- [ ] **Instagram handle** (hidden until given).
+- [ ] **Photos of their bags**: HZ-001 HW Mini-Handbag (KES 2,200, tan and black) and HZ-002 Heiz Laptop Handbag (KES 2,800) have none yet, plus any other bags with names and prices.
+- [ ] **How customers pay**: M-Pesa Till (or Paybill) number, or other method.
+- [ ] **Returns and exchanges**: their policy in their own words, if any.
+- [ ] **Their logo as a vector file** (SVG, AI or PDF) or a large PNG. The site uses an interim vector traced from a 240px JPG.
+- [ ] **Instagram / TikTok / Facebook handles** (the logo reads "Heiz_bags", which may be the handle: confirm).
+- [ ] **Opening hours** at the pick-up point.
 - [ ] **Email** for the contact form (and a Resend account), or confirm WhatsApp-only.
-- [ ] **Opening hours** (hidden until given).
-- [ ] **Delivery:** do they deliver? Areas, fees and times. The site currently says only "Ask us on WhatsApp" and "Zuri Bags will advise on delivery".
-- [ ] **Exchange conditions:** what qualifies for "Exchange within 48 hours". Only their words are shown.
-- [ ] **Brands stocked** besides Chrisbella.
+- [ ] **Delivery details** they want shown (fees, times); the site shows only "Deliveries are done countrywide at a small fee."
+- [ ] **Spelling check**: the site writes "Ambassadeur Hotel", "Tom Mboya Street" and "Shop ML 220"; confirm.
+- [ ] **Name styling**: the site uses "Heiz Bags"; confirm against "heiz bags" / "Heiz_bags".
 - [ ] **A short story of the shop** for the About page (the "Our story" section is hidden until then).
-- [ ] **Their original logo file** (vector or a large PNG); the current logo is rebuilt from a 150px image.
-- [ ] Approve the drafted copy: FAQs, blog posts, About, How to order, Bag Finder wording (view with `NEXT_PUBLIC_SHOW_DRAFT_FLAGS=true`).
+- [ ] Approve the drafted copy: FAQs, blog posts, About, How to order, Bag Finder wording, occasion and editorial headings (view with `NEXT_PUBLIC_SHOW_DRAFT_FLAGS=true`).

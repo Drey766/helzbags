@@ -11,5 +11,9 @@ export function fillTokens(text: string): string {
     shops: brand.shops.map(shopLabel).join("; "),
     name: brand.name,
   };
-  return text.replace(/\{(\w+)\}/g, (m, k: string) => map[k] ?? m);
+  // Empty values (for example a policy not given yet) collapse cleanly instead of leaving gaps.
+  return text
+    .replace(/\{(\w+)\}/g, (m, k: string) => map[k] ?? m)
+    .replace(/\s{2,}/g, " ")
+    .trim();
 }

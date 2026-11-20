@@ -9,7 +9,7 @@ export function PostCard({ post }: { post: BlogPost }) {
   return (
     <article className="group">
       <Link href={`/blog/${post.slug}`} className="block">
-        <div className="relative aspect-[4/3] overflow-hidden rounded-[20px] bg-plum">
+        <div className="relative aspect-[4/3] overflow-hidden rounded-[20px] bg-primary">
           {cover ? (
             <SmartImage
               src={cover.images[0]}
@@ -22,7 +22,7 @@ export function PostCard({ post }: { post: BlogPost }) {
           )}
         </div>
         <p className="mt-4 text-sm text-muted">{post.readMinutes} min read <DraftBadge /></p>
-        <h3 className="display mt-1 text-2xl leading-tight text-plum group-hover:text-plum-soft">{post.title}</h3>
+        <h3 className="display mt-1 text-2xl leading-tight text-primary group-hover:text-primary-raised">{post.title}</h3>
         <p className="mt-2 text-muted">{post.excerpt}</p>
       </Link>
     </article>

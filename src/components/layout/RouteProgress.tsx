@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 type Phase = "idle" | "running" | "finishing";
 
 /**
- * A thin gold thread across the top of the page while moving between pages.
+ * A thin accent thread across the top of the page while moving between pages.
  * Starts on an internal link click, creeps forward, fills and fades when the URL changes.
  */
 export function RouteProgress() {
@@ -84,7 +84,7 @@ export function RouteProgress() {
   return (
     <div aria-hidden="true" className="pointer-events-none fixed inset-x-0 top-0 z-[90] h-[2px]">
       <div
-        className="zb-progress h-full"
+        className="hz-progress h-full"
         style={{
           transform: `scaleX(${progress})`,
           opacity: phase === "running" ? 1 : 0,

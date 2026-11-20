@@ -4,16 +4,16 @@ import { getProducts } from "@/lib/products";
 
 const ps = getProducts();
 const items = [
-  { product: ps.find((p) => p.id === "ZB-001")!, qty: 2 },
-  { product: ps.find((p) => p.id === "ZB-002")!, qty: 1 },
+  { product: ps.find((p) => p.id === "HZ-001")!, qty: 2 },
+  { product: ps.find((p) => p.id === "HZ-002")!, qty: 1 },
 ];
-const msg = basketOrderMessage(items, { kind: "pickup", shopLabel: "Sawa Mall, G12, Moi Avenue" }, "Wanjiru");
+const msg = basketOrderMessage(items, { kind: "pickup", shopLabel: "Dynamic Mall, 5th floor, Shop ML 220, Tom Mboya Street" }, "Wanjiru");
 console.log(msg);
 const checks: [string, boolean][] = [
-  ["line 1 qty and line total", msg.includes("Chrisbella Handbag × 2 @ KES 5,300 = KES 10,600")],
-  ["line 2 qty and line total", msg.includes("× 1 @ KES 4,500 = KES 4,500")],
-  ["subtotal", msg.includes("Subtotal: KES 15,100") && basketTotal(items) === 15100],
-  ["pickup", msg.includes("Pickup at: Sawa Mall, G12, Moi Avenue")],
+  ["line 1 qty and line total", msg.includes("HW Mini-Handbag × 2 @ KES 2,200 = KES 4,400")],
+  ["line 2 qty and line total", msg.includes("Heiz Laptop Handbag × 1 @ KES 2,800 = KES 2,800")],
+  ["subtotal", msg.includes("Subtotal: KES 7,200") && basketTotal(items) === 7200],
+  ["pickup", msg.includes("Pickup at: Dynamic Mall, 5th floor, Shop ML 220, Tom Mboya Street")],
   ["name", msg.includes("Name: Wanjiru")],
   ["no false claims", !/placed|paid|confirmed/i.test(msg)],
 ];

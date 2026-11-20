@@ -4,9 +4,9 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useRef, use
 import type { BasketLine } from "@/types";
 
 const KEYS = {
-  basket: "zb:basket:v1",
-  wishlist: "zb:wishlist:v1",
-  recent: "zb:recent:v1",
+  basket: "hz:basket:v1",
+  wishlist: "hz:wishlist:v1",
+  recent: "hz:recent:v1",
 } as const;
 
 const MAX_QTY = 5;

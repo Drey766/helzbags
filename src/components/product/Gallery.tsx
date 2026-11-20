@@ -58,8 +58,8 @@ export function Gallery({ product }: { product: Product }) {
                 onClick={() => goTo(i)}
                 aria-label={`Show photo ${i + 1} of ${images.length}`}
                 aria-current={i === active}
-                className={`relative block h-[92px] w-[76px] overflow-hidden rounded-xl bg-champagne transition ${
-                  i === active ? "ring-2 ring-plum ring-offset-2 ring-offset-ivory" : "opacity-60 hover:opacity-100"
+                className={`relative block h-[92px] w-[76px] overflow-hidden rounded-xl bg-surface-alt transition ${
+                  i === active ? "ring-2 ring-primary ring-offset-2 ring-offset-surface" : "opacity-60 hover:opacity-100"
                 }`}
               >
                 <SmartImage src={src} alt="" sizes="76px" />
@@ -71,7 +71,7 @@ export function Gallery({ product }: { product: Product }) {
       <div className={`relative ${images.length > 1 ? "" : "md:col-span-2"}`}>
         <div
           ref={track}
-          className="no-scrollbar flex aspect-[4/5] snap-x snap-mandatory overflow-x-auto bg-champagne"
+          className="no-scrollbar flex aspect-[4/5] snap-x snap-mandatory overflow-x-auto bg-surface-alt"
           style={{ borderRadius: "var(--radius-arch)" }}
           tabIndex={0}
           aria-label="Photos, swipe or use the arrow buttons"
@@ -89,7 +89,7 @@ export function Gallery({ product }: { product: Product }) {
         <button
           type="button"
           onClick={() => setLightbox(true)}
-          className="absolute bottom-4 right-4 grid h-11 w-11 place-items-center rounded-full bg-ivory/90 text-plum shadow-sm backdrop-blur hover:bg-ivory"
+          className="absolute bottom-4 right-4 grid h-11 w-11 place-items-center rounded-full bg-surface/90 text-primary shadow-sm backdrop-blur hover:bg-surface"
           aria-label="Open full-screen photos"
           aria-haspopup="dialog"
         >
@@ -99,7 +99,7 @@ export function Gallery({ product }: { product: Product }) {
           <>
             <div className="absolute inset-x-0 bottom-5 flex justify-center gap-1.5 md:hidden" aria-hidden="true">
               {images.map((src, i) => (
-                <span key={src} className={`h-1.5 rounded-full transition-all ${i === active ? "w-5 bg-plum" : "w-1.5 bg-plum/30"}`} />
+                <span key={src} className={`h-1.5 rounded-full transition-all ${i === active ? "w-5 bg-primary" : "w-1.5 bg-primary/30"}`} />
               ))}
             </div>
             <div className="absolute inset-y-0 left-2 hidden items-center md:flex">
@@ -120,7 +120,7 @@ export function Gallery({ product }: { product: Product }) {
           {images.length > 1 && (
             <div className="mt-6 flex items-center gap-4">
               <ArrowBtn dir="prev" dark onClick={() => setActive((a) => (a - 1 + images.length) % images.length)} />
-              <span className="tabular text-sm text-lilac-text" aria-live="polite">
+              <span className="tabular text-sm text-muted-on-dark" aria-live="polite">
                 {active + 1} / {images.length}
               </span>
               <ArrowBtn dir="next" dark onClick={() => setActive((a) => (a + 1) % images.length)} />
@@ -140,7 +140,7 @@ function ArrowBtn({ dir, onClick, dark }: { dir: "prev" | "next"; onClick: () =>
       onClick={onClick}
       aria-label={dir === "prev" ? "Previous photo" : "Next photo"}
       className={`grid h-11 w-11 place-items-center rounded-full shadow-sm ${
-        dark ? "border border-gold/50 text-gold-light hover:bg-white/10" : "bg-ivory/90 text-plum hover:bg-ivory"
+        dark ? "border border-accent/50 text-accent-light hover:bg-white/10" : "bg-surface/90 text-primary hover:bg-surface"
       }`}
     >
       <Icon aria-hidden="true" className="h-5 w-5" strokeWidth={1.5} />

@@ -1,7 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx create-next-app@latest zuribags-scaffold *)",
+      "Bash(npx create-next-app@latest heizbags-scaffold *)",
       "Bash(npm install *)",
       "Bash(npm run *)",
       "Bash(node scripts/prepare-assets.mjs)",
@@ -14,7 +14,7 @@
       "Bash(git commit *)",
       "Bash(mkdir *)",
       "Bash(ls *)",
-      "PowerShell(npx create-next-app@latest zuribags-scaffold *)",
+      "PowerShell(npx create-next-app@latest heizbags-scaffold *)",
       "PowerShell(npm install *)",
       "PowerShell(npm run *)",
       "PowerShell(node scripts/prepare-assets.mjs)",

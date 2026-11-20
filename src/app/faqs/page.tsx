@@ -9,7 +9,7 @@ import { DraftBadge } from "@/components/ui/DraftBadge";
 
 export const metadata: Metadata = {
   title: "FAQs",
-  description: "How to order, pay, visit our shops and exchange a bag.",
+  description: "How to order, pay, find our pick-up point and ask about exchanges and delivery.",
 };
 
 export default function FaqsPage() {
@@ -18,21 +18,21 @@ export default function FaqsPage() {
       <PageHero
         title={
           <>
-            Questions, <em className="text-gold-light">answered</em>
+            Questions, <em className="text-accent-light">answered</em>
           </>
         }
         intro="The short version: choose a bag, send it on WhatsApp, pay via M-Pesa Till or at the shop."
       />
       <section className="section">
-        <div className="container-zb max-w-3xl">
+        <div className="container-hz max-w-3xl">
           <DraftBadge />
           <ul className="mt-4 divide-y divide-line border-y border-line">
             {faqs.faqs.map((f) => (
               <li key={f.key}>
                 <details className="group">
                   <summary className="flex min-h-16 cursor-pointer list-none items-center justify-between gap-4 py-5 [&::-webkit-details-marker]:hidden">
-                    <span className="display text-2xl text-plum">{f.q}</span>
-                    <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-line text-plum transition-transform group-open:rotate-45">
+                    <span className="display text-2xl text-primary">{f.q}</span>
+                    <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-line text-primary transition-transform group-open:rotate-45">
                       <Plus aria-hidden="true" className="h-4 w-4" strokeWidth={1.5} />
                     </span>
                   </summary>
@@ -41,8 +41,8 @@ export default function FaqsPage() {
               </li>
             ))}
           </ul>
-          <div className="mt-12 rounded-[24px] bg-champagne p-6 text-center md:p-10">
-            <p className="display text-3xl text-plum">Still wondering?</p>
+          <div className="mt-12 rounded-[24px] bg-surface-alt p-6 text-center md:p-10">
+            <p className="display text-3xl text-primary">Still wondering?</p>
             <p className="mt-2 text-muted">Ask us on WhatsApp.</p>
             <WhatsAppButton message={generalMessage()} label="Chat on WhatsApp" className="mt-6" />
           </div>

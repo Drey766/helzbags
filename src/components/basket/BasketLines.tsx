@@ -26,7 +26,7 @@ export function BasketLines({ items, compact, onNavigate }: Props) {
           <Link
             href={`/shop/${p.slug}`}
             onClick={onNavigate}
-            className={`relative shrink-0 overflow-hidden bg-champagne ${compact ? "h-24 w-20" : "h-28 w-[84px] sm:h-32 sm:w-[104px]"}`}
+            className={`relative shrink-0 overflow-hidden bg-surface-alt ${compact ? "h-24 w-20" : "h-28 w-[84px] sm:h-32 sm:w-[104px]"}`}
             style={{ borderRadius: "var(--radius-arch)" }}
             tabIndex={-1}
             aria-hidden="true"
@@ -39,7 +39,7 @@ export function BasketLines({ items, compact, onNavigate }: Props) {
                 <Link
                   href={`/shop/${p.slug}`}
                   onClick={onNavigate}
-                  className={`display block leading-tight text-plum hover:text-plum-soft ${compact ? "text-xl" : "text-2xl"}`}
+                  className={`display block leading-tight text-primary hover:text-primary-raised ${compact ? "text-xl" : "text-2xl"}`}
                 >
                   {p.name}
                 </Link>
@@ -55,7 +55,7 @@ export function BasketLines({ items, compact, onNavigate }: Props) {
                   removeFromBasket(p.slug);
                   announce(`${p.name} removed from basket`);
                 }}
-                className="-mr-2 -mt-2 grid h-11 w-11 shrink-0 place-items-center rounded-full text-muted transition-colors hover:bg-champagne hover:text-plum"
+                className="-mr-2 -mt-2 grid h-11 w-11 shrink-0 place-items-center rounded-full text-muted transition-colors hover:bg-surface-alt hover:text-primary"
                 aria-label={`Remove ${p.name}`}
               >
                 <X aria-hidden="true" className="h-[18px] w-[18px]" strokeWidth={1.5} />
@@ -65,7 +65,7 @@ export function BasketLines({ items, compact, onNavigate }: Props) {
               <div className="flex items-center rounded-full border border-line bg-white" role="group" aria-label={`Quantity of ${p.name}`}>
                 <button
                   type="button"
-                  className="grid h-11 w-11 place-items-center rounded-full text-plum disabled:opacity-35"
+                  className="grid h-11 w-11 place-items-center rounded-full text-primary disabled:opacity-35"
                   onClick={() => {
                     setQty(p.slug, qty - 1);
                     announce(`${p.name}: quantity ${qty - 1}`);
@@ -80,7 +80,7 @@ export function BasketLines({ items, compact, onNavigate }: Props) {
                 </span>
                 <button
                   type="button"
-                  className="grid h-11 w-11 place-items-center rounded-full text-plum disabled:opacity-35"
+                  className="grid h-11 w-11 place-items-center rounded-full text-primary disabled:opacity-35"
                   onClick={() => {
                     setQty(p.slug, qty + 1);
                     announce(`${p.name}: quantity ${qty + 1}`);

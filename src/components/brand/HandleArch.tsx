@@ -1,7 +1,7 @@
 type Props = {
   children: React.ReactNode;
   /** colour of the floating handle line */
-  handle?: "gold" | "plum";
+  handle?: "accent" | "primary";
   className?: string;
   frameClassName?: string;
   /** "tile": 999px arch; "soft": 50% top radius for wide tiles */
@@ -12,8 +12,8 @@ type Props = {
  * Signature frame: an arched top (like a bag's body) with a thin handle arc floating above.
  * The handle lifts 4px on hover/focus of any ancestor with `.arch-group`.
  */
-export function HandleArch({ children, handle = "gold", className = "", frameClassName = "", shape = "tile" }: Props) {
-  const stroke = handle === "gold" ? "var(--zb-gold)" : "var(--zb-plum)";
+export function HandleArch({ children, handle = "accent", className = "", frameClassName = "", shape = "tile" }: Props) {
+  const stroke = handle === "accent" ? "var(--hz-accent)" : "var(--hz-primary)";
   return (
     <div className={`relative pt-[14%] ${className}`}>
       <svg

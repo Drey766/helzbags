@@ -15,7 +15,7 @@ export function productUrl(p: Pick<Product, "slug">): string {
   return `${siteUrl}/shop/${p.slug}`;
 }
 
-/** "Hello Zuri Bags, I'd like to order the Chrisbella Handbag (KES 5,300). <link>" */
+/** "Hello Heiz Bags, I'd like to order this bag: HW Mini-Handbag (KES 2,200) <link> Is it available?" */
 export function productOrderMessage(p: Product): string {
   return [
     `Hello ${brand.name}, I'd like to order this bag:`,

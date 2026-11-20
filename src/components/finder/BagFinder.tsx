@@ -51,12 +51,12 @@ export function BagFinder() {
       <div>
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
-            <h2 ref={headingRef} tabIndex={-1} className="display h-section text-plum outline-none">
+            <h2 ref={headingRef} tabIndex={-1} className="display h-section text-primary outline-none">
               {finderConfig.resultsTitle}
             </h2>
             <ul className="mt-4 flex flex-wrap gap-2 text-sm">
               {summary.map((s) => (
-                <li key={s.q} className="rounded-full bg-lilac px-3 py-1 text-plum">
+                <li key={s.q} className="rounded-full bg-surface-soft px-3 py-1 text-primary">
                   <span className="sr-only">{s.q}: </span>
                   {s.a}
                 </li>
@@ -86,7 +86,7 @@ export function BagFinder() {
                   <ul className="mt-2 space-y-1 px-1 text-sm text-muted">
                     {r.reasons.map((x) => (
                       <li key={x} className="flex gap-2">
-                        <span aria-hidden="true" className="mt-[0.7em] h-px w-3 shrink-0 bg-gold-text" />
+                        <span aria-hidden="true" className="mt-[0.7em] h-px w-3 shrink-0 bg-accent-text" />
                         {x}
                       </li>
                     ))}
@@ -96,8 +96,8 @@ export function BagFinder() {
             ))}
           </ul>
         ) : (
-          <div className="mt-8 rounded-[28px] bg-champagne px-6 py-12 text-center">
-            <p className="display text-3xl text-plum">No bags match all four answers.</p>
+          <div className="mt-8 rounded-[28px] bg-surface-alt px-6 py-12 text-center">
+            <p className="display text-3xl text-primary">No bags match all four answers.</p>
             <p className="mt-3 text-muted">Try a different budget, or ask us on WhatsApp what would suit your day.</p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <button type="button" onClick={back} className="btn btn-outline">
@@ -108,7 +108,7 @@ export function BagFinder() {
           </div>
         )}
         <p className="mt-12 text-center text-sm text-muted">
-          Or <Link href="/shop" className="text-plum underline underline-offset-4">browse every bag</Link>.
+          Or <Link href="/shop" className="text-primary underline underline-offset-4">browse every bag</Link>.
         </p>
       </div>
     );
@@ -119,7 +119,7 @@ export function BagFinder() {
     <div className="mx-auto max-w-3xl">
       <div className="flex items-center gap-3" aria-hidden="true">
         {finderKeys.map((k, i) => (
-          <span key={k} className={`h-1 flex-1 rounded-full ${i < step ? "bg-plum" : i === step ? "bg-gold" : "bg-line"}`} />
+          <span key={k} className={`h-1 flex-1 rounded-full ${i < step ? "bg-primary" : i === step ? "bg-accent" : "bg-line"}`} />
         ))}
       </div>
       <p className="mt-6 text-sm text-muted">
@@ -127,7 +127,7 @@ export function BagFinder() {
       </p>
       <fieldset className="mt-2">
         <legend className="w-full">
-          <h2 ref={headingRef} tabIndex={-1} className="display h-section text-plum outline-none">
+          <h2 ref={headingRef} tabIndex={-1} className="display h-section text-primary outline-none">
             {q.label}
           </h2>
         </legend>
@@ -137,20 +137,20 @@ export function BagFinder() {
               <button
                 type="button"
                 onClick={() => setAnswer({ ...answers, [q.key]: a.key })}
-                className="group flex min-h-16 w-full items-center justify-between gap-4 rounded-2xl border border-line bg-white px-5 py-4 text-left transition-colors hover:border-plum hover:bg-plum hover:text-ivory"
+                className="group flex min-h-16 w-full items-center justify-between gap-4 rounded-2xl border border-line bg-white px-5 py-4 text-left transition-colors hover:border-primary hover:bg-primary hover:text-surface"
               >
                 <span>
                   <span className="display block text-2xl leading-tight">{a.label}</span>
-                  {a.hint && <span className="block text-sm text-muted group-hover:text-lilac-text">{a.hint}</span>}
+                  {a.hint && <span className="block text-sm text-muted group-hover:text-muted-on-dark">{a.hint}</span>}
                 </span>
-                <span aria-hidden="true" className="h-3 w-3 rounded-full border border-plum group-hover:border-gold group-hover:bg-gold" />
+                <span aria-hidden="true" className="h-3 w-3 rounded-full border border-primary group-hover:border-accent group-hover:bg-accent" />
               </button>
             </li>
           ))}
         </ul>
       </fieldset>
       {step > 0 && (
-        <button type="button" onClick={back} className="mt-8 inline-flex min-h-11 items-center gap-2 text-plum underline-offset-4 hover:underline">
+        <button type="button" onClick={back} className="mt-8 inline-flex min-h-11 items-center gap-2 text-primary underline-offset-4 hover:underline">
           <ArrowLeft aria-hidden="true" className="h-4 w-4" strokeWidth={1.5} />
           Back
         </button>

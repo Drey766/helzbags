@@ -5,19 +5,19 @@ import { DraftBadge } from "@/components/ui/DraftBadge";
 
 export const metadata: Metadata = {
   title: "Privacy",
-  description: "How the Zuri Bags website handles your information.",
+  description: "How the Heiz Bags website handles your information.",
 };
 
 export default function PrivacyPage() {
   return (
     <>
       <PageHero title="Privacy notice" intro="Short and plain: this website keeps as little about you as it can." />
-      <div className="container-zb max-w-[44rem] py-12 md:py-16">
+      <div className="container-hz max-w-[44rem] py-12 md:py-16">
         <DraftBadge />
-        <div className="prose-zb text-[1.05rem] leading-[1.8] text-ink">
+        <div className="prose-hz text-[1.05rem] leading-[1.8] text-ink">
           <h2>Who we are</h2>
           <p>
-            {brand.name} sells women&rsquo;s handbags from shops in Nairobi CBD. You can reach us on WhatsApp or by phone on{" "}
+            {brand.name} sells women&rsquo;s handbags from a pick-up point in {brand.shops[0].mall}, {brand.shops[0].street}, Nairobi. You can reach us on WhatsApp or by phone on{" "}
             {brand.phoneDisplay}.
           </p>
           <h2>What this website stores</h2>

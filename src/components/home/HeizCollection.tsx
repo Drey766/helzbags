@@ -8,23 +8,23 @@ import { WhatsAppButton } from "@/components/brand/WhatsAppButton";
 import { productOrderMessage } from "@/lib/whatsapp";
 import { SectionHeading } from "./SectionHeading";
 
-/** Zuri's own bags (ZB-001, ZB-002), in their own words, with designed placeholders until photos arrive. */
-export function ZuriCollection() {
+/** Heiz Bags' own bags (HZ-001, HZ-002), in their own words, with designed placeholders until photos arrive. */
+export function HeizCollection() {
   const own = getOwnProducts();
   if (!own.length) return null;
   return (
-    <section className="section bg-champagne" aria-labelledby="collection-title">
-      <div className="container-zb">
+    <section className="section bg-surface-alt" aria-labelledby="collection-title">
+      <div className="container-hz">
         <SectionHeading
-          eyebrow="The Zuri Collection"
-          title={<span id="collection-title">From our shops, in our words</span>}
+          eyebrow="The Heiz Collection"
+          title={<span id="collection-title">From our pick-up point, in our words</span>}
           align="center"
         />
         <ul className="mx-auto mt-14 grid max-w-5xl gap-12 md:grid-cols-2 md:gap-16">
           {own.map((p) => (
             <li key={p.id} className="flex flex-col items-center text-center">
               <Link href={`/shop/${p.slug}`} className="arch-group group block w-full max-w-[360px]">
-                <HandleArch frameClassName="aspect-[4/5] bg-plum">
+                <HandleArch frameClassName="aspect-[4/5] bg-primary">
                   {p.images.length ? (
                     <SmartImage src={p.images[0]} alt={productAlt(p)} sizes="(min-width: 768px) 360px, 90vw" />
                   ) : (
@@ -32,7 +32,7 @@ export function ZuriCollection() {
                   )}
                 </HandleArch>
               </Link>
-              <h3 className="display mt-6 text-3xl text-plum">
+              <h3 className="display mt-6 text-3xl text-primary">
                 <Link href={`/shop/${p.slug}`} className="link-underline">
                   {p.name}
                 </Link>

@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   images: {
-    // Sample photos only (demo mode). Replace with Zuri Bags' own photos in public/products/.
+    // Sample photos only (demo mode). Replace with Heiz Bags' own photos in public/products/.
     remotePatterns: [{ protocol: "https", hostname: "media.hbleatherke.com", pathname: "/products/**" }],
     // Remote sample photos are loaded unoptimised (see SmartImage): Next.js aborts upstream
     // image fetches after a fixed 7s, and the sample host is often slower than that.

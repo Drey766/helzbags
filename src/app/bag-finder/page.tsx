@@ -15,17 +15,17 @@ export default function BagFinderPage() {
   return (
     <>
       <section className="velvet" data-tone="dark">
-        <div className="container-zb pb-4 pt-12 md:pt-16">
-          <h1 className="display h-hero text-ivory">
-            Bag <em className="text-gold-light">Finder</em>
+        <div className="container-hz pb-4 pt-12 md:pt-16">
+          <h1 className="display h-hero text-surface">
+            Bag <em className="text-accent-light">Finder</em>
           </h1>
-          <p className="mt-4 max-w-lg text-lilac-text">
+          <p className="mt-4 max-w-lg text-muted-on-dark">
             {finderConfig.intro} <DraftBadge />
           </p>
         </div>
-        <GoldWave tone="plum" height={56} />
+        <GoldWave tone="primary" height={56} />
       </section>
-      <div className="container-zb py-12 md:py-16">
+      <div className="container-hz py-12 md:py-16">
         <Suspense fallback={<BrandLoader label="Loading the questions" className="py-16" />}>
           <BagFinder />
         </Suspense>

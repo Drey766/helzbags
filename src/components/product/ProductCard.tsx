@@ -29,11 +29,11 @@ export function ProductCard({
           preserveAspectRatio="none"
           className="arch-handle pointer-events-none mx-auto block h-5 w-[42%] overflow-visible md:h-6"
         >
-          <path d="M6,30 C6,2 94,2 94,30" fill="none" stroke="var(--zb-gold-text)" strokeWidth="1.25" vectorEffect="non-scaling-stroke" opacity=".7" />
+          <path d="M6,30 C6,2 94,2 94,30" fill="none" stroke="var(--hz-accent-text)" strokeWidth="1.25" vectorEffect="non-scaling-stroke" opacity=".7" />
         </svg>
         <Link
           href={`/shop/${p.slug}`}
-          className="relative block aspect-[4/5] overflow-hidden bg-champagne"
+          className="relative block aspect-[4/5] overflow-hidden bg-surface-alt"
           style={{ borderRadius: "var(--radius-arch)" }}
 
         >
@@ -59,7 +59,7 @@ export function ProductCard({
         <div className="pointer-events-none absolute inset-x-3 top-[18%] flex items-start justify-between md:top-[16%]">
           <div className="flex flex-col items-start gap-1.5">
             {p.isNew && (
-              <span className="rounded-full bg-lilac px-2.5 py-1 text-[11px] font-medium uppercase leading-none tracking-[0.14em] text-plum">
+              <span className="rounded-full bg-surface-soft px-2.5 py-1 text-[11px] font-medium uppercase leading-none tracking-[0.14em] text-primary">
                 New
               </span>
             )}
@@ -75,7 +75,7 @@ export function ProductCard({
       </div>
       <div className="mt-4 px-1">
         {category && <p className="eyebrow text-muted">{category.name}</p>}
-        <h3 className="display mt-1 text-[1.375rem] leading-tight text-plum">
+        <h3 className="display mt-1 text-[1.375rem] leading-tight text-primary">
           <Link href={`/shop/${p.slug}`} className="link-underline">
             {p.name}
           </Link>

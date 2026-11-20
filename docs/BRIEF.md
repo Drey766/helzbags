@@ -1,139 +1,110 @@
-# Zuri Bags — full brief
+# Heiz Bags — full brief
+
+> Rebranded on 2026-11-20 from an earlier handbag-shop build. Only the facts below belong to Heiz Bags (source: `rebrand/REBRAND.md`).
 
 ## 1. The business (only what they have said)
 
-- **Name:** Zuri Bags ("zuri" means beautiful in Kiswahili; don't claim that is why they chose it).
-- **What:** women's handbags. Their hashtags: sling bags, tote bags, office bags, clutch bags, and the Chrisbella brand.
-- **Phone / WhatsApp:** 0717 840 894 (`254717840894`). "Whatsapp 0717840894 to order."
-- **Payment:** M-Pesa Till **5242805**.
-- **Shops:**
-  - Sasa Mall, G16, Moi Avenue (in the bio; not in their latest posts → confirm it is still open)
-  - Sawa Mall, G12, along Moi Avenue
-  - Star Mall, M12, along Tom Mboya Street
-- **Policy (their words):** "No refund. Exchange within 48hrs."
-- **Their voice (posts):**
-  - "Carry elegance. Carry confidence. Carry Chrisbella. Perfect for work, outings or elevating your everyday look." (Ksh 5,300)
-  - "A timeless piece for the woman who loves her style simple, elegant & classy." (Ksh 4,500)
-- Unknown (hide until provided): Instagram handle, email, opening hours, delivery areas/fees/times, founding story, team, brands beyond Chrisbella, photos.
+- **Name:** Heiz Bags (the logo writes it "Heiz_bags" under a gold "HB" script monogram on black).
+- **What:** women's handbags. Their bio: "ELEVATE YOUR STYLE WITH THE PERFECT HANDBAG". Services as they put it: "Perfect handbags".
+- **Phone / WhatsApp:** 0113 846 224 (`254113846224`).
+- **Pick-up point:** "Dynamic mall 5th floor shop ml 220 opposite ambassuduer hotel along tommboya street, Nairobi" → shown as Dynamic Mall, 5th floor, Shop ML 220, Tom Mboya Street, opposite Ambassadeur Hotel. "You will find the bags already available there."
+- **Delivery (their words):** "Deliveries are done countrywide at a small fee." No amounts, areas or times.
+- **Their posts:**
+  - "HW MINI-HANDBAG AVAILABLE AT KSH 2200" · Colours: tan & black · Good quality · Spacious enough to fit a bottle, notebook, wallet, small umbrella, wipes, charger and other essentials · Has a zip to keep your essentials safe · Adjustable straps.
+  - "Heiz laptop handbag available at KSH 2800" · Good quality · Fits up to 14 inches laptop · Has a padded laptop compartment · Spacious enough · Has a back sleeve for suitcase handle to slide in while traveling · Adjustable straps · Has a long shoulder strap · Available in black, tan, brown, coffee and grey.
+- Unknown (hide until provided): M-Pesa Till or other payment method, exchange/refund policy, Instagram and other socials, email, opening hours, website domain, founding story, team, brands stocked, photos.
 
 ## 2. Guardrails (full text)
 
-1. **No invented facts.** No founding year, years in business, customer numbers, "trusted by", team members, brand lists, hours, delivery promises. Empty fields render nothing (no "Coming soon" placeholders on public pages).
+1. **No invented facts.** No founding year, years in business, customer numbers, "trusted by", team members, brand lists, hours, payment methods, delivery fees, areas or times. Empty fields render nothing (no "Coming soon" placeholders on public pages).
 2. **No social proof**: no testimonials, ratings, review counts, "loved by", "best seller".
-3. **No superlatives or authenticity claims**: no "best", "#1", "cheapest", "original", "authentic", "genuine leather" (for Zuri's own stock, unless they confirm), "premium quality guaranteed".
-4. **Policy**: show "No refund. Exchange within 48 hours." exactly, with "Ask us on WhatsApp about exchanges." No conditions, fees, free-delivery thresholds, discounts, gift wrapping, instalments or loyalty schemes.
-5. **Own products** (ZB-001, ZB-002): copy built only from their posts. No materials, dimensions or colours until they provide them. ZB-002's name is a placeholder: show it, flag `nameConfirmed: false` as an open question.
-6. **Samples** (ZB-003–ZB-029) are from another Nairobi shop's public site, used to show the design. With `NEXT_PUBLIC_DEMO_MODE=true`:
-   - a slim site-wide notice: "Preview: most bags shown are samples while Zuri Bags' own photos are added."
+3. **No superlatives or authenticity claims** of our own: no "best", "#1", "cheapest", "original", "authentic", "genuine leather", "premium quality guaranteed". Their own phrases may be quoted ("Good quality", "the perfect handbag", "Spacious enough").
+4. **Policy**: none given. `brand.policy` is empty, so no policy line renders (`hasPolicy`). Say only "Ask us on WhatsApp about exchanges." Delivery is only their sentence. No fees, free-delivery thresholds, discounts, gift wrapping, instalments or loyalty schemes.
+5. **Own products** (HZ-001, HZ-002): copy built only from their posts (features, colours and fits as stated). No materials or dimensions beyond "fits up to a 14-inch laptop".
+6. **Samples** (HZ-003–HZ-029) are from another Nairobi shop's public site, used to show the design. With `NEXT_PUBLIC_DEMO_MODE=true`:
+   - a slim site-wide notice: "Preview: most bags shown are samples while Heiz Bags' own photos are added."
    - a "Sample" tag on every sample card and page, "Sample price" next to sample prices
    - `noindex` on every page, `robots.ts` disallows all, sitemap excludes samples, **no Product/Offer JSON-LD** for anything
    - never show the source shop's name, initials, URL, "handmade", "made in", "designed in", "since day one", leather area or lining lengths
-   - photos may show the source's small branding: that is acceptable only in demo mode and must be replaced before launch (README)
+   - photos may show the source's small branding. Its initials are also "HB", the same letters as Heiz Bags' monogram, so this is acceptable only in demo mode and samples must be replaced before launch (README).
    With demo mode **off**, samples are hidden entirely (filter by `status`).
-7. **WhatsApp ordering**: buttons open `https://wa.me/254717840894?text=…`. Copy says "Order on WhatsApp" / "Send order on WhatsApp", never "Order placed", "Paid", "Confirmed". After opening WhatsApp, show "Finish your order in WhatsApp. Zuri Bags will reply to confirm." (that is how WhatsApp ordering works, not a promise of timing).
+7. **WhatsApp ordering**: buttons open `https://wa.me/254113846224?text=…`. Copy says "Order on WhatsApp" / "Send order on WhatsApp", never "Order placed", "Paid", "Confirmed". After opening WhatsApp, show "Finish your order in WhatsApp. Heiz Bags will reply to confirm."
 8. **Privacy**: contact form → Resend email if keys exist, otherwise WhatsApp/Call fallback; never a false success; no storage, no logging of personal data. Basket, wishlist, recently viewed: `localStorage` only. `/privacy` cites the Data Protection Act, 2019 and the Office of the Data Protection Commissioner (ODPC).
 9. **Drafts**: every page/section Claude writes beyond their words has `status: "draft"` in data and shows `<DraftBadge />` when `NEXT_PUBLIC_SHOW_DRAFT_FLAGS === "true"`. Blog posts end with the `articleNotice`.
-10. **Tone**: warm, elegant, short sentences, Kenyan English, KES. No emoji in UI, no exclamation marks.
+10. **Tone**: elegant, bold, short sentences, Kenyan English, KES. No emoji in UI, no exclamation marks.
 
 ## 3. Brand config (`src/config/brand.ts`)
 
-```ts
-export const brand = {
-  name: "Zuri Bags",
-  tagline: "Carry elegance. Carry confidence.",        // their words
-  ownWords: [
-    "Carry elegance. Carry confidence. Carry Chrisbella.",
-    "Perfect for work, outings or elevating your everyday look.",
-    "A timeless piece for the woman who loves her style simple, elegant & classy.",
-  ],
-  phoneDisplay: "0717 840 894",
-  phoneTel: "+254717840894",
-  whatsapp: "254717840894",
-  mpesaTill: "5242805",
-  email: "",            // unknown → hidden
-  instagram: "",        // unknown → hidden (open question)
-  hours: "",            // unknown → hidden
-  policy: { refunds: "No refund.", exchange: "Exchange within 48 hours." },
-  shops: [
-    { key: "sasa", mall: "Sasa Mall", unit: "G16", street: "Moi Avenue", confirm: true },
-    { key: "sawa", mall: "Sawa Mall", unit: "G12", street: "Moi Avenue", confirm: false },
-    { key: "star", mall: "Star Mall", unit: "M12", street: "Tom Mboya Street", confirm: false },
-  ],
-  // Google Maps search links (no embeds): https://www.google.com/maps/search/?api=1&query=<mall>+<street>+Nairobi
-  colors: {
-    ivory: "#FBF8F2",      // page
-    champagne: "#F4EDE0",  // alternate sections, cards
-    lilac: "#EEE8F4",      // soft accent surface (plum on lilac 13.3)
-    ink: "#1E1529",        // text                       on ivory 16.59
-    muted: "#6B6275",      // secondary text             on ivory 5.46, on champagne 4.97
-    plum: "#2E0A5C",       // logo purple: dark sections, primary buttons   ivory on plum 15.08
-    plumDeep: "#1C0638",   // footer                      gold on plumDeep 8.39
-    plumSoft: "#5B3A8C",   // links/hover on light       on ivory 8.16
-    gold: "#D4A84A",       // accents on plum             gold on plum 7.23; plum on gold 7.23
-    goldLight: "#EEDC88",  // highlights on plum          on plum 11.59
-    goldDeep: "#A87A2C",   // gradient end only (decorative)
-    goldText: "#7A5A1E",   // gold-coloured TEXT on light on ivory 5.99
-    lilacText: "#C9B8DE",  // secondary text on plum      on plum 8.67
-    line: "#E7DECF",       // hairlines (decorative)
-    white: "#FFFFFF",
-    success: "#2F6B45",
-    danger: "#A3322A",
-  },
-  fonts: { display: "Cormorant Garamond", body: "Jost" },
-  demoNotice: "Preview: most bags shown are samples while Zuri Bags' own photos are added.",
-  articleNotice: "This article is general styling and care advice from Zuri Bags.",
-} as const;
-```
+Name, contacts, `ownWords` (bio, spacious, available, delivery), the single pick-up point (`shops[0]`: mall, floor, unit, street, landmark), empty `mpesaTill`, `email`, `instagram`, `hours` and `policy`, colours and fonts. `hasTill` / `hasPolicy` show the Till card and policy lines automatically once filled.
 
-Contrast rules: **gold (`#D4A84A`) is 2.09:1 on ivory → never text on light**; use `goldText`. Gold gradient text only on plum, ≥ 24px. Muted text never on lilac below 16px.
+Colours (contrast on the pairs used for text):
 
-## 4. Design system — "Gilded Plum"
+| Token | Hex | Use | Contrast |
+| --- | --- | --- | --- |
+| `surface` | `#FAF8F3` | page | ink 17.17 |
+| `surfaceAlt` | `#F2EDE3` | alternate sections, cards | ink 15.62, muted 5.40 |
+| `surfaceSoft` | `#ECE6DA` | pills, soft panels | primary 14.29, muted 5.07 |
+| `ink` | `#171512` | text | on surface 17.17 |
+| `muted` | `#665F55` | secondary text on light | on surface 5.94 |
+| `primary` | `#181818` | logo black: dark sections, primary buttons | surface on primary 16.73 |
+| `primaryDeep` | `#0D0D0C` | footer | accent on it 8.82 |
+| `primaryRaised` | `#4A4237` | links/hover on light, sheen on black | on surface 9.31 |
+| `accent` | `#CBAC43` | logo gold: accents on black | on primary 8.05; primary on accent 8.05 |
+| `accentLight` | `#ECCB5B` | highlights on black | on primary 11.21 |
+| `accentDeep` | `#8F7425` | gradient end only (decorative) | below 4.5 everywhere |
+| `accentText` | `#7A6320` | gold-coloured TEXT on light | on surface 5.45, surfaceAlt 4.95, surfaceSoft 4.65 |
+| `mutedOnDark` | `#BEB6A8` | secondary text on black | on primary 8.83 |
+| `line` | `#E5DED1` | hairlines (decorative) | |
 
-**Idea.** A boutique counter at dusk: ivory and champagne like tissue paper, plum velvet sections, thin gold lines. Calm space, large images, small precise type. Premium comes from restraint, alignment and detail, not from decoration everywhere.
+Contrast rules: **gold `accent` is never text on light** (use `accentText`). Gold gradient text only on black, at 24px and up. `accentDeep` never carries text. `mutedOnDark` only on black.
 
-- **Type.** Cormorant Garamond 500–700 for headings (large: hero 44px at 375, 72px desktop; italic for one or two words, e.g. "Carry *elegance*"). Jost 400–500 for body (16px min), Jost 500 uppercase with 0.18em tracking for eyebrows and small labels. Prices: Jost 500 tabular.
-- **Grid.** 16px gutters on mobile, max width 1280. Generous vertical rhythm (64–96px sections on mobile, 120px desktop).
-- **Surfaces.** Ivory page; champagne cards and alternating sections; plum feature sections (hero, Bag Finder band, shops band, footer in plumDeep).
-- **Handle arch (signature).** Product and category images sit in a frame with a rounded-arch top (`border-radius: 999px 999px 16px 16px` on tiles, or 50% top radius on category tiles) and a thin gold or plum **handle line** (an SVG arc, 1.5px) floating above the frame. On hover/focus the handle lifts 4px. Use on category tiles, the hero image and featured cards; plain 16px-radius cards elsewhere so it stays special.
-- **Gold wave.** `gold-wave.svg` as a full-width divider between major sections (at most 3 per page), drawing in with `stroke-dashoffset` on the thin lines when it enters the viewport. On plum it shines; on ivory use it thin and low-opacity.
-- **Side-panel blocks.** A slim plum bar + pale-gold bar (like the logo's bag sides) as the left edge of quotes, policy callouts and the order summary.
-- **Buttons.** Primary: plum fill, ivory text, 52px tall, radius 999px. On plum sections: gold fill, plum text. Secondary: 1px plum outline. WhatsApp buttons are primary style with the lucide `MessageCircle` icon (no green WhatsApp branding).
-- **Cards.** Product card: arched image (4:5), "New" pill (plum on lilac), "Sample" tag (when demo), wishlist heart top-right (44px target), name in Cormorant 22px, price in Jost, category in muted caps; hover shows the second image and a "Quick view" button; tap on mobile goes to the page.
-- **Motion.** 200–400ms ease-out; reveals rise 12px; waves draw in; handle lifts; heart fills with a small scale. All off with `prefers-reduced-motion`.
-- **Icons.** lucide, 1.5px stroke, in plum or gold.
+## 4. Design system — "Gilded Noir"
 
-## 5. Personality mandate (required, reviewed in Phase 9)
+**Idea.** A boutique counter at night: ivory pages like tissue paper, deep black feature sections taken from the logo, and fine gold lines and script. Bold contrast, calm space, large images, small precise type. Premium comes from restraint, alignment and detail, not from decoration everywhere.
+
+- **Type.** Cormorant Garamond 400–600 for headings (italic for one or two words, e.g. "Elevate your *style*"). Jost 400–500 for body (16px min), Jost 500 uppercase with wide tracking for eyebrows and labels. Prices: Jost 500 tabular. The logo wordmark beside the monogram is Jost, letter-spaced.
+- **Grid.** 16px gutters on mobile, max width 1280. Generous vertical rhythm.
+- **Surfaces.** Ivory page; `surfaceAlt` cards and alternating sections; black feature sections (hero, Bag Finder band, Find us band, footer in `primaryDeep`) with a warm sheen.
+- **Handle arch (signature).** Product and category images sit in a frame with a rounded-arch top and a thin gold or black **handle line** floating above. On hover/focus the handle lifts 4px. Use with restraint.
+- **Gold wave.** `gold-wave.svg` as a full-width divider between major sections (at most 3 per page), drawing in when it enters the viewport.
+- **Side-panel blocks.** A slim black bar + pale-gold bar as the left edge of quotes and callouts.
+- **Buttons.** Primary: black fill, ivory text, radius 999px. On black sections: gold fill, black text. Secondary: 1px black outline. WhatsApp buttons use the lucide `MessageCircle` icon (no green WhatsApp branding).
+- **Cards.** Product card: arched image (4:5), "Sample" tag (demo), wishlist heart (44px target), name in Cormorant, price in Jost, category in muted caps.
+- **Motion.** 200–400ms ease-out; reveals rise 12px; waves draw in; handle lifts; heart fills. All off with `prefers-reduced-motion`.
+- **Icons.** lucide, 1.5px stroke, in black or gold.
+
+## 5. Personality mandate (required)
 
 A correct but plain shop fails this brief. Each must exist and be done well:
 
-1. **Hero** on plum: "Carry *elegance*. Carry *confidence*." (their words) in Cormorant with goldLight italics, a featured bag image (ZB-001 when it has photos, otherwise a sample) in the handle-arch frame with the gold handle line, the gold wave sweeping beneath, two buttons: "Shop the collection" and "Order on WhatsApp". On mobile the image comes first, cropped tall.
-2. **Shop by occasion**: four tiles Work · Outings · Evening · Everyday, captioned with their own line "Perfect for work, outings or elevating your everyday look." → `/shop?occasion=`.
-3. **Category tiles** in handle-arch frames (Handbags, Totes, Office, Sling & Crossbody, Clutches, Wallets, Pouches, Backpacks) as a horizontal snap row on mobile.
-4. **Bag Finder** (`/bag-finder`): 4 questions (Where are you going? What do you carry? How do you like to carry it? Budget), answers in the URL, results "Bags for your day" with one-line reasons from the data ("Fits a 14-inch laptop", "Worn crossbody"). No scores, no "perfect match".
-5. **What fits** row on product pages: icons for phone, wallet, keys, cards, A4, laptop, make-up, bottles, shown **only** from the product's `fits` data.
-6. **Order on WhatsApp** everywhere it matters: product page (with the exact bag name, price and link), basket (whole list + total + chosen shop for pickup or "delivery, please advise" note), and the sticky mobile bar.
-7. **Visit our shops** band on plum: three shop cards (mall, unit, street, "Get directions", "Call"), and a **schematic CBD map** drawn in SVG (Moi Avenue and Tom Mboya Street as two gold lines, three plum pins, labelled "Not to scale"). Sasa Mall carries a draft flag until confirmed.
-8. **M-Pesa Till card**: a neat card "Pay via M-Pesa · Till 5242805" with a copy button and steps (Lipa na M-Pesa → Buy Goods → Till 5242805 → amount → PIN), shown on basket, How to order and product pages, with "Send your order on WhatsApp first so Zuri Bags can confirm availability." (that is ordering logic, not a policy).
+1. **Hero** on black: "Elevate your *style* with the *perfect* handbag." (their bio) in Cormorant with gold italics, their delivery line, a featured bag image in the handle-arch frame, the gold wave beneath, two buttons: "Shop the collection" and "Order on WhatsApp". The pick-up point under the buttons.
+2. **Shop by occasion**: four tiles Work · Outings · Evening · Everyday → `/shop?occasion=` (draft intro, not a quote).
+3. **Category tiles** in handle-arch frames as a horizontal snap row on mobile.
+4. **Bag Finder** (`/bag-finder`): 4 questions, answers in the URL, results "Bags for your day" with one-line reasons from the data. No scores, no "perfect match".
+5. **What fits** row on product pages, **only** from the product's `fits` data.
+6. **Order on WhatsApp** everywhere it matters: product page, basket (whole list + total + pick-up or "delivery, please advise"), sticky mobile bar.
+7. **Find us** band on black: the pick-up point card (mall, floor, unit, street, landmark, "Get directions", "Call") and a **schematic map** in SVG (Tom Mboya Street as a gold line, the Dynamic Mall pin, Ambassadeur Hotel opposite, "Not to scale").
+8. **M-Pesa Till card**: built, but hidden until the client gives a Till (`hasTill`).
 9. **Gold wave** dividers that draw in, and the **handle arch** motif, used with restraint.
-10. **Designed empty and error states**: empty basket ("Your basket is waiting for something beautiful."), empty wishlist, no results (with occasion links), 404 "This bag has wandered off." with shop links.
+10. **Designed empty and error states**: empty basket, empty wishlist, no results (with occasion links), 404 "This bag has wandered off." with the pick-up point link.
 
 ## 6. Pages
 
-**Chrome on every page:** skip link, DemoNotice (demo mode), Navbar (logo, Shop with a mega menu of categories and occasions, Bag Finder, About, Blog, Visit us, search icon, wishlist, basket with count), mobile menu (full-screen plum sheet), Footer (plumDeep: logo on light variant, tagline, shops, phone, Till, policy line, links, legal), MobileActionBar, `ClothingStore` JSON-LD (name, phone, addresses of the two confirmed shops, no ratings), metadata (noindex in demo mode).
+**Chrome on every page:** skip link, DemoNotice (demo mode), Navbar (logo, Shop with a mega menu of categories and occasions, Bag Finder, About, Blog, Visit us, search icon, wishlist, basket with count), mobile menu (full-screen black sheet), Footer (primaryDeep: logo dark variant, tagline, pick-up point, phone, their delivery line, Till and policy only once given, links, legal), MobileActionBar, `ClothingStore` JSON-LD (name, phone, the pick-up point address, no ratings, no payment claims), metadata (noindex in demo mode).
 
-- **`/` Home.** Hero → occasions → category row → "New in" rail (`isNew`) → Bag Finder band (plum, the first question inline) → featured "Zuri Collection" (ZB-001/002 with designed placeholders until photos) → "Simple, elegant & classy" editorial split (their line + image) → how ordering works (3 steps: choose → WhatsApp → pay Till or at the shop) → Visit our shops band → policy strip ("Exchange within 48 hours · No refund") → blog preview → final CTA.
+- **`/` Home.** Hero → occasions → category row → "New in" rail (`isNew`) → Bag Finder band (black, the first question inline) → featured "Heiz Collection" (HZ-001/002 with designed placeholders until photos) → "Room for your whole day" editorial split (their "Spacious enough…" line + image) → how ordering works (3 steps: choose → WhatsApp → pick up or delivery) → Find us band → delivery strip (their delivery line; the policy joins it once given) → blog preview → final CTA.
 - **`/shop`.** Grid (2 cols mobile, 3 tablet, 4 desktop). Filters synced to the URL: category, occasion, carry (hand, shoulder, crossbody, wrist, back), size (small, medium, large), price range, "New only". Bottom-sheet filters on mobile, sidebar on desktop; active chips; sort (Featured, Newest, Price low–high, high–low); result count; **search** box filtering name, category and occasion (debounced). Category landing via `?category=`; the heading and intro change with it (from `categories[].blurb`). Quick view sheet (images, price, what fits, Order on WhatsApp, Add to basket, View details).
-- **`/shop/[slug]`.** Gallery (swipe on mobile, thumbnails desktop, lightbox, keyboard), name, price (with "Sample price" when sample), tags, short summary, **Order on WhatsApp** (primary), Add to basket, wishlist, share (Web Share API → copy link), What fits, details (description, features), "How to carry" chips from `carry`, Till card, policy line, "Visit a shop to see it" with shop links, "You may also like" (same occasion or category), recently viewed. Own products without photos show a designed placeholder: plum handle-arch frame, gold wave, the bag name in Cormorant and "Photos coming soon".
+- **`/shop/[slug]`.** Gallery (swipe on mobile, thumbnails desktop, lightbox, keyboard), name, price (with "Sample price" when sample), tags, short summary, **Order on WhatsApp** (primary), Add to basket, wishlist, share (Web Share API → copy link), What fits, details (description, features), "How to carry" chips from `carry`, Till card and policy line (hidden until given), their delivery line, "See it at our pick-up point", "You may also like" (same occasion or category), recently viewed. Own products without photos show a designed placeholder: black handle-arch frame, gold wave, the bag name in Cormorant and "Photos coming soon".
 - **`/bag-finder`.** As in §5.4, inside `<Suspense>`.
 - **`/wishlist`.** Saved bags, move to basket, share list on WhatsApp.
-- **`/basket`.** Line items (image, name, price, quantity stepper 1–5, remove with Undo), subtotal, choice: "Pick up at" (shop select) or "Deliver to me" (area text field, with "Zuri Bags will advise on delivery"), name field (optional), **Send order on WhatsApp** (message lists items, quantities, prices, subtotal, pickup/delivery choice, name), Till card. Basket drawer for quick view from the navbar. Basket naming: call it **Basket** everywhere (a "bag" basket is confusing in a bag shop).
-- **`/how-to-order`.** Steps, WhatsApp, Till instructions, pickup at shops, exchange policy, FAQ links.
-- **`/about`.** Their words, what they sell (categories), the three shops, the policy, how to order. No invented story: if no story is provided, the page is built from facts and their voice, with a draft "Our story" section hidden unless `NEXT_PUBLIC_SHOW_DRAFT_FLAGS` is true.
-- **`/visit`.** Shops with directions and the schematic map, phone, Till. Hours hidden until known.
-- **`/faqs`.** 8 drafts answered only from known facts (how to order, how to pay, where the shops are, exchange policy, can I see a bag before buying (visit the shops), do you deliver ("Ask us on WhatsApp"), are the bags on the site in stock ("Ask on WhatsApp to confirm"), Chrisbella).
+- **`/basket`.** Line items (image, name, price, quantity stepper 1–5, remove with Undo), subtotal, choice: "Pick up at" (the pick-up point) or "Deliver to me" (area text field, with their delivery line and "Heiz Bags will advise."), name field (optional), **Send order on WhatsApp** (message lists items, quantities, prices, subtotal, pickup/delivery choice, name), Till card once given. Basket drawer for quick view from the navbar. Basket naming: call it **Basket** everywhere (a "bag" basket is confusing in a bag shop).
+- **`/how-to-order`.** Steps, pick-up point, delivery (their words), Till and exchanges only once given, FAQ links.
+- **`/about`.** Their words, what they sell (categories), the pick-up point, their delivery line, how to order. No invented story: if no story is provided, the page is built from facts and their voice, with a draft "Our story" section hidden unless `NEXT_PUBLIC_SHOW_DRAFT_FLAGS` is true.
+- **`/visit`** ("Find us"). The pick-up point with directions and the schematic map, phone. Till and hours hidden until known.
+- **`/faqs`.** 8 drafts answered only from known facts (how to order, how to pay ("Ask us on WhatsApp"), where to find us, exchanges ("Ask us on WhatsApp" until a policy is given), can I see a bag before buying (the pick-up point), do you deliver (their words), are the bags on the site in stock ("Ask on WhatsApp to confirm"), laptop bags).
 - **`/blog`, `/blog/[slug]`.** 6 posts (Phase 3).
-- **`/contact`.** Form (name, phone, message, optional product pre-filled from `?bag=`), WhatsApp and Call buttons, shops.
-- **`/privacy`, `/terms`** (terms: ordering through WhatsApp, prices may change, exchange within 48 hours, no refund — no extra terms), **not-found**.
+- **`/contact`.** Form (name, phone, message, optional product pre-filled from `?bag=`), WhatsApp and Call buttons, pick-up point.
+- **`/privacy`, `/terms`** (terms: ordering through WhatsApp, prices may change, ask how to pay, pick-up and their delivery line, exchanges: ask on WhatsApp — no extra terms), **not-found**.
 
 ## 7. Data
 
@@ -149,26 +120,26 @@ type Product = {
   size: "small"|"medium"|"large"|null;
   fits: string[];          // phone, wallet, keys, cards, coins, notes, a4, laptop, laptop-14, make-up, toiletries, bottles
   priceKes: number; isNew: boolean;
-  images: string[];        // remote sample photos; [] for ZB-001/002
+  images: string[];        // remote sample photos; [] for HZ-001/002
   summary: string; description: string; features: string[];   // filled in Phase 2
   idealFor: string[];      // Bag Finder tags: work, outings, evening, everyday, travel, mum
 };
 ```
 The file also has `categories` and `occasions`. Read it and make the types match exactly.
 
-Phase 2 rules: `summary` ≤ 140 characters; `description` 2–3 sentences in Zuri's voice; `features` 3–6 short lines **visible or stated** (closures, pockets, straps, linings, beadwork), with no measurements of material, no maker or origin claims, no brand marks. ZB-001/ZB-002: use only `data-raw/bag-notes.json` `ownWords`.
+Phase 2 rules: `summary` ≤ 140 characters; `description` 2–3 sentences in Heiz Bags' voice; `features` 3–6 short lines **visible or stated** (closures, pockets, straps, linings, beadwork), with no measurements of material, no maker or origin claims, no brand marks. HZ-001/HZ-002: use only the wording of their posts (§1).
 
 Other data files written in Phase 3 (all `status: "draft"`): `finder.json` (questions, answers → tags/filters), `faqs.json`, `blog.json`, `about.json`, `steps.json` (how to order).
 
-Libraries: `src/lib/products.ts` (load, filter by demo mode, filter/sort/search), `src/lib/finder.ts`, `src/lib/whatsapp.ts` (message builders, `wa.me` URLs, encodeURIComponent), `src/lib/format.ts` (`Intl.NumberFormat("en-KE")` → "KES 5,300"), `src/store/` (basket, wishlist, recently viewed; context + `localStorage` with try/catch and a `hydrated` flag).
+Libraries: `src/lib/products.ts` (load, filter by demo mode, filter/sort/search), `src/lib/finder.ts`, `src/lib/whatsapp.ts` (message builders, `wa.me` URLs, encodeURIComponent), `src/lib/format.ts` (`Intl.NumberFormat("en-KE")` → "KES 2,800"), `src/store/` (basket, wishlist, recently viewed; context + `localStorage` with try/catch and a `hydrated` flag).
 
 ## 8. Technical rules
 
 - Server components by default; client islands for filters, gallery, basket, wishlist, finder, forms.
-- `next/image` for everything; `remotePatterns` only for `media.hbleatherke.com`; `sizes` set; a designed fallback (plum frame + logo mark) if an image fails.
+- `next/image` for everything; `remotePatterns` only for `media.hbleatherke.com`; `sizes` set; a designed fallback (black frame + logo mark) if an image fails.
 - `/api/contact`: zod, honeypot, minimum fill time (3s), simple in-memory rate limit, Resend when `RESEND_API_KEY` and `CONTACT_TO_EMAIL` exist; otherwise 503 → the form shows WhatsApp/Call fallback with the message pre-filled. Never store or log personal data.
-- Metadata per page; title template `%s · Zuri Bags`; `opengraph-image.jpg`, icons and `manifest.ts` from the asset script.
-- Accessibility: AA contrast per §3, focus visible (2px gold outline on plum, plum on light), sheets trap and return focus, `aria-live` for basket updates, alt text "Name, sample photo" for samples.
+- Metadata per page; title template `%s · Heiz Bags`; `opengraph-image.jpg`, icons and `manifest.ts` from the asset script.
+- Accessibility: AA contrast per §3, focus visible (2px gold outline on black, black on light), sheets trap and return focus, `aria-live` for basket updates, alt text "Name, sample photo" for samples.
 
 ## 9. Environment (`.env.example`)
 
@@ -189,6 +160,6 @@ src/components/{brand,layout,product,shop,basket,finder,shops,ui}/
 src/config/brand.ts   src/data/*.json   src/lib/*   src/store/*   src/types/*
 ```
 
-## 11. README checklist (Phase 9)
+## 11. README checklist
 
-How to run and deploy; demo mode and what turns off; how to add Zuri's own products and photos (`public/products/<id>/`), and how to remove samples; and **for Zuri Bags to provide**: photos and names of their bags with prices, ZB-002's name, whether Sasa Mall G16 is still open, Instagram handle, opening hours, delivery areas and fees (if they deliver), exchange conditions, email for the contact form, the brands they stock, a short story of the shop, plus every item under "Open questions".
+How to run and deploy; demo mode and what turns off; how to add Heiz Bags' own products and photos (`public/products/<id>/`), and how to remove samples; and **for Heiz Bags to provide**: photos of their bags (HZ-001, HZ-002 and any others) with prices, how to pay (M-Pesa Till or other), their exchange/refund policy, Instagram or other handles, opening hours at the pick-up point, email for the contact form, delivery fees and times if they want them shown, a short story of the shop, their logo as a vector file, plus every item under "Open questions".

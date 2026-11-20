@@ -22,11 +22,11 @@ export function CategoryRow() {
   if (!cats.length) return null;
 
   return (
-    <section className="section bg-champagne" aria-labelledby="categories-title">
-      <div className="container-zb">
+    <section className="section bg-surface-alt" aria-labelledby="categories-title">
+      <div className="container-hz">
         <SectionHeading
           eyebrow="Categories"
-          title={<span id="categories-title">Find your <em className="text-plum-soft">shape</em></span>}
+          title={<span id="categories-title">Find your <em className="text-primary-raised">shape</em></span>}
           action={
             <Link href="/shop" className="btn btn-outline btn-sm">
               All bags
@@ -41,7 +41,7 @@ export function CategoryRow() {
           return (
             <li key={c.key} className="w-[42vw] max-w-[180px] shrink-0 snap-start md:w-auto md:max-w-none">
               <Link href={`/shop?category=${c.key}`} className="arch-group group block text-center">
-                <HandleArch handle="plum" shape="soft" frameClassName="aspect-[4/5] bg-ivory">
+                <HandleArch handle="primary" shape="soft" frameClassName="aspect-[4/5] bg-surface">
                   {p && p.images.length ? (
                     <SmartImage
                       src={p.images[0]}
@@ -53,7 +53,7 @@ export function CategoryRow() {
                     p && <OwnPlaceholder name={c.name} size="sm" />
                   )}
                 </HandleArch>
-                <span className="display mt-3 block text-xl leading-tight text-plum">{c.name}</span>
+                <span className="display mt-3 block text-xl leading-tight text-primary">{c.name}</span>
                 <span className="tabular mt-0.5 block text-xs tracking-wide text-muted">
                   {inCat.length} {inCat.length === 1 ? "bag" : "bags"}
                 </span>

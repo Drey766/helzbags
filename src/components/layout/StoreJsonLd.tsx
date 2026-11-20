@@ -11,11 +11,10 @@ export function StoreJsonLd() {
     telephone: brand.phoneTel,
     slogan: brand.tagline,
     image: `${siteUrl}/opengraph-image.jpg`,
-    paymentAccepted: "M-Pesa",
     currenciesAccepted: "KES",
     address: confirmed.map((s) => ({
       "@type": "PostalAddress",
-      streetAddress: `${s.mall}, ${s.unit}, ${s.street}`,
+      streetAddress: `${s.mall}, ${s.floor}, ${s.unit}, ${s.street}`,
       addressLocality: "Nairobi",
       addressCountry: "KE",
     })),

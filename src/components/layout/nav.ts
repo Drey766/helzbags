@@ -3,7 +3,7 @@ export const mainNav = [
   { href: "/bag-finder", label: "Bag Finder" },
   { href: "/about", label: "About" },
   { href: "/blog", label: "Blog" },
-  { href: "/visit", label: "Visit us" },
+  { href: "/visit", label: "Find us" },
 ] as const;
 
 export const footerNav = {
@@ -17,11 +17,11 @@ export const footerNav = {
   help: [
     { href: "/how-to-order", label: "How to order" },
     { href: "/faqs", label: "FAQs" },
-    { href: "/visit", label: "Visit our shops" },
+    { href: "/visit", label: "Find us" },
     { href: "/contact", label: "Contact" },
   ],
   about: [
-    { href: "/about", label: "About Zuri Bags" },
+    { href: "/about", label: "About Heiz Bags" },
     { href: "/blog", label: "Blog" },
     { href: "/privacy", label: "Privacy" },
     { href: "/terms", label: "Terms" },

@@ -16,14 +16,14 @@ export function SectionHeading({ eyebrow, title, intro, tone = "light", align = 
     <div className={`flex flex-col gap-6 ${center ? "items-center text-center" : "md:flex-row md:items-end md:justify-between"} ${className}`}>
       <div className={center ? "max-w-2xl" : "max-w-2xl"}>
         {eyebrow && (
-          <p className={`eyebrow flex items-center gap-3 ${center ? "justify-center" : ""} ${dark ? "text-gold" : "text-gold-text"}`}>
-            <span aria-hidden="true" className={`h-px w-8 ${dark ? "bg-gold" : "bg-gold-text"}`} />
+          <p className={`eyebrow flex items-center gap-3 ${center ? "justify-center" : ""} ${dark ? "text-accent" : "text-accent-text"}`}>
+            <span aria-hidden="true" className={`h-px w-8 ${dark ? "bg-accent" : "bg-accent-text"}`} />
             {eyebrow}
-            {center && <span aria-hidden="true" className={`h-px w-8 ${dark ? "bg-gold" : "bg-gold-text"}`} />}
+            {center && <span aria-hidden="true" className={`h-px w-8 ${dark ? "bg-accent" : "bg-accent-text"}`} />}
           </p>
         )}
-        <H className={`display h-section mt-3 ${dark ? "text-ivory" : "text-plum"}`}>{title}</H>
-        {intro && <p className={`mt-4 text-[1.05rem] leading-relaxed ${dark ? "text-lilac-text" : "text-muted"}`}>{intro}</p>}
+        <H className={`display h-section mt-3 ${dark ? "text-surface" : "text-primary"}`}>{title}</H>
+        {intro && <p className={`mt-4 text-[1.05rem] leading-relaxed ${dark ? "text-muted-on-dark" : "text-muted"}`}>{intro}</p>}
       </div>
       {action && <div className="shrink-0">{action}</div>}
     </div>

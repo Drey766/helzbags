@@ -31,7 +31,7 @@ export function BasketDrawer() {
             <Link href="/basket" onClick={close} className="btn btn-primary mt-4 w-full">
               Review and order on WhatsApp
             </Link>
-            <button type="button" onClick={close} className="btn mt-1 w-full text-plum">
+            <button type="button" onClick={close} className="btn mt-1 w-full text-primary">
               Keep shopping
             </button>
           </div>
