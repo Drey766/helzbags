@@ -43,6 +43,7 @@ Claude: update this at the end of every phase. If you were compacted, read this 
 - Colours: black `#181818` + logo gold `#CBAC43` on ivory; tokens renamed to semantic names (`primary`, `accent`, `surface`, …; CSS prefix `--hz-`). All text pairs AA.
 - Content: their bio, delivery line and two products (HZ-001 HW Mini-Handbag KES 2,200, HZ-002 Heiz Laptop Handbag KES 2,800). One pick-up point replaces the three shops; map redrawn. No Till or policy given → hidden via `hasTill` / `hasPolicy`. Old own products removed; samples renumbered HZ-003–029.
 - Visual check: see the report.
+- Hero on mobile: text first, featured image below (desktop unchanged: text left, image right). Visual check done at 375×812.
 
 ## Open questions (for Heiz Bags — copy into the README checklist)
 - Photos of their bags (HZ-001 and HZ-002 have none yet), and any other bags with names and prices.

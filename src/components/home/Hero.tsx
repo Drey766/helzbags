@@ -22,7 +22,7 @@ export function Hero() {
         <span className="w-1 bg-accent/70" />
       </div>
       <div className="container-hz grid items-center gap-10 pb-6 pt-8 md:grid-cols-[1.05fr_1fr] md:gap-16 md:pb-10 md:pt-16 lg:pt-20">
-        <div className="order-2 md:order-1">
+        <div>
           <p className="eyebrow flex items-center gap-3 text-accent">
             <span aria-hidden="true" className="h-px w-8 bg-accent" />
             Women&rsquo;s handbags · Nairobi CBD
@@ -46,7 +46,7 @@ export function Hero() {
         </div>
 
         {featured && (
-          <div className="order-1 mx-auto w-full max-w-[340px] md:order-2 md:max-w-[400px]">
+          <div className="mx-auto w-full max-w-[340px] md:max-w-[400px]">
             <Link href={`/shop/${featured.slug}`} className="arch-group group block">
               <HandleArch frameClassName="gilt-frame aspect-[3/4] bg-primary-deep shadow-[0_40px_80px_-30px_rgba(0,0,0,0.6)] ring-1 ring-accent/40">
                 {featured.images.length ? (
