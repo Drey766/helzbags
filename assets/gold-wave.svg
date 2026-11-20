@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+<defs>
+<linearGradient id="zw-gold" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="var(--wave-deep, #A87A2C)"/><stop offset=".3" stop-color="var(--wave-gold, #D4A84A)"/>
+<stop offset=".5" stop-color="var(--wave-light, #EEDC88)"/><stop offset=".72" stop-color="var(--wave-gold, #D4A84A)"/>
+<stop offset="1" stop-color="var(--wave-deep, #A87A2C)"/>
+</linearGradient>
+</defs>
+<path d="M0,64 C180,18 360,22 560,58 C760,94 960,104 1200,46 L1200,58 C960,118 760,106 560,72 C360,38 180,36 0,78 Z" fill="url(#zw-gold)"/>
+<path class="zw-line" d="M0,52 C200,10 380,14 580,48 C780,82 980,90 1200,34" fill="none" stroke="url(#zw-gold)" stroke-width="2" opacity=".75"/>
+<path class="zw-line" d="M0,90 C220,56 400,58 600,84 C800,110 1000,112 1200,70" fill="none" stroke="url(#zw-gold)" stroke-width="1.2" opacity=".5"/>
+</svg>

@@ -1,0 +1,22 @@
+{
+  "status": "draft",
+  "title": "How ordering works",
+  "intro": "Ordering from Zuri Bags happens on WhatsApp, so you talk to a person, not a checkout.",
+  "steps": [
+    {
+      "key": "choose",
+      "title": "Choose your bag",
+      "body": "Browse the shop or try the Bag Finder. Add bags to your basket, or open the one you like."
+    },
+    {
+      "key": "whatsapp",
+      "title": "Send it on WhatsApp",
+      "body": "Tap Order on WhatsApp. Your message is written for you with the bag, the price and the link. Zuri Bags will reply to confirm availability."
+    },
+    {
+      "key": "pay",
+      "title": "Pay by Till or at the shop",
+      "body": "Once your order is confirmed, pay via M-Pesa Till or when you pick up at one of the shops."
+    }
+  ]
+}

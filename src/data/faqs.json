@@ -1,0 +1,53 @@
+{
+  "status": "draft",
+  "faqs": [
+    {
+      "key": "order",
+      "status": "draft",
+      "q": "How do I order?",
+      "a": "Choose a bag and tap Order on WhatsApp. A message with the bag, its price and its link opens in WhatsApp. Send it, and Zuri Bags will reply to confirm. You can also add several bags to your basket and send them in one message."
+    },
+    {
+      "key": "pay",
+      "status": "draft",
+      "q": "How do I pay?",
+      "a": "Pay via M-Pesa: Lipa na M-Pesa, Buy Goods and Services, Till number {till}, enter the amount and your PIN. Please send your order on WhatsApp first so Zuri Bags can confirm availability. You can also pay when you visit a shop."
+    },
+    {
+      "key": "shops",
+      "status": "draft",
+      "q": "Where are your shops?",
+      "a": "Zuri Bags has shops in Nairobi CBD: {shops}. See the Visit page for directions."
+    },
+    {
+      "key": "exchange",
+      "status": "draft",
+      "q": "Can I return or exchange a bag?",
+      "a": "{refunds} {exchange} {policyHelp}"
+    },
+    {
+      "key": "see",
+      "status": "draft",
+      "q": "Can I see a bag before I buy it?",
+      "a": "Yes. Visit one of the shops to see bags in person. Send a WhatsApp message first if you would like to check that a particular bag is there."
+    },
+    {
+      "key": "delivery",
+      "status": "draft",
+      "q": "Do you deliver?",
+      "a": "Ask us on WhatsApp. Tell us where you are and Zuri Bags will advise."
+    },
+    {
+      "key": "stock",
+      "status": "draft",
+      "q": "Are the bags on the website in stock?",
+      "a": "Ask on WhatsApp to confirm. Zuri Bags will confirm availability when you send your order."
+    },
+    {
+      "key": "chrisbella",
+      "status": "draft",
+      "q": "Do you sell Chrisbella bags?",
+      "a": "Yes. In Zuri Bags' words: \"Carry elegance. Carry confidence. Carry Chrisbella.\" Ask on WhatsApp about the Chrisbella bags available now."
+    }
+  ]
+}

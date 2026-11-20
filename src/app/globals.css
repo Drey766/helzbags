@@ -1,0 +1,470 @@
+@import "tailwindcss";
+
+/* Colour values live in src/config/brand.ts and are injected as --zb-* variables
+   by the root layout. This file maps them into the Tailwind theme. */
+@theme inline {
+  --color-ivory: var(--zb-ivory);
+  --color-champagne: var(--zb-champagne);
+  --color-lilac: var(--zb-lilac);
+  --color-ink: var(--zb-ink);
+  --color-muted: var(--zb-muted);
+  --color-plum: var(--zb-plum);
+  --color-plum-deep: var(--zb-plum-deep);
+  --color-plum-soft: var(--zb-plum-soft);
+  --color-gold: var(--zb-gold);
+  --color-gold-light: var(--zb-gold-light);
+  --color-gold-deep: var(--zb-gold-deep);
+  --color-gold-text: var(--zb-gold-text);
+  --color-lilac-text: var(--zb-lilac-text);
+  --color-line: var(--zb-line);
+  --color-white: var(--zb-white);
+  --color-success: var(--zb-success);
+  --color-danger: var(--zb-danger);
+
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-jost), "Jost", system-ui, sans-serif;
+
+  /* percentages, so the 16px base corners survive (999px radii would scale them away) */
+  --radius-arch: 50% 50% 16px 16px / 40% 40% 16px 16px;
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--zb-ivory);
+  color: var(--zb-ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--zb-plum);
+  color: var(--zb-ivory);
+}
+
+/* Focus: plum on light, gold on plum (sections set data-tone="dark"). */
+:focus-visible {
+  outline: 2px solid var(--zb-plum);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+[data-tone="dark"] :focus-visible,
+[data-tone="dark"]:focus-visible {
+  outline-color: var(--zb-gold);
+}
+
+@layer components {
+  .container-zb {
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 16px;
+  }
+  @media (min-width: 768px) {
+    .container-zb {
+      padding-inline: 32px;
+    }
+  }
+
+  .section {
+    padding-block: 88px;
+  }
+  @media (min-width: 1024px) {
+    .section {
+      padding-block: 136px;
+    }
+  }
+
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 0.6875rem;
+    line-height: 1.4;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+  }
+
+  .display {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.04;
+    letter-spacing: -0.015em;
+    font-feature-settings: "liga", "kern";
+  }
+  .display em,
+  em.display {
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: -0.005em;
+  }
+
+  .h-hero {
+    font-size: 2.9rem;
+  }
+  @media (min-width: 1024px) {
+    .h-hero {
+      font-size: 5rem;
+    }
+  }
+  .h-section {
+    font-size: 2.35rem;
+  }
+  @media (min-width: 1024px) {
+    .h-section {
+      font-size: 3.5rem;
+    }
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums lining-nums;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    min-height: 52px;
+    padding-inline: 1.9rem;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    transition:
+      background-color 250ms var(--ease-out-soft),
+      color 250ms var(--ease-out-soft),
+      border-color 250ms var(--ease-out-soft),
+      transform 250ms var(--ease-out-soft),
+      box-shadow 250ms var(--ease-out-soft);
+    white-space: nowrap;
+  }
+  .btn:active {
+    transform: translateY(1px);
+  }
+  .btn-primary {
+    background: var(--zb-plum);
+    color: var(--zb-ivory);
+    box-shadow: 0 1px 0 color-mix(in srgb, var(--zb-gold) 60%, transparent) inset;
+  }
+  .btn-primary:hover {
+    background: var(--zb-plum-deep);
+  }
+  .btn-gold {
+    background: linear-gradient(135deg, var(--zb-gold-light), var(--zb-gold) 45%, var(--zb-gold-deep));
+    color: var(--zb-plum);
+  }
+  .btn-gold:hover {
+    filter: brightness(1.05);
+    box-shadow: 0 8px 24px -10px color-mix(in srgb, var(--zb-gold) 70%, transparent);
+  }
+  .btn-outline {
+    border: 1px solid var(--zb-plum);
+    color: var(--zb-plum);
+    background: transparent;
+  }
+  .btn-outline:hover {
+    background: var(--zb-plum);
+    color: var(--zb-ivory);
+  }
+  .btn-outline-light {
+    border: 1px solid color-mix(in srgb, var(--zb-gold) 70%, transparent);
+    color: var(--zb-ivory);
+    background: transparent;
+  }
+  .btn-outline-light:hover {
+    border-color: var(--zb-gold);
+    background: color-mix(in srgb, var(--zb-gold) 12%, transparent);
+  }
+  .btn-sm {
+    min-height: 44px;
+    padding-inline: 1.3rem;
+    font-size: 0.6875rem;
+  }
+
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 300ms var(--ease-out-soft);
+  }
+  .link-underline:hover,
+  .link-underline:focus-visible {
+    background-size: 100% 1px;
+  }
+
+  /* Gold gradient text: only on plum, at 24px and up. */
+  .text-gold-gradient {
+    background: linear-gradient(100deg, var(--zb-gold-light), var(--zb-gold) 50%, var(--zb-gold-light));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .hairline {
+    height: 1px;
+    background: var(--zb-line);
+  }
+
+  /* Handle arch: arched frame + floating handle line */
+  .arch-frame {
+    border-radius: var(--radius-arch);
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .arch-handle {
+    transition: transform 400ms var(--ease-out-soft);
+  }
+  .arch-group:hover .arch-handle,
+  .arch-group:focus-within .arch-handle {
+    transform: translateY(-4px);
+  }
+
+  /* Plum velvet: subtle radial sheen for plum sections */
+  .velvet {
+    background-color: var(--zb-plum);
+    background-image:
+      radial-gradient(120% 80% at 85% 0%, color-mix(in srgb, var(--zb-plum-soft) 45%, transparent), transparent 60%),
+      radial-gradient(90% 70% at 0% 100%, color-mix(in srgb, var(--zb-plum-deep) 80%, transparent), transparent 70%);
+    color: var(--zb-ivory);
+  }
+
+  .card-surface {
+    background: var(--zb-champagne);
+    border-radius: 16px;
+  }
+
+  .input {
+    width: 100%;
+    min-height: 48px;
+    padding: 0.7rem 1rem;
+    border-radius: 12px;
+    border: 1px solid var(--zb-line);
+    background: var(--zb-white);
+    color: var(--zb-ink);
+    transition: border-color 200ms;
+  }
+  .input:hover {
+    border-color: color-mix(in srgb, var(--zb-plum) 35%, var(--zb-line));
+  }
+  .input:focus-visible {
+    outline: 2px solid var(--zb-plum);
+    outline-offset: 1px;
+    border-color: var(--zb-plum);
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .prose-zb p {
+    margin-block: 1em;
+  }
+  .prose-zb h2 {
+    font-family: var(--font-display);
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-top: 1.8em;
+    margin-bottom: 0.4em;
+    color: var(--zb-plum);
+  }
+  .prose-zb ul {
+    list-style: none;
+    padding: 0;
+  }
+  .prose-zb li {
+    position: relative;
+    padding-left: 1.4em;
+    margin-block: 0.45em;
+  }
+  .prose-zb li::before {
+    content: "";
+    position: absolute;
+    left: 0.2em;
+    top: 0.75em;
+    width: 0.45em;
+    height: 1px;
+    background: var(--zb-gold-text);
+  }
+}
+
+/* Gilt frame: a fine gold line set just inside an image, like a picture mount. */
+.gilt-frame::after {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border: 1px solid color-mix(in srgb, var(--zb-gold-light) 55%, transparent);
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Image shimmer while a photo loads */
+.zb-shimmer {
+  background:
+    linear-gradient(100deg, transparent 30%, color-mix(in srgb, var(--zb-white) 55%, transparent) 50%, transparent 70%) 0 0 / 220% 100%,
+    var(--zb-champagne);
+  animation: zb-shimmer 1.6s ease-in-out infinite;
+}
+@keyframes zb-shimmer {
+  from { background-position: 120% 0, 0 0; }
+  to { background-position: -120% 0, 0 0; }
+}
+
+/* Brand loader: the handle draws itself, the gold line sweeps beneath */
+.zb-loader-handle {
+  stroke-dasharray: 160;
+  stroke-dashoffset: 160;
+  animation: zb-draw 1.6s var(--ease-out-soft) infinite;
+}
+.zb-loader-line {
+  transform-origin: left center;
+  animation: zb-sweep 1.6s var(--ease-out-soft) infinite;
+}
+@keyframes zb-draw {
+  0% { stroke-dashoffset: 160; opacity: 0.2; }
+  45% { stroke-dashoffset: 0; opacity: 1; }
+  80% { stroke-dashoffset: 0; opacity: 1; }
+  100% { stroke-dashoffset: -160; opacity: 0.2; }
+}
+@keyframes zb-sweep {
+  0% { transform: scaleX(0); opacity: 0.3; }
+  50% { transform: scaleX(1); opacity: 1; }
+  100% { transform: scaleX(1); opacity: 0; }
+}
+
+/* Route progress: a thin gold thread across the top */
+.zb-progress {
+  background: linear-gradient(90deg, var(--zb-gold-deep), var(--zb-gold-light) 50%, var(--zb-gold));
+  box-shadow: 0 0 10px color-mix(in srgb, var(--zb-gold) 70%, transparent);
+  transform-origin: left center;
+  transition: transform 400ms var(--ease-out-soft), opacity 300ms ease-out 200ms;
+}
+
+/* Gold wave draw-in */
+.zw-wave .zw-line {
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 1400;
+  transition: stroke-dashoffset 1600ms var(--ease-out-soft);
+}
+.zw-wave .zw-band {
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 1400ms var(--ease-out-soft) 150ms;
+}
+.zw-wave.is-drawn .zw-line {
+  stroke-dashoffset: 0;
+}
+.zw-wave.is-drawn .zw-band {
+  clip-path: inset(0 0 0 0);
+}
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 600ms var(--ease-out-soft),
+    transform 600ms var(--ease-out-soft);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Heart pop */
+@keyframes zb-pop {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.22);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.heart-pop {
+  animation: zb-pop 320ms var(--ease-out-soft);
+}
+
+@keyframes zb-sheet-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes zb-sheet-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes zb-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@utility anim-sheet-up {
+  animation: zb-sheet-up 320ms var(--ease-out-soft);
+}
+@utility anim-sheet-right {
+  animation: zb-sheet-right 320ms var(--ease-out-soft);
+}
+@utility anim-fade {
+  animation: zb-fade 250ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .zb-shimmer,
+  .zb-loader-handle,
+  .zb-loader-line {
+    animation: none;
+  }
+  .zb-loader-handle {
+    stroke-dashoffset: 0;
+  }
+  .zw-wave .zw-line {
+    stroke-dashoffset: 0;
+  }
+  .zw-wave .zw-band {
+    clip-path: none;
+  }
+  .arch-group:hover .arch-handle,
+  .arch-group:focus-within .arch-handle {
+    transform: none;
+  }
+}

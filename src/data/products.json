@@ -1,0 +1,1144 @@
+{
+  "categories": [
+    {
+      "key": "handbags",
+      "name": "Handbags",
+      "blurb": "Shoulder and top-handle bags for every day."
+    },
+    {
+      "key": "totes",
+      "name": "Tote Bags",
+      "blurb": "Roomy totes that carry the whole day."
+    },
+    {
+      "key": "office",
+      "name": "Office Bags",
+      "blurb": "Structured bags for work, files and laptops."
+    },
+    {
+      "key": "sling",
+      "name": "Sling & Crossbody",
+      "blurb": "Hands-free bags for town and outings."
+    },
+    {
+      "key": "clutches",
+      "name": "Clutches",
+      "blurb": "Small bags for evenings and occasions."
+    },
+    {
+      "key": "wallets",
+      "name": "Wallets",
+      "blurb": "Wallets and wristlets for cards, coins and notes."
+    },
+    {
+      "key": "pouches",
+      "name": "Pouches",
+      "blurb": "Make-up and toiletry bags."
+    },
+    {
+      "key": "backpacks",
+      "name": "Backpacks",
+      "blurb": "Backpacks for busy days and mums on the move."
+    }
+  ],
+  "occasions": [
+    {
+      "key": "work",
+      "name": "Work"
+    },
+    {
+      "key": "outings",
+      "name": "Outings"
+    },
+    {
+      "key": "evening",
+      "name": "Evening"
+    },
+    {
+      "key": "everyday",
+      "name": "Everyday"
+    },
+    {
+      "key": "travel",
+      "name": "Travel"
+    }
+  ],
+  "products": [
+    {
+      "id": "ZB-001",
+      "slug": "chrisbella-handbag",
+      "name": "Chrisbella Handbag",
+      "status": "own",
+      "category": "handbags",
+      "occasions": [
+        "work",
+        "outings",
+        "everyday"
+      ],
+      "carry": [],
+      "size": null,
+      "fits": [],
+      "priceKes": 5300,
+      "isNew": true,
+      "images": [],
+      "summary": "Carry elegance. Carry confidence. Carry Chrisbella.",
+      "description": "Carry elegance. Carry confidence. Carry Chrisbella. Perfect for work, outings or elevating your everyday look.",
+      "features": [],
+      "idealFor": [
+        "work",
+        "outings",
+        "everyday"
+      ]
+    },
+    {
+      "id": "ZB-002",
+      "slug": "classic-everyday-handbag",
+      "name": "Classic Everyday Handbag",
+      "nameConfirmed": false,
+      "status": "own",
+      "category": "handbags",
+      "occasions": [
+        "everyday",
+        "work"
+      ],
+      "carry": [],
+      "size": null,
+      "fits": [],
+      "priceKes": 4500,
+      "isNew": true,
+      "images": [],
+      "summary": "A timeless piece for the woman who loves her style simple, elegant & classy.",
+      "description": "A timeless piece for the woman who loves her style simple, elegant & classy.",
+      "features": [],
+      "idealFor": [
+        "everyday",
+        "work"
+      ]
+    },
+    {
+      "id": "ZB-003",
+      "slug": "mwanga-carry-all",
+      "name": "Mwanga Carry-All",
+      "status": "sample",
+      "category": "totes",
+      "occasions": [
+        "work",
+        "everyday"
+      ],
+      "carry": [
+        "hand",
+        "shoulder",
+        "crossbody"
+      ],
+      "size": "large",
+      "fits": [
+        "laptop"
+      ],
+      "priceKes": 23600,
+      "isNew": true,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LB-017_02_03_DSC1067.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-017_00_01_DSC1063.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-017_01_02_DSC1081.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-017_03_04_DSC0007-scaled.jpg"
+      ],
+      "summary": "A roomy carry-all for long days, with space for a laptop and a strap that changes how you wear it.",
+      "description": "A generous bag for days that start early and end late. Carry it by hand when you are in a rush, on the shoulder for comfort, or across the body when you need your hands free.",
+      "features": [
+        "Large front cargo pocket with a knob closure",
+        "Large zip pocket inside",
+        "Room for a laptop in a sleeve",
+        "Patterned fabric lining",
+        "Strap for hand, shoulder or crossbody carry"
+      ],
+      "idealFor": [
+        "everyday",
+        "work"
+      ]
+    },
+    {
+      "id": "ZB-004",
+      "slug": "jioni-clutch",
+      "name": "Jioni Clutch",
+      "status": "sample",
+      "category": "clutches",
+      "occasions": [
+        "evening"
+      ],
+      "carry": [
+        "hand"
+      ],
+      "size": "small",
+      "fits": [
+        "phone"
+      ],
+      "priceKes": 5700,
+      "isNew": true,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LB-016_00_01_Clutch-Bag-1.jpg"
+      ],
+      "summary": "A small clutch for evenings, weddings and special gatherings. Holds your phone and the little things.",
+      "description": "A neat clutch for the evening, carried in hand or tucked under the arm. It holds your phone and the essentials, and lets the outfit do the talking.",
+      "features": [
+        "Carried in hand or under the arm",
+        "Lined interior",
+        "Sized for a phone and small essentials"
+      ],
+      "idealFor": [
+        "evening"
+      ]
+    },
+    {
+      "id": "ZB-005",
+      "slug": "nyota-hair-on-shoulder-bag",
+      "name": "Nyota Hair-On Shoulder Bag",
+      "status": "sample",
+      "category": "handbags",
+      "occasions": [
+        "everyday",
+        "outings"
+      ],
+      "carry": [
+        "shoulder"
+      ],
+      "size": "medium",
+      "fits": [],
+      "priceKes": 13500,
+      "isNew": true,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LB-015_01_02_Juliana-set-1-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-015_00_01_Juliana-Bag.jpg"
+      ],
+      "summary": "A structured shoulder bag with a textured hair-on finish that holds its shape.",
+      "description": "An everyday shoulder bag with a textured hair-on finish that makes a quiet statement. Its structured shape stays neat, even when it is full.",
+      "features": [
+        "Textured hair-on finish",
+        "Two parallel shoulder straps",
+        "Structured shape that does not slouch",
+        "Spacious main compartment",
+        "Small zip pocket inside",
+        "Zip closure"
+      ],
+      "idealFor": [
+        "everyday",
+        "outings"
+      ]
+    },
+    {
+      "id": "ZB-006",
+      "slug": "amani-bag-wallet-set",
+      "name": "Amani Bag & Wallet Set",
+      "status": "sample",
+      "category": "handbags",
+      "occasions": [
+        "work",
+        "everyday",
+        "outings"
+      ],
+      "carry": [
+        "shoulder",
+        "hand"
+      ],
+      "size": "medium",
+      "fits": [],
+      "priceKes": 10000,
+      "isNew": true,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LB-014_00_FWK04489.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-014_06_FWK04673.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-014_07_FWK04683.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-014_08_FWK04694.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-014_09_FWK05062.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-014_10_FWK05063.jpg"
+      ],
+      "summary": "A shoulder bag with a matching wallet, so your look comes together in one go.",
+      "description": "A handbag and a matching wallet that are made to be carried together. Wear the bag on the shoulder or on the arm, for the office or the weekend.",
+      "features": [
+        "Comes with a matching wallet",
+        "Long straps for shoulder or arm carry",
+        "Zip closure",
+        "Zip pocket and open pocket inside",
+        "Fabric lining",
+        "Firm shape that holds its form"
+      ],
+      "idealFor": [
+        "everyday",
+        "outings",
+        "work"
+      ]
+    },
+    {
+      "id": "ZB-007",
+      "slug": "pindo-fringe-bag",
+      "name": "Pindo Fringe Bag",
+      "status": "sample",
+      "category": "handbags",
+      "occasions": [
+        "outings",
+        "everyday"
+      ],
+      "carry": [
+        "shoulder",
+        "hand"
+      ],
+      "size": "medium",
+      "fits": [],
+      "priceKes": 13500,
+      "isNew": true,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LB-013_00_01_FRINGE-HAIR-ON-BAG-1-1-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-013_01_02_FRINGE-HAIR-ON-BAG-8-1-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-013_02_03_FRINGE-HAIR-ON-BAG-11-scaled.jpg"
+      ],
+      "summary": "A fringed shoulder bag for outings, with room for the everyday and a zip pocket for valuables.",
+      "description": "Soft fringe gives this bag movement and character. It is made for outings and easy weekends, with plenty of room inside.",
+      "features": [
+        "Fringe detail",
+        "Spacious main compartment",
+        "Zip pocket for valuables",
+        "Fabric lining",
+        "Long, comfortable straps"
+      ],
+      "idealFor": [
+        "everyday",
+        "outings"
+      ]
+    },
+    {
+      "id": "ZB-008",
+      "slug": "kito-statement-bag",
+      "name": "Kito Statement Bag",
+      "status": "sample",
+      "category": "handbags",
+      "occasions": [
+        "outings",
+        "evening"
+      ],
+      "carry": [
+        "shoulder"
+      ],
+      "size": "medium",
+      "fits": [],
+      "priceKes": 15800,
+      "isNew": true,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LB-012_00_01_Gele-6-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-012_01_02_Gele-2-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-012_02_03_Gele-4-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-012_03_04_Gele-7-scaled.jpg"
+      ],
+      "summary": "A shoulder bag with a sculpted shape and a back pocket for the things you reach for most.",
+      "description": "A bag with a shape that catches the eye, for outings and evenings out. A back pocket keeps your phone close, and the zip keeps everything else secure.",
+      "features": [
+        "Distinctive sculpted shape",
+        "Back pocket for quick access",
+        "Zip closure",
+        "Long shoulder straps",
+        "Fabric lining"
+      ],
+      "idealFor": [
+        "evening",
+        "outings"
+      ]
+    },
+    {
+      "id": "ZB-009",
+      "slug": "bahari-two-tone-tote",
+      "name": "Bahari Two-Tone Tote",
+      "status": "sample",
+      "category": "totes",
+      "occasions": [
+        "everyday",
+        "outings"
+      ],
+      "carry": [
+        "shoulder"
+      ],
+      "size": "large",
+      "fits": [],
+      "priceKes": 15200,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LB-011_00_01_BLUE-RED-TOTTE-1.jpg"
+      ],
+      "summary": "A two-tone tote with a spacious lined interior and a zip to keep it all together.",
+      "description": "A tote that pairs two tones for a look that feels considered. The interior is roomy and lined, and closes with a zip.",
+      "features": [
+        "Two-tone design",
+        "Spacious interior",
+        "Fabric lining",
+        "Zip closure",
+        "Shoulder straps"
+      ],
+      "idealFor": [
+        "everyday",
+        "outings"
+      ]
+    },
+    {
+      "id": "ZB-010",
+      "slug": "safari-canvas-tote",
+      "name": "Safari Canvas Tote",
+      "status": "sample",
+      "category": "totes",
+      "occasions": [
+        "everyday",
+        "travel"
+      ],
+      "carry": [
+        "crossbody",
+        "shoulder"
+      ],
+      "size": "large",
+      "fits": [],
+      "priceKes": 18400,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LB-010_06_01_Long-Tote-1.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-010_07_02_Long-Tote-2.jpg"
+      ],
+      "summary": "A canvas tote with a crossbody strap, for errands, travel and hands-free days.",
+      "description": "A relaxed canvas tote for busy days and trips. Use the crossbody strap and keep your hands free.",
+      "features": [
+        "Canvas body",
+        "Spacious interior",
+        "Crossbody strap",
+        "Shoulder carry"
+      ],
+      "idealFor": [
+        "everyday",
+        "travel"
+      ]
+    },
+    {
+      "id": "ZB-011",
+      "slug": "kazi-laptop-bag",
+      "name": "Kazi Laptop Bag",
+      "status": "sample",
+      "category": "office",
+      "occasions": [
+        "work",
+        "travel"
+      ],
+      "carry": [
+        "shoulder"
+      ],
+      "size": "large",
+      "fits": [
+        "laptop-14"
+      ],
+      "priceKes": 15000,
+      "isNew": true,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LAP-010_01_02_Wausi-laptop-bag-1-1-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LAP-010_00_01_Wausi-Laptop-Lady-Bag.jpg"
+      ],
+      "summary": "A shoulder bag with a padded laptop compartment, for work days and travel.",
+      "description": "A work bag that keeps your laptop safe and your look polished. There is room for the day's essentials next to the padded compartment.",
+      "features": [
+        "Padded compartment for a 14-inch laptop",
+        "Two shoulder straps",
+        "Riveted strap fixings",
+        "Bead detail",
+        "Two-way zip"
+      ],
+      "idealFor": [
+        "travel",
+        "work"
+      ]
+    },
+    {
+      "id": "ZB-012",
+      "slug": "siku-wallet",
+      "name": "Siku Wallet",
+      "status": "sample",
+      "category": "wallets",
+      "occasions": [
+        "everyday"
+      ],
+      "carry": [
+        "hand"
+      ],
+      "size": "small",
+      "fits": [
+        "cards",
+        "coins",
+        "notes"
+      ],
+      "priceKes": 3800,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LWL-003_00_FWK05268.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LWL-003_09_03_Kelsey-Wallet-3-1-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LWL-003_12_06_Kelsey-Wallet-5-scaled.jpg"
+      ],
+      "summary": "A wallet with a place for coins, cards and notes, so everything is easy to find.",
+      "description": "A tidy wallet for the everyday. Coins, cards and notes each have their own place.",
+      "features": [
+        "Coin section",
+        "Card slots",
+        "Note section"
+      ],
+      "idealFor": [
+        "everyday"
+      ]
+    },
+    {
+      "id": "ZB-013",
+      "slug": "tulia-zip-wallet",
+      "name": "Tulia Zip Wallet",
+      "status": "sample",
+      "category": "wallets",
+      "occasions": [
+        "everyday",
+        "outings"
+      ],
+      "carry": [
+        "wrist"
+      ],
+      "size": "small",
+      "fits": [
+        "cards",
+        "coins",
+        "notes"
+      ],
+      "priceKes": 4000,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LWL-002_00_01_Marita-ladies-wallet-3-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LWL-002_01_02_Marita-ladies-wallet-2-1-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LWL-002_02_03_Marita-ladies-wallet-5-1-scaled.jpg"
+      ],
+      "summary": "A zip wallet with a wristlet, card slots, a coin section and a clear photo window.",
+      "description": "A zip wallet you can carry on its own with the wristlet. It keeps coins, cards and notes in order.",
+      "features": [
+        "Zip closure",
+        "Card slots",
+        "Coin section and note section",
+        "Clear photo window",
+        "Magnetic fastening",
+        "Wristlet strap"
+      ],
+      "idealFor": [
+        "everyday",
+        "outings"
+      ]
+    },
+    {
+      "id": "ZB-014",
+      "slug": "shanga-phone-wallet",
+      "name": "Shanga Phone Wallet",
+      "status": "sample",
+      "category": "wallets",
+      "occasions": [
+        "everyday",
+        "outings"
+      ],
+      "carry": [
+        "wrist"
+      ],
+      "size": "small",
+      "fits": [
+        "phone",
+        "cards",
+        "coins",
+        "notes"
+      ],
+      "priceKes": 6300,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LWL-001_01_02_Wags-Wallet-1.jpg",
+        "https://media.hbleatherke.com/products/gallery/Wags_Wallet-_2.jpg",
+        "https://media.hbleatherke.com/products/gallery/FWK05333_1.jpg",
+        "https://media.hbleatherke.com/products/gallery/FWK05335_1.jpg"
+      ],
+      "summary": "A wallet with space for your phone, with a beaded front panel and a detachable wrist strap.",
+      "description": "A wallet roomy enough for your phone, cards, coins and notes. Carry it on its own with the wrist strap when you want to travel light.",
+      "features": [
+        "Holds a phone, cards, coins and notes",
+        "Beaded front panel",
+        "Pebbled finish with contrast stitching",
+        "Zip closure with a press-stud tab",
+        "Detachable wrist strap"
+      ],
+      "idealFor": [
+        "everyday",
+        "outings"
+      ]
+    },
+    {
+      "id": "ZB-015",
+      "slug": "urembo-make-up-bag",
+      "name": "Urembo Make-Up Bag",
+      "status": "sample",
+      "category": "pouches",
+      "occasions": [
+        "everyday",
+        "travel"
+      ],
+      "carry": [
+        "hand"
+      ],
+      "size": "small",
+      "fits": [
+        "make-up"
+      ],
+      "priceKes": 3650,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-MUP-001_04_FWK05374.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-MUP-001_00_FWK05368.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-MUP-001_01_FWK05369.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-MUP-001_02_FWK05371.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-MUP-001_03_FWK05372.jpg"
+      ],
+      "summary": "A make-up bag with a wipe-clean lining and a strap, for your handbag or your travels.",
+      "description": "A neat home for your make-up and brushes, at home or on the go. The lining wipes clean if something spills.",
+      "features": [
+        "Wipe-clean lining",
+        "Zip closure",
+        "Carry strap for the arm or hand",
+        "Shaped body"
+      ],
+      "idealFor": [
+        "everyday",
+        "travel"
+      ]
+    },
+    {
+      "id": "ZB-016",
+      "slug": "shanga-crossbody",
+      "name": "Shanga Crossbody",
+      "status": "sample",
+      "category": "sling",
+      "occasions": [
+        "outings",
+        "everyday"
+      ],
+      "carry": [
+        "crossbody",
+        "shoulder"
+      ],
+      "size": "small",
+      "fits": [
+        "phone",
+        "wallet",
+        "keys"
+      ],
+      "priceKes": 12200,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-SLG-003_00_FWK05505.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-SLG-003_01_FWK05519.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-SLG-003_02_FWK05531.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-SLG-003_03_FWK05535.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-SLG-003_04_FWK05538.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-SLG-003_05_01_IMG_6497-1-scaled.jpg"
+      ],
+      "summary": "A crossbody with a colourful beaded panel and room for your phone, wallet and keys.",
+      "description": "A crossbody bag with a bright beaded panel that lifts any outfit. Wear it across the body or on the shoulder and keep your hands free.",
+      "features": [
+        "Beaded front panel in red, blue, green and white",
+        "Flap-over closure",
+        "Detachable strap on trigger hooks",
+        "Crossbody or shoulder carry",
+        "Room for a phone, wallet and keys",
+        "Contrast edge stitching"
+      ],
+      "idealFor": [
+        "everyday",
+        "outings"
+      ]
+    },
+    {
+      "id": "ZB-017",
+      "slug": "pambo-toiletry-bag",
+      "name": "Pambo Toiletry Bag",
+      "status": "sample",
+      "category": "pouches",
+      "occasions": [
+        "travel"
+      ],
+      "carry": [
+        "hand"
+      ],
+      "size": "small",
+      "fits": [
+        "toiletries"
+      ],
+      "priceKes": 5500,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-WSH-001_00_01_Hazina-washbag-7-1-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-WSH-001_01_02_Hazina-washbag-4.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-WSH-001_02_03_Hazina-washbag-3.jpg"
+      ],
+      "summary": "A toiletry bag with a water-resistant lining, for travel, the gym and weekends away.",
+      "description": "A toiletry bag for trips, gym days and overnight stays. The lining protects against spills, and there is space for your bottles.",
+      "features": [
+        "Water-resistant lining",
+        "Space for bottles",
+        "Zip closure",
+        "Bead detail",
+        "Small carry strap"
+      ],
+      "idealFor": [
+        "travel"
+      ]
+    },
+    {
+      "id": "ZB-018",
+      "slug": "kikapu-mini-tote",
+      "name": "Kikapu Mini Tote",
+      "status": "sample",
+      "category": "totes",
+      "occasions": [
+        "everyday",
+        "outings"
+      ],
+      "carry": [
+        "shoulder",
+        "hand"
+      ],
+      "size": "medium",
+      "fits": [],
+      "priceKes": 7500,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/FWK04563.jpg",
+        "https://media.hbleatherke.com/products/gallery/image_a0dfc622.jpg"
+      ],
+      "summary": "A mini tote with a long strap, easy to throw on for errands and outings.",
+      "description": "An easy tote for the days you want to grab one bag and go. The long strap sits on the shoulder or the arm, or carry it in hand.",
+      "features": [
+        "Long strap",
+        "Shoulder, arm or hand carry",
+        "Roomy interior"
+      ],
+      "idealFor": [
+        "everyday",
+        "outings"
+      ]
+    },
+    {
+      "id": "ZB-019",
+      "slug": "malkia-structured-tote",
+      "name": "Malkia Structured Tote",
+      "status": "sample",
+      "category": "office",
+      "occasions": [
+        "work",
+        "everyday"
+      ],
+      "carry": [
+        "hand",
+        "shoulder"
+      ],
+      "size": "large",
+      "fits": [],
+      "priceKes": 26000,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LB-008_00_01_TELFAR-BAG-1.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-008_01_02_TELFAR-BAG-3.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-008_02_03_TELFAR-BAG-1.jpg"
+      ],
+      "summary": "A structured tote for the office and meetings, with hand straps and a detachable shoulder strap.",
+      "description": "A structured tote that looks as good in a meeting as it does on the weekend. Inside, four compartments keep the day in order.",
+      "features": [
+        "Two hand straps",
+        "Detachable shoulder strap",
+        "Four compartments inside",
+        "Zip pocket for valuables",
+        "Two open pockets",
+        "Lined interior"
+      ],
+      "idealFor": [
+        "everyday",
+        "work"
+      ]
+    },
+    {
+      "id": "ZB-020",
+      "slug": "haradali-portrait-tote",
+      "name": "Haradali Portrait Tote",
+      "status": "sample",
+      "category": "office",
+      "occasions": [
+        "work"
+      ],
+      "carry": [
+        "shoulder"
+      ],
+      "size": "large",
+      "fits": [
+        "laptop",
+        "a4"
+      ],
+      "priceKes": 14700,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LB-007_00_01_TWIGA-TOTE-BAG-1.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-007_01_02_TWIGA-TOTE-BAG-2.jpg"
+      ],
+      "summary": "A tall open-top tote in a warm mustard tone, slim enough to carry a laptop or A4 files upright.",
+      "description": "A tall, slim tote in warm mustard for work days. It carries a laptop, a notebook and your essentials upright.",
+      "features": [
+        "Tall portrait shape for a laptop or A4 files",
+        "Large flap-over front pocket",
+        "Two shoulder straps riveted at the base",
+        "Open top for quick access"
+      ],
+      "idealFor": [
+        "work"
+      ]
+    },
+    {
+      "id": "ZB-021",
+      "slug": "neema-hair-on-bag",
+      "name": "Neema Hair-On Bag",
+      "status": "sample",
+      "category": "handbags",
+      "occasions": [
+        "everyday",
+        "outings"
+      ],
+      "carry": [
+        "shoulder",
+        "hand"
+      ],
+      "size": "medium",
+      "fits": [],
+      "priceKes": 12500,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LB-006_00_01_The-Lizz-4.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-006_01_02_The-Lizz-2.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-006_02_03_The-Lizz-1.jpg"
+      ],
+      "summary": "A shoulder bag with hair-on detailing for texture and character, for every day.",
+      "description": "A bag with hair-on detailing that adds texture and character. It carries the everyday and suits relaxed and dressy looks.",
+      "features": [
+        "Hair-on detailing",
+        "Two long shoulder straps",
+        "Fabric lining",
+        "Zip closure"
+      ],
+      "idealFor": [
+        "everyday",
+        "outings"
+      ]
+    },
+    {
+      "id": "ZB-022",
+      "slug": "dhahabu-buckle-sling",
+      "name": "Dhahabu Buckle Sling",
+      "status": "sample",
+      "category": "sling",
+      "occasions": [
+        "outings",
+        "everyday"
+      ],
+      "carry": [
+        "crossbody",
+        "shoulder"
+      ],
+      "size": "small",
+      "fits": [],
+      "priceKes": 16500,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-SLG-002_00_01_Ekira-Sling-Bag-1.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-SLG-002_01_02_Ekira-Sling-Bag-2.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-SLG-002_02_03_Ekira-Sling-Bag-3.jpg"
+      ],
+      "summary": "A sling with a gold-tone buckle and flap closure, worn across the body or on the shoulder.",
+      "description": "A sling for outings, finished with a gold-tone buckle. The adjustable strap goes across the body or over the shoulder.",
+      "features": [
+        "Gold-tone buckle",
+        "Flap closure",
+        "Front pocket",
+        "Fabric lining",
+        "Long adjustable strap"
+      ],
+      "idealFor": [
+        "everyday",
+        "outings"
+      ]
+    },
+    {
+      "id": "ZB-023",
+      "slug": "lulu-crossbody-clutch",
+      "name": "Lulu Crossbody Clutch",
+      "status": "sample",
+      "category": "clutches",
+      "occasions": [
+        "evening",
+        "outings"
+      ],
+      "carry": [
+        "crossbody",
+        "shoulder",
+        "hand"
+      ],
+      "size": "small",
+      "fits": [],
+      "priceKes": 12500,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LB-005_00_01_joy-odera-clutch-bag-6.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-005_01_02_joy-odera-clutch-bag-5.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-005_02_03_joy-odera-clutch-bag-12.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-005_03_04_joy-odera-clutch-bag-11.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-005_04_05_joy-odera-clutch-bag-8.jpg"
+      ],
+      "summary": "A small bag that works as a clutch or a crossbody, for evenings and outings.",
+      "description": "A small, classic bag for evenings and outings. Carry it in hand, or clip on the strap and wear it on the shoulder or across the body.",
+      "features": [
+        "Detachable strap on trigger hooks",
+        "Clutch, shoulder or crossbody carry",
+        "Zip closure",
+        "Magnetic fastening",
+        "Fabric lining"
+      ],
+      "idealFor": [
+        "evening",
+        "outings"
+      ]
+    },
+    {
+      "id": "ZB-024",
+      "slug": "upinde-colour-block-bag",
+      "name": "Upinde Colour-Block Bag",
+      "status": "sample",
+      "category": "handbags",
+      "occasions": [
+        "work",
+        "outings"
+      ],
+      "carry": [
+        "shoulder"
+      ],
+      "size": "medium",
+      "fits": [],
+      "priceKes": 16500,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LB-004_00_FWK04458.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-004_01_FWK04461.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-004_02_FWK04463.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-004_03_FWK04471.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-004_04_FWK05122.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-004_05_FWK05125.jpg"
+      ],
+      "summary": "A colour-block shoulder bag for the office and weekend outings.",
+      "description": "A bag that blends colours for a look that stands out. It moves easily from the office to the weekend.",
+      "features": [
+        "Colour-block design",
+        "Adjustable shoulder strap with buckles",
+        "Spacious main compartment",
+        "Small zip pocket inside",
+        "Zip closure"
+      ],
+      "idealFor": [
+        "outings",
+        "work"
+      ]
+    },
+    {
+      "id": "ZB-025",
+      "slug": "imara-hair-on-tote",
+      "name": "Imara Hair-On Tote",
+      "status": "sample",
+      "category": "handbags",
+      "occasions": [
+        "everyday",
+        "work"
+      ],
+      "carry": [
+        "shoulder",
+        "hand"
+      ],
+      "size": "medium",
+      "fits": [],
+      "priceKes": 15500,
+      "isNew": true,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LB-003_00_FWK04436.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-003_01_FWK04442.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-003_02_FWK04445.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-003_03_FWK04448.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-003_04_FWK04453.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-003_05_FWK05227.jpg"
+      ],
+      "summary": "A hair-on tote with a natural pattern, a divided interior and sturdy carry handles.",
+      "description": "A tote with a hair-on finish and a natural pattern, so no two look quite alike. It carries on the shoulder or in hand.",
+      "features": [
+        "Hair-on finish",
+        "Edged trim",
+        "Carry handles",
+        "Main compartment with a divider",
+        "Zip pocket inside",
+        "Zip closure"
+      ],
+      "idealFor": [
+        "everyday",
+        "work"
+      ]
+    },
+    {
+      "id": "ZB-026",
+      "slug": "faraja-everyday-bag",
+      "name": "Faraja Everyday Bag",
+      "status": "sample",
+      "category": "handbags",
+      "occasions": [
+        "everyday"
+      ],
+      "carry": [
+        "shoulder"
+      ],
+      "size": "medium",
+      "fits": [],
+      "priceKes": 17700,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LB-002_02_03_Glynis-Bag-1-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-002_00_01_Glynis-Bag-2-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-002_01_02_Glynis-Bag-4-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-002_03_04_Glynis-Bag-8-scaled.jpg"
+      ],
+      "summary": "A medium everyday bag with front and back pockets and a lined interior.",
+      "description": "A medium bag for every day, with pockets front and back for the things you reach for often. The interior is lined and roomy.",
+      "features": [
+        "Front and back pockets",
+        "Zip front pocket",
+        "Zip pocket inside",
+        "Fabric lining",
+        "Fixed shoulder strap"
+      ],
+      "idealFor": [
+        "everyday"
+      ]
+    },
+    {
+      "id": "ZB-027",
+      "slug": "mrembo-mini-top-handle",
+      "name": "Mrembo Mini Top-Handle",
+      "status": "sample",
+      "category": "handbags",
+      "occasions": [
+        "work",
+        "outings",
+        "evening"
+      ],
+      "carry": [
+        "hand",
+        "shoulder",
+        "crossbody"
+      ],
+      "size": "small",
+      "fits": [],
+      "priceKes": 16200,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-LB-001_02_03_Dolly-Mini-4-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-001_01_02_Dolly-Mini-2-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-LB-001_00_01_Dolly-Mini-3-scaled.jpg"
+      ],
+      "summary": "A small top-handle bag with a detachable strap, for work, outings and evenings.",
+      "description": "A small top-handle bag with a classic shape. Carry it by the handles, or add the strap for the shoulder or across the body.",
+      "features": [
+        "Two fixed hand straps",
+        "Long, adjustable detachable strap",
+        "Main compartment",
+        "Small zip pocket inside",
+        "Two open pockets inside",
+        "Zip closure"
+      ],
+      "idealFor": [
+        "evening",
+        "outings",
+        "work"
+      ]
+    },
+    {
+      "id": "ZB-028",
+      "slug": "porini-sling",
+      "name": "Porini Sling",
+      "status": "sample",
+      "category": "sling",
+      "occasions": [
+        "outings",
+        "everyday"
+      ],
+      "carry": [
+        "shoulder",
+        "crossbody"
+      ],
+      "size": "medium",
+      "fits": [],
+      "priceKes": 15500,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-SLG-001_00_01_Bush-Princess-1.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-SLG-001_01_02_Bush-Princess-2.jpg"
+      ],
+      "summary": "A sling that mixes a hair-on panel with a smooth finish, worn on the shoulder or across the body.",
+      "description": "A sling that pairs a hair-on panel with a smooth finish. The long strap goes on the shoulder or across the body.",
+      "features": [
+        "Hair-on panel",
+        "Fabric lining",
+        "Long strap for shoulder or crossbody"
+      ],
+      "idealFor": [
+        "everyday",
+        "outings"
+      ]
+    },
+    {
+      "id": "ZB-029",
+      "slug": "matembezi-mum-backpack",
+      "name": "Matembezi Mum Backpack",
+      "status": "sample",
+      "category": "backpacks",
+      "occasions": [
+        "travel",
+        "everyday"
+      ],
+      "carry": [
+        "back",
+        "shoulder",
+        "crossbody"
+      ],
+      "size": "large",
+      "fits": [
+        "bottles"
+      ],
+      "priceKes": 15900,
+      "isNew": false,
+      "images": [
+        "https://media.hbleatherke.com/products/gallery/HB-BPK-003_03_04_Baby-Noah-2.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-BPK-003_00_01_Baby-Noah-backpack.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-BPK-003_01_02_Baby-Noah-4-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-BPK-003_02_03_Baby-Noah-3-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-BPK-003_04_05_Baby-Noah-7-scaled.jpg",
+        "https://media.hbleatherke.com/products/gallery/HB-BPK-003_05_06_Baby-Noah-6-scaled.jpg"
+      ],
+      "summary": "A mum's backpack with bottle pockets, many compartments and three ways to carry.",
+      "description": "A backpack for mums on the move. Bottle pockets and plenty of compartments keep your little one's things in order.",
+      "features": [
+        "Two bottle pockets",
+        "Several compartments and pockets",
+        "Adjustable back straps",
+        "Detachable shoulder or crossbody strap",
+        "Canvas body"
+      ],
+      "idealFor": [
+        "everyday",
+        "mum",
+        "travel"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "status": "draft",
+  "title": "Bag Finder",
+  "intro": "Four quick questions, then we show you bags for your day.",
+  "resultsTitle": "Bags for your day",
+  "questions": [
+    {
+      "key": "occasion",
+      "label": "Where are you going?",
+      "answers": [
+        { "key": "work", "label": "Work" },
+        { "key": "outings", "label": "Outings" },
+        { "key": "evening", "label": "Evening" },
+        { "key": "everyday", "label": "Everyday" },
+        { "key": "travel", "label": "Travel" }
+      ]
+    },
+    {
+      "key": "carryItems",
+      "label": "What do you carry?",
+      "answers": [
+        { "key": "essentials", "label": "Just essentials", "hint": "Phone, keys, cards" },
+        { "key": "laptop", "label": "A laptop", "hint": "And the day's things" },
+        { "key": "files", "label": "Files and papers", "hint": "A4 documents" },
+        { "key": "everything", "label": "A bit of everything", "hint": "A roomy bag" },
+        { "key": "baby", "label": "Baby things", "hint": "Bottles and more" }
+      ]
+    },
+    {
+      "key": "carry",
+      "label": "How do you like to carry it?",
+      "answers": [
+        { "key": "hand", "label": "In hand" },
+        { "key": "shoulder", "label": "On the shoulder" },
+        { "key": "crossbody", "label": "Crossbody, hands-free" },
+        { "key": "back", "label": "On the back" },
+        { "key": "any", "label": "No preference" }
+      ]
+    },
+    {
+      "key": "budget",
+      "label": "Budget",
+      "answers": [
+        { "key": "u5", "label": "Up to KES 5,000", "max": 5000 },
+        { "key": "5-10", "label": "KES 5,000 – 10,000", "min": 5000, "max": 10000 },
+        { "key": "10-15", "label": "KES 10,000 – 15,000", "min": 10000, "max": 15000 },
+        { "key": "o15", "label": "Over KES 15,000", "min": 15000 },
+        { "key": "any", "label": "Show me everything" }
+      ]
+    }
+  ]
+}
